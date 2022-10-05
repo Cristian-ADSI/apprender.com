@@ -16,7 +16,7 @@ class Controller
         if (file_exists($modelFile)) {
 
             require_once $modelFile;
-            $modelName =  ucfirst($model . 'Model');
+            $modelName =  ucfirst($MODEL . 'Model');
 
             $this->model = new  $modelName();
         }
@@ -67,6 +67,6 @@ class Controller
             $params = "?$params";
         }
 
-        header("lLcation:".constant(URL)."$PATH" . "$params");
+        header("Location:".constant(URL)."$PATH" . "$params");
     }
 }

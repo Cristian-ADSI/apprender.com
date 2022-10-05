@@ -10,4 +10,6 @@ class SingupController extends Controller
     function loadView(){
         $this->view->render('singup');
     }
+
+    
 }

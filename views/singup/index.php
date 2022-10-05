@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprender</title>
     <!-- Styles  -->
-    <link href="<?PHP echo constant('URL') ?>/assets/css/singup.css" rel="stylesheet">
+    <link href="<?PHP echo constant('URL') ?>/public/css/singup.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="<?PHP echo constant('BOOTSTRAP') ?>" rel="stylesheet">
 </head>
@@ -92,12 +92,13 @@
 
                 </div>
 
-                <div class="text-center mb-3 submit-button" >
+                <div class="text-center mb-3 submit-button">
                     <button type="submit">Enviar</button>
                 </div>
 
-                <a href="./index.php" class="singup-link"> Ya tienes una cuenta? Ingresa </a>
-
+                <a href="<?PHP echo constant('URL') ?>" class="singup-link">
+                    Ya tienes una cuenta? Ingresa
+                </a>
             </form>
 
         </div>
