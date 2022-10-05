@@ -2,7 +2,7 @@
 
 class LoginModel{
     function __construct(){
-        error_log('MODEL::CONSTRUCT=>OK');
+        error_log('LOGIN_MODEL::CONSTRUCT=>Cargado');
     }
    
 }

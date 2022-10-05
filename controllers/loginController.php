@@ -3,7 +3,7 @@ class LoginController extends Controller
 {
     function __construct()
     {
-        error_log("LOGIN::CONSTRUCT=>Login cargado");
+        error_log("LOGIN_CONTROLLER::CONSTRUCT=>Cargado");
         parent::__construct();
     }
 

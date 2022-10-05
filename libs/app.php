@@ -15,9 +15,10 @@ class App
         }
 
         // No existe el controlador especificado
-        $fileController = "controllers/$url[0].php";
+        $fileController = "controllers/$url[0]Controller.php";
         if (!file_exists($fileController)) {
-            $this->redirectErrors();
+          
+            $this->redirectErrors($url[0]);
             return;
         }
 
@@ -39,7 +40,7 @@ class App
 
         //No existe el metodo especificado
         if (method_exists($controller, $method)) {
-            $this->redirectErrors();
+            $this->redirectErrors($url[1]);
             return;
         }
 
@@ -73,9 +74,9 @@ class App
         $controller->loadView();
     }
 
-    private function redirectErrors()
+    private function redirectErrors($CONTROLLER)
     {
-        error_log("APP::constructor=>No existe el controlador especificado");
+        error_log("APP::constructor=>No existe el controlado/metodo $CONTROLLER");
 
         $fileController = 'controllers/errorsController.php';
         require_once $fileController;

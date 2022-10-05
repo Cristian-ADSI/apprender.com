@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apprender</title>
     <!-- styles  -->
-    <link rel="stylesheet" href="<?PHP echo constant('URL')?>assets/css/login.css">
+    <link rel="stylesheet" href="<?PHP echo constant('URL') ?>assets/css/login.css">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?PHP echo constant('BOOTSTRAP') ?>" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                 <!-- Sing up  -->
                 <a href="#" class="singup-link"> No tienes una cuenta? Registrate </a>
             </form>
-        </div>   
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
