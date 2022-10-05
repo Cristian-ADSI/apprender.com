@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes bg-ColorChange {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+body {
+  animation: bg-ColorChange 10s infinite ease-in-out;
+  background: linear-gradient(to right, #30127b, #2d8daa, #275891);
+  background-size: 400% 400%;
+  margin: 200px;
+  margin-left: 500px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container .main_form {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  width: 45%;
+}
+
+.container .main_form form .submit-button > button {
+  display: inline-block;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 25px;
+  outline: none;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+
+.container .main_form form .submit-button > button:hover {
+  background: linear-gradient(to right, #30127b, #2d8daa, #275891);
+  border: 1px solid #ffffff00;
+}
+
+.container .main_form form .singup-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+
+.container .main_form form .singup-link:hover {
+  color: #833ab4;
+}
+
+@media (max-width: 992px) {
+  .main_form {
+    width: 90%;
+  }
+}
