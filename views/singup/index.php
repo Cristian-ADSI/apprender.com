@@ -7,17 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprender</title>
     <!-- Styles  -->
-    <link href="<?PHP echo constant('URL') ?>/assets/css/singup.css" rel="stylesheet">
+    <link href="<?PHP echo constant('URL') ?>/public/css/singup.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="<?PHP echo constant('BOOTSTRAP') ?>" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-
         <div class="main-form">
             <h1 class="text-center text-light pt-4">Registrate en Apprender </h1>
-            <form class="px-5 py-2" role="form" action="<?PHP $_SERVER['PHP_SELF'] ?>" method="POST">
+            <form class="px-5 py-2" role="form" action="<?PHP echo constant('URL') ?>singup/newUSer" method="POST">
                 <!-- Info  -->
                 <div class="row ">
 
@@ -26,15 +25,16 @@
                         <h5 class="fw-bold text-light">Datos personales</h5>
                         <!-- DNI  -->
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="id" id="id" placeholder="Ingresa tu N° documento" required>
+                            <input type="text" class="form-control" name="idUser" placeholder="Ingresa tu N° documento" required>
                         </div>
                         <!-- Names   -->
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombres" required>
+                            <input type="text" class="form-control" name="name" placeholder="Nombres" required>
                         </div>
                         <!-- Lastnames  -->
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Apellidos" required>
+                            <input type="text" class="form-control" name="lastname" 
+                            placeholder="Apellidos" required>
                         </div>
 
                     </div>
@@ -44,11 +44,11 @@
                         <h5 class="fw-bold text-light">Datos de contacto</h5>
                         <!-- Phone  -->
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono" required>
+                            <input type="text" class="form-control" name="phone" placeholder="Telefono" required>
                         </div>
                         <!-- Email  -->
                         <div class=" mb-3">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico" required>
+                            <input type="email" class="form-control" name="email" placeholder="Correo electronico" required>
                         </div>
 
                     </div>
@@ -79,25 +79,26 @@
                     <h5 class="fw-bold text-light">Autentificacion</h5>
                     <div class="col-md-12 key-content">
                         <div>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="clave" required autocomplete="off">
+                            <input type="password" class="form-control" name="password" placeholder="clave" required autocomplete="off">
                         </div>
 
                         <div>
-                            <input type="password" class="form-control" name="password_confirm" id="password_confirm" placeholder="Confirma tu clave" required autocomplete="off">
+                            <input type="password" class="form-control" name="password_conf" placeholder="Confirma tu clave" required autocomplete="off">
                         </div>
                     </div>
                 </div>
 
                 <div class="alert-zone p-0">
-
+                <?PHP $this->showMessages() ?>
                 </div>
 
-                <div class="text-center mb-3 submit-button" >
+                <div class="text-center mb-3 submit-button">
                     <button type="submit">Enviar</button>
                 </div>
 
-                <a href="./index.php" class="singup-link"> Ya tienes una cuenta? Ingresa </a>
-
+                <a href="<?PHP echo constant('URL') ?>/login" class="singup-link">
+                    Ya tienes una cuenta? Ingresa
+                </a>
             </form>
 
         </div>

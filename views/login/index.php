@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apprender</title>
     <!-- styles  -->
-    <link rel="stylesheet" href="<?PHP echo constant('URL') ?>assets/css/login.css">
+    <link rel="stylesheet" href="<?PHP echo constant('URL') ?>public/css/login.css">
     <!-- Bootstrap -->
     <link href="<?PHP echo constant('BOOTSTRAP') ?>" rel="stylesheet">
 </head>
@@ -50,7 +50,7 @@
                 </div>
 
                 <!-- Sing up  -->
-                <a href="#" class="singup-link"> No tienes una cuenta? Registrate </a>
+                <a href="<?PHP echo constant('URL') ?>singup" class="singup-link"> No tienes una cuenta? Registrate </a>
             </form>
         </div>
     </div>
