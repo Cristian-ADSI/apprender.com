@@ -16,17 +16,19 @@ class View
     }
 
     private function handleMessages()
-    {
+    {   
+        
         if (isset($_GET['success']) && isset($_GET['error'])) { }
         
-        if (isset($_GET['success'])) {   $this->handleSuccess(); }
+        if (isset($_GET['success'])) { $this->handleSuccess(); }
         
         if (isset($_GET['error'])) { $this->handleError(); }
     }
     
     private function handleError(){
-        $code = $_GET['error'];
         $error = new ErrorMessages();
+
+        $code = $_GET['error'];
 
         if ($error->existsKey($code)) {
             $this->data['error'] = $error->getError($code);
@@ -42,7 +44,6 @@ class View
         }
     }
 
-
     public function showMessages(){
         $this->showErrors();
         $this->showSuccess();
@@ -51,7 +52,7 @@ class View
     private function showErrors(){
         if (array_key_exists('error', $this->data)){
 
-            echo'<div class="error" > ' . $this->data['error'] . ' </div> ';
+            echo'<div class="alert alert-danger " > ' . $this->data['error'] . ' </div> ';
         }
     }
 

@@ -27,7 +27,7 @@
             <div class="access">
                 <a href="<?php echo constant('URL') ?>singup" class="btn-singUp">Registrarse</a>
                 <div class="btn-singIn">
-                    <a href="<?php echo constant('URL') ?>login">Acceder</a>
+                    <a href="<?php echo constant('URL') ?>login">Ingresar</a>
                 </div>
             </div>
         </nav>
