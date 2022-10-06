@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #c8c7f1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 50vh;
+  width: 100%;
+}
+
+header nav {
+  width: 100%;
+
+  background: #3c5d94;
+  height: 60px;
+  padding: 0 10%;
+}
+
+header nav .brand {
+  background: #c8c7f1;
+  border-radius: 50px;
+  height: 40px;
+}
+
+header nav .brand a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  border-radius: 50px;
+  height: 100%;
+  padding: 0 8px;
+  text-decoration: none;
+}
+
+header nav .brand a img {
+  height: 90%;
+  border-radius: 50px;
+}
+
+header nav .brand a p {
+  color: #525252;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+
+  padding-right: 20px;
+  margin-bottom: 0;
+}
+
+header nav .access {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header nav .access a {
+  color: #525252;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+
+  padding: 5px 15px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+header nav .access a:hover {
+  background: #c8c7f1;
+}
+
+header .banner {
+  background: url('https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+
+  height: calc(100% - 60px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.guide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+  min-height: 50vh;
+  width: 100%;
+}
+
+.guide .cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  background: #3c5d94;
+  border-radius: 20px;
+  margin-top: 20px;
+  min-height: 85%;
+  padding: 25px;
+  width: 90%;
+}
+
+.guide .cards-container .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(82, 82, 82, 0.6) 5px 5px 10px -3px;
+  height: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  transition: all ease 0.2s;
+  width: 200px;
+}
+
+.guide .cards-container .card .card-img {
+  width: 70%;
+}
+
+.guide .cards-container .card .card-img img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.guide .cards-container .card .card-body p {
+  text-align: center;
+  font-style: italic;
+  color: #525252;
+}

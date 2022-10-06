@@ -10,7 +10,7 @@ class App
 
         // No se especifico controlador en la url 
         if (empty($url[0])) {
-            $this->redirectLogin();
+            $this->redirectHome();
             return;
         }
 
@@ -67,6 +67,18 @@ class App
 
         $controller = new LoginController();
         $controller->loadModel('login');
+        $controller->loadView();
+    }
+
+    private function redirectHome()
+    {
+        error_log("APP::constructor=>No se especifico controlador");
+
+        $fileController = 'controllers/homeController.php';
+        require_once $fileController;
+
+        $controller = new HomeController();
+        $controller->loadModel('home');
         $controller->loadView();
     }
 
