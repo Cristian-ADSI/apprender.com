@@ -1,3 +1,4 @@
+
 <?PHP
 session_start();
 ?>
@@ -7,7 +8,6 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- styles  -->
     <link rel="stylesheet" href="<?PHP echo constant('URL') ?>/public/css/courses.css">
@@ -15,7 +15,6 @@ session_start();
     <link rel="stylesheet" href="<?PHP echo BOOTSTRAP ?>">
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
     <title>Apprender</title>
 </head>
 
@@ -23,14 +22,15 @@ session_start();
     <?PHP require_once "views/components/header.php" ?>
     <?PHP require_once "views/components/sidebar.php" ?>
     <main>
-        <div class="contenedor-cursos">
-            <!-- <?php
+        <!-- <div class="contenedor-cursos">
+            <?php
             //cunsulta paa mostrar los cursos
-            $sql = ("SELECT `id_curso`, `imagen`, `nombre`, `descripcion`, `fecha_inicial`, `fecha_final`,`valor` 
-                 FROM `cursos` 
-                 order by id_curso"
+            $sql = ("SELECT C.id_curso,c.imagen,c.nombre,c.descripcion,c.fecha_inicial,c.fecha_final
+                 FROM cursos C 
+                 INNER join matriculas M ON c.id_curso = m.id_curso
+                 INNER JOIN usuarios U ON u.id = m.id_usuarios
+                 WHERE m.id_usuarios='1039784054'"
             );
-
             $result = mysqli_query($con, $sql);
             while ($mostrar = mysqli_fetch_array($result)) {
 
@@ -50,19 +50,17 @@ session_start();
                         <br>
                         <label id="fecha_inicial">Fecha inicial:<?php echo " " . $mostrar['fecha_inicial'] ?></label> <br>
                         <label id="fecha_final">Fecha final:<?php echo " " . $mostrar['fecha_final'] ?></label><br>
-                        <b><label>valor de curso:</label></b><br>
-                        <label id="valor"><?php echo " " . $mostrar['valor'] ?></label>
                         <div class="boton">
-                            <a href="matricula.php?id=<?php echo $idCurso; ?>&token=<?php echo $tokenHash ?>" class="btn">
-                                Matricularme
+                            <a href="temas.php?id=<?php echo $idCurso; ?>&token=<?php echo $tokenHash ?>" class="btn">
+                                continuar
                             </a>
                         </div>
                     </div>
                 </div>
             <?php
             }
-            ?> -->
-        </div>
+            ?>
+        </div> -->
     </main>
 </body>
 

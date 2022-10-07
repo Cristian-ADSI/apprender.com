@@ -27,7 +27,7 @@
                 </div>
                 <div class="nombre-Usuario">
                     <label>
-                        <!-- <?php echo $mostrarr['nombre'] ?> -->
+                      <?php echo $_SESSION['sessionName'] ?> 
                     </label>
                 </div>
             </div>
