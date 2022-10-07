@@ -8,6 +8,7 @@ require_once "config/config.php";
 
 require_once "classes/errorMessages.php";
 require_once "classes/successMessages.php";
+require_once "classes/session.php";
 
 require_once "libs/app.php";
 require_once "libs/controller.php";
