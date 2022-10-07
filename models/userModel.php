@@ -139,7 +139,7 @@ class UserModel extends Model
         }
     }
 
-    public function exists($FIELD, $VALUE,)
+    public function exists($FIELD, $VALUE)
     {
         $string = "SELECT `$FIELD` FROM `usuarios` WHERE `$FIELD` = :value";
         try {
