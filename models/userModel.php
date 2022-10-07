@@ -12,7 +12,7 @@ class UserModel extends Model
     private $roles;
 
 
-    function __construct()
+    public function __construct()
     {
         parent::__construcut();
         $this->idUser = '';
@@ -104,13 +104,19 @@ class UserModel extends Model
 
     public function getUser($ID_USER)
     {
-        $string = "SELECT * FROM `usuarios` WHERE id_usuario = :id_usuario";
+        $string = "SELECT `usuarios`.*, `nombre` ,`cod_rol` FROM `roles_usuario`
+        INNER JOIN usuarios ON `roles_usuario`.id_usuario = `usuarios`.`id_usuario`
+        WHERE `usuarios`.id_usuario  = :id_usuario";
 
         try {
             $query = $this->prepare($string);
             $query->execute(['id_usuario' => $ID_USER]);
 
             $user = $query->fetch(PDO::FETCH_ASSOC);
+
+            if (!$user) {
+                return false;
+            }
 
             $this->setIdUser($user['id_usuario']);
             $this->setName($user['nombre']);
@@ -119,6 +125,7 @@ class UserModel extends Model
             $this->setEmail($user['correo']);
             $this->setPassword($user['clave']);
             $this->setImage($user['imagen']);
+            $this->setRoles($user['cod_rol']);
 
             return $this;
         } catch (PDOException $err) {
@@ -128,15 +135,10 @@ class UserModel extends Model
         }
     }
 
-    public function comparePasswords($PASSWORD, $ID_USER)
+    public function comparePasswords($PASSWORD)
     {
-        try {
-            $user = $this->getUser($ID_USER);
-            return password_verify($PASSWORD, $user['clave']);
-        } catch (PDOException $err) {
-            error_log("SINGUPMODEL::CREATE=>PDOEXEPTION: $err");
-            return false;
-        }
+        $hash = $this->getPaswwordHash($this->getIdUser());
+        return password_verify($PASSWORD, $hash);
     }
 
     public function exists($FIELD, $VALUE)
@@ -158,12 +160,25 @@ class UserModel extends Model
         }
     }
 
-    private function hashPassword($PASSWORD)
+    private function getPaswwordHash($ID_USER)
     {
-        var_dump($PASSWORD);
-        return password_hash($PASSWORD, PASSWORD_DEFAULT);
+        $string = "SELECT `clave` FROM `usuarios` WHERE `id_usuario` = :id_usuario";
+        try {
+            $query = $this->prepare($string);
+            $query->execute(['id_usuario' => $ID_USER]);
+            $user = $query->fetch(PDO::FETCH_ASSOC);
+            return $user['clave'];
+        } catch (PDOException $err) {
+
+            error_log("USER_MODEL::GET_USER=>PDOEXEPTION: $err");
+            return false;
+        }
     }
 
+    private function hashPassword($PASSWORD)
+    {
+        return password_hash($PASSWORD, PASSWORD_DEFAULT);
+    }
 
     public function setModel($ARRAY)
     {
@@ -174,6 +189,11 @@ class UserModel extends Model
         $this->email    = $ARRAY['email'];
         $this->password = $ARRAY['password'];
         $this->image    = $ARRAY['image'];
+    }
+    public function startSession()
+    {
+        session_start();
+        $session = new Session($this->getIdUser(), $this->getRoles(), $this->getName());
     }
 
     // Setters 
