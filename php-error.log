@@ -129,3 +129,299 @@ Stack trace:
 [07-Oct-2022 23:30:31 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
 [07-Oct-2022 23:30:31 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
 [07-Oct-2022 23:30:31 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:31:15 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:31:15 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 24
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:31:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:31:15 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:31:15 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:31:15 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:31:15 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:31:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:31:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:31:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:31:45 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:31:45 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:31:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:31:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:31:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:31:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:31:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:31:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:31:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:31:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:31:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:35 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:35 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:35 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:32:35 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:32:35 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:35 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:36 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:32:36 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:32:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:36 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:32:36 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:32:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:32:36 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:32:36 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:32:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:32:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:33:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:33:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $rolName in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 50
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 51
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:33:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:33:11 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:33:11 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:33:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:33:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:33:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:33:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 56
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:33:56 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:33:56 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:33:56 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:33:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:33:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:05 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:05 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 61
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:05 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:05 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:34:05 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:34:05 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:05 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:13 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:13 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:13 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:34:13 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:34:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 66
+[07-Oct-2022 23:34:13 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:34:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 71
+[07-Oct-2022 23:34:13 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:13 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:34:13 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:34:13 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:13 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:27 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:34:27 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:27 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:27 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:34:27 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:34:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:28 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:34:28 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:28 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:28 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:34:28 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:34:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:29 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:34:29 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 77
+[07-Oct-2022 23:34:29 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:34:29 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:34:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:34:39 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 32
+[07-Oct-2022 23:34:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:34:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:34:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:34:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:17 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:17 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:17 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:36:17 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:36:17 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:36:17 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:17 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:19 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:36:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:36:19 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:36:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:29 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:36:29 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:36:29 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:36:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:36:30 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:36:30 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:36:30 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:36:30 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:36:30 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:36:30 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:30 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:36:32 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:36:32 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:36:32 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:36:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:36:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:37:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:37:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:37:01 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:37:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:37:01 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:37:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:37:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:37:04 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:37:04 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[07-Oct-2022 23:37:04 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[07-Oct-2022 23:37:04 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[07-Oct-2022 23:37:04 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[07-Oct-2022 23:37:04 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[07-Oct-2022 23:37:04 Europe/Berlin] VIEW::CONSTRUCT=>OK

@@ -1,4 +1,4 @@
-<?PHP 
+<?PHP
 session_start();
 ?>
 
@@ -9,7 +9,8 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Styles  -->
+    <link href="<?PHP echo constant('URL') ?>/public/css/profile.css" rel="stylesheet">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="<?PHP echo constant('BOOTSTRAP') ?>">
 
@@ -21,7 +22,7 @@ session_start();
 
         <section class="ctn-form">
 
-            <h1 class="title"><?php echo "Perfil". $_SESSION['name'] ?></h1>
+            <h1 class="title"><?php echo "Perfil " . $_SESSION['sessionName'] ?></h1>
 
             <form action="actualizar.php" method="POST" enctype="multipart/form-data">
 
@@ -47,35 +48,30 @@ session_start();
 
                     <article class="col-md-6">
                         <article class="mt-2">
-                            <label class="form-label"><?php echo "id $rolName" ?></label>
-                            <input class="form-control" type="text" name="id" value="<?php echo $row['id'] ?>">
+                            <label class="form-label"> </label>
+                            <input class="form-control" type="text" name="id" value="">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Telefono</label>
-                            <input class="form-control" type="text" name="telefono" value="<?php echo $row['telefono'] ?>">
+                            <input class="form-control" type="text" name="telefono" value="">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Nombre</label>
-                            <input class="form-control" type="text" name="nombre" value="<?php echo $row['nombre'] ?>">
+                            <input class="form-control" type="text" name="nombre" value="">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Apellido</label>
-                            <input class="form-control" type="text" name="apellido" value="<?php echo $row['apellido'] ?>">
+                            <input class="form-control" type="text" name="apellido" value="">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Correo</label>
-                            <input class="form-control" type="email" name="correo" value="<?php echo $row['correo'] ?>">
+                            <input class="form-control" type="email" name="correo" value="">
                         </article>
 
-                        <!-- <article class="mt-2" >
-                <label class="form-label">Clave</label>
-                <input class="form-control disabled" type="text" name="clave" value="
-                <?php echo $row['clave'] ?>">
-              </article> -->
                     </article>
 
                 </section>
