@@ -1,6 +1,7 @@
 <?PHP
 session_start();
-if (isset($_SESSION)) {
+
+if (isset($_SESSION['sessionIdUser'])) {
     header("Location:" . constant('URL') . "app ");
 }
 
