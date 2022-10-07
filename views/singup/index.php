@@ -96,7 +96,7 @@
                     <button type="submit">Enviar</button>
                 </div>
 
-                <a href="<?PHP echo constant('URL') ?>/login" class="singup-link">
+                <a href="<?PHP echo constant('URL') ?>login" class="singup-link">
                     Ya tienes una cuenta? Ingresa
                 </a>
             </form>
