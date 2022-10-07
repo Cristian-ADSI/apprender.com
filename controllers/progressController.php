@@ -1,5 +1,5 @@
 <?php
-class AppController extends Controller
+class ProgressController extends Controller
 {
     function __construct()
     {
@@ -8,7 +8,7 @@ class AppController extends Controller
     }
 
     function loadView(){
-        $this->view->render('app');
+        $this->view->render('progress');
     }
     
 }
