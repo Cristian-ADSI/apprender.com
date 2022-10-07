@@ -1,3 +1,10 @@
+<?PHP
+session_start();
+if (isset($_SESSION)) {
+    header("Location:" . constant('URL') . "app ");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +26,7 @@
 
             <h1 class="text-center text-light pt-4 form-title">Bienvenido a Apprender</h1>
 
-            <form class="p-5" role="form" action="<?PHP $_SERVER['PHP_SELF'] ?>" method="POST">
+            <form class="p-5" role="form" action="<?PHP echo constant('URL') ?>login/access" method="POST">
 
                 <!-- Role  -->
                 <div class="mb-3">
@@ -35,20 +42,20 @@
                 <!-- DNI  -->
                 <div class="mb-3">
                     <h5 class="fw-bold text-light">Documento de identidad</h5>
-                    <input type="text" class="form-control" name="id" id="id" placeholder="Ingresa tu N° documento" required>
+                    <input type="text" class="form-control" name="idUser" placeholder="Ingresa tu N° documento" required>
                 </div>
 
                 <!-- Password  -->
                 <div class="mb-3">
                     <h5 class="fw-bold text-light">Contraseña</h5>
-                    <input type="password" class="form-control" name="password" id="PASSWORD" placeholder="Digita tu contraseña" required>
+                    <input type="password" class="form-control" name="password" placeholder="Digita tu contraseña" required>
                 </div>
 
                 <!-- Btn Success -->
                 <div class="text-center submit-button">
                     <button type="submit">ingresar</button>
                 </div>
-
+                <?PHP echo $this->showErrors() ?>
                 <!-- Sing up  -->
                 <a href="<?PHP echo constant('URL') ?>singup" class="singup-link"> No tienes una cuenta? Registrate </a>
             </form>

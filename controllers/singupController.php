@@ -26,44 +26,44 @@ class SingupController extends Controller
         ];
 
         if (!$this->existsPOST($params)) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_EMPTY_FIELD]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_EMPTY_FIELD]);
             return;
         }
 
         if ($this->emptyPOST($params)) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_EMPTY_FIELD]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_EMPTY_FIELD]);
             return;
         }
 
         if (!$this->validEmail($_POST['email'])) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_INVALID_EMAIL]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_INVALID_EMAIL]);
             return;
         }
 
         if (!$this->equalPasswords($_POST['password'], $_POST['password_conf'])) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_DIFERENT_PASSWORD]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_DIFERENT_PASSWORD]);
             return;
         }
 
         if (!$this->validPassword($_POST['password'])) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_INVALIDT_PASSWORD]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_INVALIDT_PASSWORD]);
             return;
         }
 
         if (is_null($_POST['roles'])) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_EMPTY_ROLE]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_EMPTY_ROLE]);
             return;
         }
 
         $user = new UserModel();
 
         if ($user->exists('id_usuario', $_POST['idUser'],)) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_EXISTS_USER]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_EXISTS_USER]);
             return;
         }
 
         if ($user->exists('correo', $_POST['email'],)) {
-            $this->redirect('singup', ['error' => ErrorMessages::ERORR_SINGUP_EXISTS_EMAIL]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_EXISTS_EMAIL]);
             return;
         }
 
@@ -76,12 +76,12 @@ class SingupController extends Controller
         $user->setRoles($_POST['roles']);
 
         if (!$user->create()) {
-            $this->redirect('singup', ['success' => ErrorMessages::ERORR_SINGUP_CREATE_USER]);
+            $this->redirect('singup', ['success' => ErrorMessages::ERORR_AUTH_CREATE_USER]);
             return;
         }
 
         if (!$user->createRoles()) {
-            $this->redirect('singup', ['success' => ErrorMessages::ERORR_SINGUP_CREATE_ROLE]);
+            $this->redirect('singup', ['success' => ErrorMessages::ERORR_AUTH_CREATE_ROLE]);
             return;
         }
 
