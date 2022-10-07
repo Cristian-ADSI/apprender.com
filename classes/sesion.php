@@ -7,7 +7,7 @@ class Session{
 
     function __construct(){
 
-        if (session_status( )) { session_start(); }
+        if (session_status()) { session_start(); }
     }
 
     public function setCurrentUser($USER){

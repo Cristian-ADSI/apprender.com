@@ -9,21 +9,36 @@
             Menu
         </div>
         <ul class="list-items">
-            <li><a href="indexUsuario.php">
+            <!-- Inicio  -->
+            <li>
+                <a href="<?PHP echo constant('URL') ?>app">
                     <ion-icon name="home-outline"></ion-icon>Inicio
-                </a></li>
-            <li><a href="cursos.php">
+                </a>
+            </li>
+            <!-- Cursos  -->
+            <li>
+                <a href="<?PHP echo constant('URL') ?>courses">
                     <ion-icon name="information-outline"></ion-icon>Cursos
-                </a></li>
-            <li><a href="perfil.php">
+                </a>
+            </li>
+            <!-- Perfil  -->
+            <li>
+                <a href="<?PHP echo constant('URL') ?>profile">
                     <ion-icon name="paw-outline"></ion-icon>perfil
-                </a></li>
-            <li><a href="miProgreso.php">
+                </a>
+            </li>
+            <!-- Progreo  -->
+            <li>
+                <a href="<?PHP echo constant('URL') ?>progress">
                     <ion-icon name="person-outline"></ion-icon>mi progreso
-                </a></li>
-            <li><a href="cerrarS.php">
+                </a>
+            </li>
+            <!-- Cerrar Sesion  -->
+            <li>
+                <a href="cerrarS.php">
                     <ion-icon name="cierre-sesion"></ion-icon>Cerrar Sesion
-                </a></li>
+                </a>
+            </li>
         </ul>
     </nav>
 </div>
