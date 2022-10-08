@@ -84,7 +84,7 @@ class UserModel extends Model
 
     public function createRoles()
     {
-        $string = "INSERT INTO `roles_usuario`(`id_usuarios`, `cod_rol`) VALUES (:id_usuario,:cod_role)";
+        $string = "INSERT INTO `roles_usuario`(`id_usuario`, `cod_rol`) VALUES (:id_usuario,:cod_role)";
 
         try {
             foreach ($this->roles as $role) {

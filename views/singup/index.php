@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="alert-zone p-0">
-                <?PHP $this->showMessages() ?>
+                    <?PHP $this->showMessages() ?>
                 </div>
 
                 <div class="text-center mb-3 submit-button">

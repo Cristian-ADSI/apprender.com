@@ -76,12 +76,12 @@ class SingupController extends Controller
         $user->setRoles($_POST['roles']);
 
         if (!$user->create()) {
-            $this->redirect('singup', ['success' => ErrorMessages::ERORR_AUTH_CREATE_USER]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_CREATE_USER]);
             return;
         }
 
         if (!$user->createRoles()) {
-            $this->redirect('singup', ['success' => ErrorMessages::ERORR_AUTH_CREATE_ROLE]);
+            $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_CREATE_ROLE]);
             return;
         }
 

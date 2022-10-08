@@ -1,0 +1,87 @@
+[08-Oct-2022 02:07:15 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[08-Oct-2022 02:07:15 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:07:15 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:07:16 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:07:16 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:07:16 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:07:16 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:07:17 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:07:17 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:07:17 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:07:17 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:07:17 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:07:17 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:07:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:07:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:07:45 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:07:45 Europe/Berlin] USER_MODEL::CREATE=>PDOEXEPTION: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_usuarios' in 'field list' in C:\xampp\htdocs\apprender.com\libs\model.php:18
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\model.php(18): PDO->prepare('INSERT INTO `ro...')
+#1 C:\xampp\htdocs\apprender.com\models\userModel.php(91): Model->prepare('INSERT INTO `ro...')
+#2 C:\xampp\htdocs\apprender.com\controllers\singupController.php(83): UserModel->createRoles()
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(44): SingupController->newUser()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+[08-Oct-2022 02:07:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:07:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:07:46 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:07:46 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:07:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:07:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:11:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:11:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:11:47 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:11:47 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:11:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:11:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:11:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:11:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:11:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:11:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:11:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:11:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:11:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:11:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:11:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:11:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:11:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:11:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:12:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:12:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:12:48 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:12:48 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:12:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:12:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:13:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:13:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:13:33 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:13:33 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:13:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:13:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:14:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:14:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:14:56 Europe/Berlin] PHP Warning:  Undefined array key "roles" in C:\xampp\htdocs\apprender.com\controllers\singupController.php on line 53
+[08-Oct-2022 02:14:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:14:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:14:56 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:14:56 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:14:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:14:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:17:05 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:17:05 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:17:05 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
+[08-Oct-2022 02:17:05 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[08-Oct-2022 02:17:05 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:17:05 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[08-Oct-2022 02:17:06 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[08-Oct-2022 02:17:06 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[08-Oct-2022 02:17:06 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[08-Oct-2022 02:17:06 Europe/Berlin] VIEW::CONSTRUCT=>OK
