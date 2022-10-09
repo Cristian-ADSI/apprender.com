@@ -15,7 +15,6 @@
     background-position: 0 50%;
   }
 }
-
 body {
   animation: bg-ColorChange 10s infinite ease-in-out;
   background: linear-gradient(to right, #30127b, #2d8daa, #275891);

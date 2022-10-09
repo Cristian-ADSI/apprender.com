@@ -19,11 +19,11 @@
             <!-- Logo  -->
             <div class="brand">
                 <a href="<?php echo constant('URL') ?>">
-                    <img src="<?php echo constant('URL') ?>public/img/utilities/logo-apprender.png" alt="Apprender.com" class="brand-img" />
-                    <p>Apprender</p>
+                    <img src="<?php echo constant('URL') ?>public/img/utilities/logo.png" alt="Apprender.com" class="brand-img" />
+                    <h1>pprender</h1>
                 </a>
             </div>
-            <!-- Authen Butons  -->
+            <!-- Authen Buttons  -->
             <div class="access">
                 <a href="<?php echo constant('URL') ?>singup" class="btn-singUp">Registrarse</a>
                 <div class="btn-singIn">
@@ -31,68 +31,85 @@
                 </div>
             </div>
         </nav>
-        <!-- Banner  -->
-        <div class="banner"></div>
+        
     </header>
 
     <section class="guide">
+        <!-- Banner  -->
+        <div class="banner"></div>
         <!-- Cards  -->
         <div class="cards-container">
             <div class="card">
-
                 <div class="card-img">
-                    <img src="https://artprojectsforkids.org/wp-content/uploads/2021/01/Rubber-Ducky.jpeg" alt="" />
-                </div>
+                    <figure>
+                        <img src="/public/img/utilities/1.jpg" alt="" />
+                        <div class="capa">
+                            <h3>Paso 1</h3>
+                            <p>
+                                ...Bienvenid@...    
+                                Para empezar, registrate y llena 
+                                el formulario con tus datos.
+                                <center style="color: #8EE23D; font-size:50px;">&#8618 </center>
+                                
 
-                <div class="card-body">
-                    <p>
-                        Explicación N°1
-                    </p>
+                            </p>
+                        </div>
+                    </figure>
                 </div>
-
             </div>
 
             <div class="card">
                 <div class="card-img">
-                    <img src="https://artprojectsforkids.org/wp-content/uploads/2021/01/Rubber-Ducky.jpeg" alt="" />
+                    <figure>
+                        <img src="/public/img/utilities/2.jpg" alt="" />
+                        <div class="capa">
+                            <h3>Paso 2</h3>
+                            <p>
+                                Logueate e ingresa con tu rol,
+                                así podrás empezar a navegar y 
+                                difrutar de la información que
+                                tenemos para tí.
+                                <center style="color: #8EE23D;font-size:35px;">&#8618</center>
+                            </p>
+                        </div>
+                    </figure>
                 </div>
-
-                <div class="card-body">
-                    <p>
-                        Explicación N°2
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <div class="card-img">
-                    <img src="https://artprojectsforkids.org/wp-content/uploads/2021/01/Rubber-Ducky.jpeg" alt="" />
-                </div>
-
-                <div class="card-body">
-                    <p>
-                        Explicación N°3
-                    </p>
-                </div>
-
             </div>
 
             <div class="card">
                 <div class="card-img">
-                    <img src="https://artprojectsforkids.org/wp-content/uploads/2021/01/Rubber-Ducky.jpeg" alt="" />
+                    <figure>    
+                        <img src="/public/img/utilities/3.jpg" alt="" />
+                        <div class="capa">
+                            <h3>Paso 3</h3>
+                            <p>
+                                Eliges y accede a los diferentes 
+                                cursos de tu interés, con ello podrás
+                                afianzarte y empezar con un reto nuevo.
+                                <center style="color: #8EE23D; font-size:25px;">&#8618 </center>
+                            </p>
+                        </div>
+                    </figure>
                 </div>
+            </div>
 
-                <div class="card-body">
-                    <p>
-                        Explicación N°4
-                    </p>
+            <div class="card">
+                <div class="card-img">
+                    <figure>    
+                        <img src="/public/img/utilities/4.jpg" alt="" />
+                        <div class="capa">
+                            <h3>Paso 4</h3>
+                            <p>
+                                En cada curso tendrás la oportunidad
+                                de formarte, aprender o repasar en 
+                                diferentes ramas de la informática.
+                                <center style="color: #8EE23D; font-size:15px;">&#8618 </center>
+                            </p>
+                        </div>
+                    </figure>
                 </div>
-
             </div>
         </div>
-
     </section>
 </body>
 

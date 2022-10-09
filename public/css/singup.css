@@ -90,10 +90,8 @@ body {
 .container .main-form form .submit-button > button {
   display: inline-block;
   height: 50px;
-  margin-top: 50px;
   text-align: center;
   width: 100%;
-
   background: none;
   border: 1px solid #ffffff;
   border-radius: 25px;
