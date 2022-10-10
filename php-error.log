@@ -85,3 +85,185 @@ Stack trace:
 [08-Oct-2022 02:17:06 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
 [08-Oct-2022 02:17:06 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
 [08-Oct-2022 02:17:06 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:31:56 Europe/Berlin] APP::constructor=>No se especifico controlador
+[10-Oct-2022 16:31:57 Europe/Berlin] HOME_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:31:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:31:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:32:17 Europe/Berlin] APP::constructor=>No se especifico controlador
+[10-Oct-2022 16:32:17 Europe/Berlin] HOME_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:32:17 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:32:17 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:32:22 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:32:22 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:32:22 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:32:22 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:32:35 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:32:35 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:32:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:32:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:32:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:32:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:33:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:23 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[10-Oct-2022 16:33:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[10-Oct-2022 16:33:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[10-Oct-2022 16:33:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[10-Oct-2022 16:33:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[10-Oct-2022 16:33:24 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:33:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:33:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:30 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:33:30 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:33:30 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:33:30 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:41 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:33:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:33:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:41 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[10-Oct-2022 16:33:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[10-Oct-2022 16:33:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[10-Oct-2022 16:33:42 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\apprender.com\views\login\index.php on line 2
+[10-Oct-2022 16:33:42 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:33:42 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:33:42 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:42 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:33:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:33:45 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:33:45 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:33:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:33:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:33:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:33:59 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:33:59 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:33:59 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:33:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\courses\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\courses\index.php(34): mysqli_query(NULL, 'SELECT `id_curs...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(14): View->render('courses')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:34:00 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:34:00 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:34:00 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:00 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:09 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:09 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:09 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[10-Oct-2022 16:34:09 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:34:09 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:34:09 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:09 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:16 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:16 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:16 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:16 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:34:16 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\courses\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\courses\index.php(34): mysqli_query(NULL, 'SELECT `id_curs...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(14): View->render('courses')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:34:16 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:34:16 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:34:16 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:16 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:19 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:34:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:19 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:19 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:19 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[10-Oct-2022 16:34:19 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\progress\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\progress\index.php(34): mysqli_query(NULL, 'SELECT C.id_cur...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\progressController.php(11): View->render('progress')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): ProgressController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[10-Oct-2022 16:34:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:34:19 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:34:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:21 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:21 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:21 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:21 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:34:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\courses\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\courses\index.php(34): mysqli_query(NULL, 'SELECT `id_curs...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(14): View->render('courses')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:34:22 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:34:22 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:34:22 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:22 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:24 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:34:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:24 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:24 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:34:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:34:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:30 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:30 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:34:30 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:34:30 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:34:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\courses\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\courses\index.php(34): mysqli_query(NULL, 'SELECT `id_curs...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(14): View->render('courses')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:34:31 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:34:31 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:34:31 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:34:31 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:46:42 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:46:42 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:46:42 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:46:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:46:42 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:46:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\courses\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\courses\index.php(34): mysqli_query(NULL, 'SELECT `id_curs...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(14): View->render('courses')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[10-Oct-2022 16:46:52 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:46:52 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:46:52 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:46:52 Europe/Berlin] PHP Warning:  Undefined variable $mostrarr in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:46:52 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\header.php on line 26
+[10-Oct-2022 16:47:16 Europe/Berlin] APP::constructor=>No se especifico controlador
+[10-Oct-2022 16:47:16 Europe/Berlin] HOME_CONTROLLER::CONSTRUCT=>Cargado
+[10-Oct-2022 16:47:16 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:47:16 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[10-Oct-2022 16:47:38 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[10-Oct-2022 16:47:38 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[10-Oct-2022 16:47:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[10-Oct-2022 16:47:38 Europe/Berlin] VIEW::CONSTRUCT=>OK
