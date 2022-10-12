@@ -1,3 +1,13 @@
+<?PHP
+if (empty($_SESSION['sessionImage'])) {
+
+    $userImage = constant('URL') . 'public/img/profiles/profile.jpg';
+} else {
+
+    $userImage = constant('URL') . 'public/img/profiles/' . $_SESSION['sessionImage'];
+}
+
+?>
 <header>
     <div class="group-header">
         <div class="contenedor-Logo">
@@ -14,20 +24,16 @@
         </div>
         <div class="contenedor-titulo">
         </div>
-        <?php
-        //cunsulta paa mostrar usuario
-        // $sql=("SELECT `id`,`nombre`,`imagen` FROM `usuarios` WHERE 1");
-        // $result=mysqli_query($con ,$sql);
-        // $mostrarr=mysqli_fetch_array($result);           
-        ?>
         <div class="contenedor-usuario">
             <div class="contorno-usuario">
+                
                 <div class="imagen-usuario">
-                    <!-- <img src=<?php echo $mostrarr['imagen'] ?>> -->
+                    <img src=<?php echo $userImage ?>>
                 </div>
+
                 <div class="nombre-Usuario">
                     <label>
-                      <?php echo $_SESSION['sessionName'] ?> 
+                        <?php echo $_SESSION['sessionName'] ?>
                     </label>
                 </div>
             </div>

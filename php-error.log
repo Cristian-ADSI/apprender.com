@@ -1,87 +1,2089 @@
-[08-Oct-2022 02:07:15 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
-[08-Oct-2022 02:07:15 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:07:15 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:07:16 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:07:16 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:07:16 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:07:16 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:07:17 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:07:17 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:07:17 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:07:17 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:07:17 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:07:17 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:07:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:07:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:07:45 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
-[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:07:45 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:07:45 Europe/Berlin] USER_MODEL::CREATE=>PDOEXEPTION: PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_usuarios' in 'field list' in C:\xampp\htdocs\apprender.com\libs\model.php:18
+[13-Oct-2022 00:28:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:28:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:28:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:28:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 37
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 40
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 46
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 47
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:28:50 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:28:50 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:28:50 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:28:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:28:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
 Stack trace:
-#0 C:\xampp\htdocs\apprender.com\libs\model.php(18): PDO->prepare('INSERT INTO `ro...')
-#1 C:\xampp\htdocs\apprender.com\models\userModel.php(91): Model->prepare('INSERT INTO `ro...')
-#2 C:\xampp\htdocs\apprender.com\controllers\singupController.php(83): UserModel->createRoles()
-#3 C:\xampp\htdocs\apprender.com\libs\app.php(44): SingupController->newUser()
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:30:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:01 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:30:32 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:32 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:30:33 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:33 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:30:33 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:33 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:30:33 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:33 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:37
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 37
+[13-Oct-2022 00:30:46 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:46 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:47 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:37
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 37
+[13-Oct-2022 00:30:47 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:47 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:47 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:37
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 37
+[13-Oct-2022 00:30:47 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:47 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:47 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:30:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:37
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 37
+[13-Oct-2022 00:30:47 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:30:47 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:30:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:30:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:31:00 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:31:00 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:31:00 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:31:00 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:31:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:31:00 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:31:00 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:31:00 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:31:00 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:31:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:31:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:31:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:31:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:31:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:31:20 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:31:20 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:31:20 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:31:20 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:31:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:31:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:31:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:31:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:31:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:31:32 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:31:32 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:31:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:31:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:32:21 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:32:21 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:32:21 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:32:21 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:32:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:32:22 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:32:22 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:32:22 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:32:22 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:32:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:32:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:32:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:32:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:32:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:32:57 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:32:57 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:32:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:32:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:33:22 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:33:22 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:33:22 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:33:22 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:33:22 Europe/Berlin] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:33:23 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:33:23 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:33:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:33:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:33:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:33:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:33:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:33:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:33:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:33:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:33:40 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:33:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:33:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:35:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:35:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:35:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:35:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:35:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:35:12 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:35:12 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:35:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:35:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:36:54 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:36:54 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:36:54 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:36:54 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 43
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 47
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 52
+[13-Oct-2022 00:36:54 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 52
+[13-Oct-2022 00:36:54 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:36:54 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:36:54 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:36:54 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:36:55 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 43
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 47
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 52
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 52
+[13-Oct-2022 00:36:55 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:36:55 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:36:55 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:36:55 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 38
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 43
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 47
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 52
+[13-Oct-2022 00:36:55 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 52
+[13-Oct-2022 00:36:55 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:36:55 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:36:55 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:36:55 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:06 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:06 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:06 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:06 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:06 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:06 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:06 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:06 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:06 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:18 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:18 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:18 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:35 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:35 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:35 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:35 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:35 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:35 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:35 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:35 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:35 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:39 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:40 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:40 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:40 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:40 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:40 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:37:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 39
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 42
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 48
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 49
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:49 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:37:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:37:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:37:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:37:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:38:07 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:38:07 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:38:07 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:38:07 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 46
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:38:07 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:38:07 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:38:07 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:38:07 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:38:07 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:00 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:00 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:00 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:00 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined variable $CourseModel in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 46
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:00 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:00 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:00 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:00 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:00 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:02 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined variable $CourseModel in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 46
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:02 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:02 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:02 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:02 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined variable $CourseModel in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 46
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:02 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:02 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:02 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:02 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:02 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:03 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:03 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:03 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:03 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined variable $CourseModel in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 46
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:03 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:39:03 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:03 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:03 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:03 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:20 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:20 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:20 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:20 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of type CourseModel is not callable in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:20 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:20 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:20 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:20 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:21 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:21 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:21 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:21 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of type CourseModel is not callable in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:22 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:22 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:22 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:22 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:39 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of type CourseModel is not callable in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of type CourseModel is not callable in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:57 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:57 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of type CourseModel is not callable in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:58 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:58 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:58 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:58 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of type CourseModel is not callable in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:58 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:58 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:58 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:58 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:39:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of type CourseModel is not callable in C:\xampp\htdocs\apprender.com\views\courses\index.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 33
+[13-Oct-2022 00:39:58 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:39:58 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:39:58 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:39:58 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:07 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:07 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:07 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:07 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:40:07 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:40:07 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:40:07 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:07 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:08 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:40:08 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:40:08 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:40:08 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:08 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:40:08 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:40:08 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:40:08 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:08 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:20 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:20 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:40:20 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:20 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:40:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:40:20 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:40:20 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:40:20 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:40:20 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:41:02 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:41:02 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:41:02 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:41:02 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:41:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:41:02 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:41:02 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:41:02 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:41:02 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:10 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:10 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:10 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:10 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:42:10 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:42:10 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:42:10 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:10 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:42:11 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:42:11 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:42:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:42:11 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:42:11 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:42:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:29 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelimage" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:42:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:42:29 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:42:29 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:42:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:42:45 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:42:45 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:42:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:42:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:42:59 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelidCourse" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:42:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:42:59 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:42:59 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:42:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:42:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelidCourse" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:43:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:43:01 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelidCourse" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:43:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:43:01 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelidCourse" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:43:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:43:01 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelidCourse" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:43:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:43:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:43:01 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:43:12 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:43:12 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:43:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:34 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:34 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:34 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:34 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:34 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:43:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:43:34 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:43:34 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:43:34 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:34 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:43:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:43:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:43:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:43:41 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:43:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:43:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:11 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelidCourse" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:44:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:44:11 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:44:11 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:44:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:23 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelName" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:44:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:44:23 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:44:23 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:44:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:24 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelName" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:44:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:44:24 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:44:24 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:44:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:28 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:28 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:28 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelname" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:44:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:44:28 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:44:28 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:44:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:29 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelname" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:44:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:44:29 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:44:29 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:44:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:44:29 Europe/Berlin] PHP Warning:  Undefined array key "CourseModelname" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:44:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type CourseModel as array in C:\xampp\htdocs\apprender.com\views\courses\index.php:41
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\coursesController.php(20): View->render('courses', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): CoursesController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:44:29 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:44:29 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:44:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:44:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:24 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:46:24 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:46:24 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:46:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:46:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:46:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:46:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:46:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:46:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:46:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:25 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:46:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:46:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:46:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:26 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:26 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:26 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 34
+[13-Oct-2022 00:46:26 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:46:26 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:46:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:46:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:46:49 Europe/Berlin] PHP Warning:  Undefined array key "image" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 41
+[13-Oct-2022 00:46:49 Europe/Berlin] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 44
+[13-Oct-2022 00:46:49 Europe/Berlin] PHP Warning:  Undefined array key "description" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 46
+[13-Oct-2022 00:46:49 Europe/Berlin] PHP Warning:  Undefined array key "value" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 53
+[13-Oct-2022 00:46:49 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:46:49 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:46:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:46:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:46:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:46:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:56:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:56:39 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:39 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:56:40 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:56:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:56:41 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:56:41 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:56:41 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:56:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:56:41 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:56:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:56:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:26 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:26 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:26 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:57:26 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:57:26 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:26 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:26 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:57:26 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:57:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:27 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:27 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:57:27 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:57:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:27 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:27 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:27 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:57:27 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:57:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:41 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:57:41 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:57:41 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:41 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:57:41 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:57:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:57:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:57:51 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 50
+[13-Oct-2022 00:57:51 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 51
+[13-Oct-2022 00:57:51 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:51 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:57:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:57:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:57:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:57:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:38 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:38 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:38 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:38 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 54
+[13-Oct-2022 00:58:38 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:58:38 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:38 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:38 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:58:38 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:58:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:38 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 54
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:58:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:58:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 54
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:58:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:58:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_inicial" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 54
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:39 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:58:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:58:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:58:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:58:51 Europe/Berlin] PHP Warning:  Undefined array key "StartDate" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 54
+[13-Oct-2022 00:58:51 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:58:51 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:51 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:58:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:58:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:58:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:58:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:59:06 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:59:06 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:59:06 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:59:06 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:59:06 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:59:06 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:59:06 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:59:06 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:59:06 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:59:06 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:59:06 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:59:07 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:59:07 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:59:07 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:59:07 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:59:07 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 55
+[13-Oct-2022 00:59:07 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:59:07 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:59:07 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:59:07 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:59:07 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:59:07 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:59:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:59:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 00:59:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:59:29 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 00:59:29 Europe/Berlin] PHP Warning:  Undefined array key "fecha_final" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 59
+[13-Oct-2022 00:59:29 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 63
+[13-Oct-2022 00:59:29 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 63
+[13-Oct-2022 00:59:29 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 00:59:29 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 00:59:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 00:59:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:00:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:00:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:00:28 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:00:28 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:00:28 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 71
+[13-Oct-2022 01:00:28 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 71
+[13-Oct-2022 01:00:28 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:00:28 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:00:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:00:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:00:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:00:38 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:00:38 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:00:38 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:00:38 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 71
+[13-Oct-2022 01:00:38 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 71
+[13-Oct-2022 01:00:38 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:00:38 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:00:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:00:38 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:00:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:00:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:00:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:00:49 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:00:49 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 71
+[13-Oct-2022 01:00:49 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 71
+[13-Oct-2022 01:00:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:00:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:00:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:00:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:01:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:01:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:01:27 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:01:27 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:01:27 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:01:27 Europe/Berlin] PHP Warning:  Undefined variable $tokenHash in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:01:27 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:01:27 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:01:27 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:01:27 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:45 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:45 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:02:45 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:02:45 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:02:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:46 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:02:46 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:02:46 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:02:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:46 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:02:46 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:02:46 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:02:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:46 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:46 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:02:46 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:02:46 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:02:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:59 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:02:59 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:02:59 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:02:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:59 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:02:59 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:02:59 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:02:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:59 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:02:59 Europe/Berlin] PHP Warning:  Undefined variable $idCurso in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 72
+[13-Oct-2022 01:02:59 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:02:59 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:02:59 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:02:59 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:24 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:24 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:24 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:03:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:03:25 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:03:25 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:03:25 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:13:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:13:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:13:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:13:39 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:13:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:13:41 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:13:41 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:13:41 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:13:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:13:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:13:48 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:13:48 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:13:48 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:13:48 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:13:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:13:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:17:26 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:17:26 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:17:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:17:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:17:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:17:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:17:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:17:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:17:32 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:17:32 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:17:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:17:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:17:34 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:17:34 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:17:34 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:17:34 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:17:34 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:17:34 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:17:34 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:17:34 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:20:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:20:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:20:36 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:20:36 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:20:36 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:20:36 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:20:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:20:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:21:53 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:21:53 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:21:53 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:21:53 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:21:53 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:21:53 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:21:53 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:21:53 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:13 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:13 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:13 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:13 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:13 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:13 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:13 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:13 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:48 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:48 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:48 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:23:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:50 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:23:50 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:50 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:50 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:23:50 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:50 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:50 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:23:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:51 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:23:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:51 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:23:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:23:51 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:23:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:23:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:23:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:23:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:25:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:25:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:25:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:25:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:25:12 Europe/Berlin] PHP Warning:  Undefined array key "sessionIdUser" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 4
+[13-Oct-2022 01:25:12 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:25:12 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:25:12 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:25:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:25:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:26:13 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:26:13 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:26:13 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:26:13 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:26:13 Europe/Berlin] PHP Parse error:  Unmatched ')' in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 4
+[13-Oct-2022 01:26:13 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:26:13 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:26:13 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:26:13 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:26:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:26:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:26:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:26:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:26:23 Europe/Berlin] PHP Warning:  Undefined array key "sessionIdUser" in C:\xampp\htdocs\apprender.com\views\courses\index.php on line 4
+[13-Oct-2022 01:26:23 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:26:23 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:26:23 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:26:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:26:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:27:01 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:27:01 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:27:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:27:01 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:27:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:27:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:27:23 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:27:23 Europe/Berlin] APP::constructor=>No se especifico controlador
+[13-Oct-2022 01:27:23 Europe/Berlin] HOME_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:27:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:24 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:27:24 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:27:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:26 Europe/Berlin] APP::constructor=>No se especifico controlador
+[13-Oct-2022 01:27:26 Europe/Berlin] HOME_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:27:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:26 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:27:26 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:27:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:40 Europe/Berlin] APP::constructor=>No se especifico controlador
+[13-Oct-2022 01:27:40 Europe/Berlin] HOME_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:27:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:27:40 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:27:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:44 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:44 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:44 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:27:44 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:27:44 Europe/Berlin] PHP Warning:  Undefined array key "sessionName" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 25
+[13-Oct-2022 01:27:44 Europe/Berlin] APP::constructor=>No se especifico controlador
+[13-Oct-2022 01:27:44 Europe/Berlin] HOME_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:27:44 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:44 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:45 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:27:45 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:27:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:53 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:27:53 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:53 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:27:54 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:27:54 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:27:54 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:27:54 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:28:04 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:28:04 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:28:04 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:28:04 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[13-Oct-2022 01:28:04 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:28:04 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:28:04 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:28:04 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:28:04 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:28:04 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:28:04 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:28:04 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:28:04 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:28:32 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:28:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:28:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:28:32 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[13-Oct-2022 01:28:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:28:32 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:28:32 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:28:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:28:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:28:32 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:28:32 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:28:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:28:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:31:12 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:31:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:31:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:31:12 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[13-Oct-2022 01:31:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:31:12 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:31:12 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:31:12 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:31:12 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:31:12 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:32:44 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:32:44 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:32:44 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:32:44 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[13-Oct-2022 01:32:44 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:32:44 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:32:44 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:32:44 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:32:44 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:32:44 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:32:44 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:32:44 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:32:44 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:32:57 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:32:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:32:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:32:57 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
+[13-Oct-2022 01:32:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:32:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:32:57 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\apprender.com\views\login\index.php on line 2
+[13-Oct-2022 01:32:57 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:32:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:32:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:32:58 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:32:58 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:32:58 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:32:58 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:04 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:33:04 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:04 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:04 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:33:04 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:33:04 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:04 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:14 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:14 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:14 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:14 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:14 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:33:14 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:33:14 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:14 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:18 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:33:18 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:33:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:18 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:33:18 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:33:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:18 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:33:18 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:33:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:33:19 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:33:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:33:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:51 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:33:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:33:51 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:33:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:33:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:35:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:35:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:35:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:35:11 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:35:11 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:35:11 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:35:11 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:35:11 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:36:03 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:36:03 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:36:03 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:36:03 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:36:03 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:36:03 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:36:03 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:36:03 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:40:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:40:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:40:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:40:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:40:18 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";" in C:\xampp\htdocs\apprender.com\views\components\header.php on line 24
+[13-Oct-2022 01:40:18 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:40:18 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:40:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:40:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:40:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:40:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:40:26 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:40:26 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:40:26 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:40:26 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:40:26 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:40:26 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:40:52 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:40:52 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:40:52 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:40:52 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:40:52 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:40:52 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:40:52 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:40:52 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:42:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:42:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:42:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:42:33 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:42:33 Europe/Berlin] PHP Warning:  Undefined variable $userImage in C:\xampp\htdocs\apprender.com\views\components\header.php on line 6
+[13-Oct-2022 01:42:33 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:42:33 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:42:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:42:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:42:53 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:42:53 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:42:53 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:42:53 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:42:53 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:42:53 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:42:53 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:42:53 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:37 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:37 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:37 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:37 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:37 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:47:37 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:47:37 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:37 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:56 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:56 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:47:56 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:47:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:56 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:56 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:47:56 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:47:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:56 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:56 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:47:56 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:47:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:47:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:57 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:47:57 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:47:57 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:47:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:47:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:18 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:18 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:18 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:19 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:19 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:19 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:19 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:19 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:19 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:23 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:23 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:23 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:23 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:23 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:48 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:48:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:48 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:48 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:50 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:50 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:50 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:50 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:50 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:51 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:51 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:51 Europe/Berlin] PHP Warning:  Undefined variable $imagen in C:\xampp\htdocs\apprender.com\views\profile\index.php on line 33
+[13-Oct-2022 01:48:52 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:52 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:52 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:52 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:53 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:53 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:53 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:53 Europe/Berlin] DATABASE::=>Conect successfuly
+[13-Oct-2022 01:48:53 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:53 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:53 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:53 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:57 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:48:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:48:57 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[13-Oct-2022 01:48:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\progress\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\progress\index.php(34): mysqli_query(NULL, 'SELECT C.id_cur...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\progressController.php(11): View->render('progress')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): ProgressController->loadView()
 #4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
 #5 {main}
-[08-Oct-2022 02:07:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:07:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:07:46 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:07:46 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:07:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:07:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:11:46 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:11:46 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:11:47 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:11:47 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:11:47 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:11:47 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:11:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:11:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:11:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:11:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:11:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:11:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:11:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:11:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:11:49 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:11:49 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:11:49 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:11:49 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:12:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:12:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:12:48 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:12:48 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:12:48 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:12:48 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:13:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:13:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:13:33 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:13:33 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:13:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:13:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:14:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:14:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:14:56 Europe/Berlin] PHP Warning:  Undefined array key "roles" in C:\xampp\htdocs\apprender.com\controllers\singupController.php on line 53
-[08-Oct-2022 02:14:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:14:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:14:56 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:14:56 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:14:56 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:14:56 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:17:05 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:17:05 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:17:05 Europe/Berlin] SINGUP_MODEL::CONSTRUCT=>Loaded
-[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:17:05 Europe/Berlin] DATABASE::=>Conect successfuly
-[08-Oct-2022 02:17:05 Europe/Berlin] LOGIN_CONTROLLER::CONSTRUCT=>Cargado
-[08-Oct-2022 02:17:05 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:17:05 Europe/Berlin] VIEW::CONSTRUCT=>OK
-[08-Oct-2022 02:17:06 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
-[08-Oct-2022 02:17:06 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
-[08-Oct-2022 02:17:06 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
-[08-Oct-2022 02:17:06 Europe/Berlin] VIEW::CONSTRUCT=>OK
+  thrown in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[13-Oct-2022 01:48:57 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:48:57 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:48:57 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:48:57 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:28 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:28 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[13-Oct-2022 01:49:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\progress\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\progress\index.php(34): mysqli_query(NULL, 'SELECT C.id_cur...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\progressController.php(11): View->render('progress')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): ProgressController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[13-Oct-2022 01:49:28 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:49:28 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:49:28 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:28 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:29 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:29 Europe/Berlin] PHP Warning:  Undefined variable $con in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[13-Oct-2022 01:49:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in C:\xampp\htdocs\apprender.com\views\progress\index.php:34
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\progress\index.php(34): mysqli_query(NULL, 'SELECT C.id_cur...')
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\progressController.php(11): View->render('progress')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): ProgressController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\progress\index.php on line 34
+[13-Oct-2022 01:49:29 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:49:29 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:49:29 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:29 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:36 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:36 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:49:36 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:49:36 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:36 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:38 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:38 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:49:39 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:49:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:39 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:39 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:40 Europe/Berlin] APP_CONTROLLER::CONSTRUCT=>Cargado
+[13-Oct-2022 01:49:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[13-Oct-2022 01:49:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[13-Oct-2022 01:49:40 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[13-Oct-2022 01:49:40 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[13-Oct-2022 01:49:40 Europe/Berlin] VIEW::CONSTRUCT=>OK
