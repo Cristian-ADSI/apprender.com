@@ -1,7 +1,6 @@
 <?PHP
 session_start();
 
-// var_dump($_SESSION);
 if (!isset($_SESSION['sessionIdUser'])) {
     header("Location:" . constant('URL'));
 }

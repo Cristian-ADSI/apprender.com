@@ -20,7 +20,7 @@ class LoginController extends Controller
             'password',
             'role',
         ];
-
+ 
         if (!$this->existsPOST($params)) {
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_EMPTY_FIELD]);
             return;
@@ -53,3 +53,5 @@ class LoginController extends Controller
         $this->redirect('app', []);
     }
 }
+
+

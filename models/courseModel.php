@@ -1,3 +1,4 @@
+
 <?php
 
 class CourseModel extends Model
@@ -14,7 +15,7 @@ class CourseModel extends Model
 
     public function __construct()
     {
-        // error_log('SINGUP_MODEL::CONSTRUCT=>Loaded');
+        // error_log('COURSE_MODEL::CONSTRUCT=>Loaded');
         parent::__construcut();
 
         $this->idCourse = '';
@@ -62,6 +63,7 @@ class CourseModel extends Model
         $this->value        = $ARRAY['valor'];
         $this->teacher      = $ARRAY['profesor'];
     }
+
     private function getModel()
     {
         $arrayCourse = [
@@ -147,3 +149,4 @@ class CourseModel extends Model
         $this->teacher = $TEACHER;
     }
 }
+
