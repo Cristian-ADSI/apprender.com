@@ -6,7 +6,7 @@ class ErrorsController extends Controller
 
     function __construct()
     {
-        error_log("ERROR::CONSTRUCT=>Errors cargado");
+        error_log("ERROR_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 

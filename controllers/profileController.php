@@ -6,7 +6,7 @@ class ProfileController extends Controller
 
     function __construct()
     {
-        // error_log("PROFILE::CONSTRUCT=>Errors cargado");
+        // error_log("PROFILE_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 

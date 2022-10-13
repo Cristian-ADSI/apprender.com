@@ -1,8 +1,7 @@
 <?PHP
 session_start();
 
-// var_dump($_SESSION);
-if (!isset($_SESSION['sessionIdUser'] )) {
+if (!isset($_SESSION['sessionIdUser'])) {
     header("Location:" . constant('URL'));
 }
 
@@ -67,8 +66,10 @@ if (!isset($_SESSION['sessionIdUser'] )) {
                         <label id="valor"><?php echo " $" . $course['value'] ?></label>
 
                         <div class="boton">
-                            <a href="matricula.php?id=<?php echo $course['idCourse'];?>" class="btn">
-                            Matricularme
+                            <a 
+                            href="<?php echo constant('URL') . 'enrollment?course=' . $course['idCourse']; ?>"
+                            class="btn">
+                                Matricularme
                             </a>
                         </div>
 

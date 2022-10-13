@@ -6,7 +6,7 @@ class CoursesController extends Controller
 
     function __construct()
     {
-        // error_log("COURSES::CONSTRUCT=>Errors cargado");
+        // error_log("COURSES_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 
