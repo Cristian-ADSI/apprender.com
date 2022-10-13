@@ -1,5 +1,5 @@
 <?php
-
+require_once "models/courseModel.php";
 class CoursesController extends Controller
 {
 
@@ -10,7 +10,13 @@ class CoursesController extends Controller
         parent::__construct();
     }
 
-    function loadView(){
-        $this->view->render('courses');
+    function loadView()
+    {
+        $coursesModel = new CourseModel();
+
+
+        $courses = $coursesModel->getCourses();
+
+        $this->view->render('courses',$courses);
     }
 }

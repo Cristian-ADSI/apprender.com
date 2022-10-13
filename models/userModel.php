@@ -177,23 +177,25 @@ class UserModel extends Model
 
     private function hashPassword($PASSWORD)
     {
+        
         return password_hash($PASSWORD, PASSWORD_DEFAULT);
     }
 
     public function setModel($ARRAY)
     {
-        $this->idUser   = $ARRAY['idUser'];
-        $this->name     = $ARRAY['name'];
-        $this->lastname = $ARRAY['lastname'];
-        $this->phone    = $ARRAY['phone'];
-        $this->email    = $ARRAY['email'];
-        $this->password = $ARRAY['password'];
-        $this->image    = $ARRAY['image'];
+        $this->idUser   = $ARRAY['id_usuario'];
+        $this->name     = $ARRAY['nombre'];
+        $this->lastname = $ARRAY['apellido'];
+        $this->phone    = $ARRAY['telefono'];
+        $this->email    = $ARRAY['correo'];
+        $this->password = $ARRAY['clave'];
+        $this->image    = $ARRAY['imagen'];
     }
+
     public function startSession()
     {
         session_start();
-        $session = new Session($this->getIdUser(), $this->getRoles(), $this->getName());
+        $session = new Session($this->getIdUser(), $this->getRoles(), $this->getName(), $this->getImage());
     }
 
     // Setters 
