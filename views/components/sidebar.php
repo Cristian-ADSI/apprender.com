@@ -35,7 +35,7 @@
             </li>
             <!-- Cerrar Sesion  -->
             <li>
-                <a href="cerrarS.php">
+                <a href="<?PHP echo constant('URL')."app/closeSession"?>">
                     <ion-icon name="cierre-sesion"></ion-icon>Cerrar Sesion
                 </a>
             </li>
