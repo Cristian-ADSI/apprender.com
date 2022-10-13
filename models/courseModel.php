@@ -52,6 +52,63 @@ class CourseModel extends Model
         }
     }
 
+    public function getThemes($ID_COURSE)
+    {
+        $string = "SELECT T.id_tema, T.nombre FROM cursos C
+        INNER JOIN cursos_tema CT ON CT.id_curso = C.id_curso
+        INNER JOIN temas T ON T.id_tema = CT.id_tema
+        WHERE C.id_curso = '$ID_COURSE' ";
+
+        $themes = [];
+
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+
+            while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
+                array_push($themes, $result);
+            }
+
+            return $themes;
+        } catch (PDOException $err) {
+
+            error_log("USER_MODEL::GET_THEMES=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
+    public function getThemsAndThematics($THEMES)
+    {
+        $themesAndThematics = [];
+
+        try {
+
+            foreach ($THEMES as $theme) {
+                $string = "SELECT `tematicas`.nombre, `tematicas`.`descripcion`, `tematicas`.`video` FROM `temas`
+                INNER JOIN `temas_tematicas` ON `temas`.`id_tema` = `temas_tematicas`.`id_tema`
+                INNER JOIN `tematicas` ON `temas_tematicas`.`id_tematica` = `tematicas`.`id_tematica`
+                WHERE `temas_tematicas`.`id_tema` = " . $theme['id_tema'];
+                $query = $this->prepare($string);
+                $query = $this->query($string);
+                $thematics = [];
+                
+                while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
+                    array_push($thematics, $result);
+                }
+            
+                $theme['thematics'] = $thematics ? $thematics : [];
+
+                array_push($themesAndThematics, $theme);
+            }
+
+            return $themesAndThematics;
+        } catch (PDOException $err) {
+
+            error_log("USER_MODEL::GET_THEMES=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
     private function setModel($ARRAY)
     {
         $this->idCourse     = $ARRAY['id_curso'];
@@ -149,4 +206,3 @@ class CourseModel extends Model
         $this->teacher = $TEACHER;
     }
 }
-

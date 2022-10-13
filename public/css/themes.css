@@ -1,0 +1,236 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e7e6f2;
+  /* background-image: url("https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+  margin: 0%;
+}
+/*-----------------------inicio estilos header------------------------- */
+.group-header {
+  display: flex;
+  background-color: #3c5c94;
+  height: 100px;
+  margin: 0%;
+  padding: 0%;
+  border: none;
+}
+.contenedor-Logo {
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.contorno {
+  display: flex;
+  background-color: #8bbdbf;
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 40px;
+  width: 160px;
+  border-radius: 30px;
+}
+.logo img {
+  height: 40px;
+  width: 50px;
+  border-radius: 30px;
+}
+.nombre-proyecto {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.contenedor-titulo {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+}
+.contorno-titulo {
+  background-color: white;
+  margin-top: 25px;
+  height: 30px;
+  width: 510px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.contenedor-usuario {
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.contorno-usuario {
+  display: flex;
+  background-color: #8bbdbf;
+  margin-top: 25px;
+  height: 40px;
+  width: 160px;
+  border-radius: 30px;
+  transform: translateX(220px);
+}
+.imagen-usuario img {
+  height: 40px;
+  width: 50px;
+  border-radius: 30px;
+}
+.nombre-usuario {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+/* ------------------- fin estilos header------------------------ */
+/* ---------------------inicio estilos menu-------------------------------------- */
+.wrapper {
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+.wrapper .menu-btn {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: #3c5c94;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 9999;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ .menu-btn {
+  left: 247px;
+}
+.wrapper .menu-btn i {
+  position: absolute;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.wrapper .menu-btn i.fa-times {
+  opacity: 0;
+}
+#btn:checked ~ .menu-btn i.fa-times {
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.fa-bars {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+#sidebar {
+  position: fixed;
+  background: #3c5c94;
+  height: 100%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ #sidebar {
+  left: 0;
+}
+#sidebar .title {
+  line-height: 65px;
+  text-align: center;
+  background: #3c5c94;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2f2f2;
+  border-bottom: 1px solid #6c9bc7;
+}
+#sidebar .list-items {
+  position: relative;
+  background: #3c5c94;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+#sidebar .list-items li {
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid #3c5c94;
+  border-bottom: #6c9bc7;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #eedddd;
+}
+#sidebar .list-items li:first-child {
+  border-top: none;
+}
+#sidebar .list-items li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#sidebar .list-items li a i,
+#sidebar .list-items li a ion-icon {
+  margin-right: 20px;
+  font-size: 25px;
+}
+#sidebar .list-items .icons {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sidebar .list-items .icons a {
+  height: 100%;
+  width: 40px;
+  display: block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #f2f2f2;
+
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+#sidebar .list-items .icons a:hover {
+  background: #404040;
+}
+.list-items .icons a:first-child {
+  margin-left: 0px;
+}
+a .contenido {
+  text-decoration: none;
+  color: #404040;
+}
+
+.contenedorTemas {
+  margin-left: 13%;
+  width: 75%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 13px 4px rgba(0, 0, 0, 0.4);
+}
+h2 {
+  justify-content: center;
+  width: 300px;
+  margin-left: 35%;
+  margin-bottom: 25px;
+}
+.contenedorLista {
+  margin-left: 5%;
+}
+
+.NombreTema {
+  margin-top: 30px;
+  background-color: #3c5c94;
+  border-radius: 30px;
+  height: 30px;
+  width: 95%;
+  text-align: center;
+}
