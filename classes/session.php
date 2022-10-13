@@ -33,9 +33,4 @@ class Session{
         session_destroy();
         
     }
-
-    public function exists(){
-        return isset($_SESSION[$this->sessionName]);
-    }
-
 }

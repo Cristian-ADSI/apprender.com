@@ -11,6 +11,7 @@ session_start();
 
     <!-- styles  -->
     <link rel="stylesheet" href="<?PHP echo constant('URL') ?>/public/css/courses.css">
+    <!-- <link rel="stylesheet" href="<?PHP echo constant('URL') ?>/public/css/header.css"> -->
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="<?PHP echo BOOTSTRAP ?>">
     <!-- Font Awesome  -->
