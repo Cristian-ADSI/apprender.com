@@ -17,6 +17,8 @@ class ErrorMessages
     public const ERORR_AUTH_NOT_INVALID_ROLE  = "auth011";
     public const ERORR_AUTH_NOT_INVALID_PASS  = "auth012";
 
+    public const ERORR_ENROLL_CREATE_FAILED  = "enroll012";
+
 
     private $errorList = [];
 
@@ -37,6 +39,12 @@ class ErrorMessages
             ErrorMessages::ERORR_AUTH_NOT_EXISTS_USER     => 'El usuarion ingreado no existe en el sistema',
             ErrorMessages::ERORR_AUTH_NOT_INVALID_ROLE    => 'El perfil ingresado no es valido para este usuario',
             ErrorMessages::ERORR_AUTH_NOT_INVALID_PASS    => 'La contraseña ingresada no es valida',
+
+            ErrorMessages::ERORR_ENROLL_CREATE_FAILED    => 
+            "<div class='alert alert-danger m-1'>
+                Error al realiar la matricula
+            </div>
+            "
         ];
     }
 

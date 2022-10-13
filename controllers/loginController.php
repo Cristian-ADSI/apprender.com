@@ -4,7 +4,7 @@ class LoginController extends Controller
 {
     function __construct()
     {
-        error_log("LOGIN_CONTROLLER::CONSTRUCT=>Cargado");
+        // error_log("LOGIN_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 
@@ -12,6 +12,7 @@ class LoginController extends Controller
     {
         $this->view->render('login');
     }
+
     public function access()
     {
         $params = [
@@ -19,7 +20,7 @@ class LoginController extends Controller
             'password',
             'role',
         ];
-
+ 
         if (!$this->existsPOST($params)) {
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_EMPTY_FIELD]);
             return;
@@ -52,3 +53,5 @@ class LoginController extends Controller
         $this->redirect('app', []);
     }
 }
+
+

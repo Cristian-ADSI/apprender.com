@@ -1,5 +1,10 @@
 <?PHP
 session_start();
+
+if (!isset($_SESSION['sessionIdUser'])) {
+    header("Location:" . constant('URL'));
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,44 +29,55 @@ session_start();
     <?PHP require_once "views/components/sidebar.php" ?>
     <main>
         <div class="contenedor-cursos">
-            <!-- <?php
-            //cunsulta paa mostrar los cursos
-            $sql = ("SELECT `id_curso`, `imagen`, `nombre`, `descripcion`, `fecha_inicial`, `fecha_final`,`valor` 
-                 FROM `cursos` 
-                 order by id_curso"
-            );
+            <?php
 
-            $result = mysqli_query($con, $sql);
-            while ($mostrar = mysqli_fetch_array($result)) {
-
-                $idCurso = $mostrar['id_curso'];
-                $tokenHash =  hash_hmac('sha1', $idCurso, KEY_TOKEN);
+            foreach ($this->data as $course) {
             ?>
                 <div class="card-curso" id="curso">
                     <div class="imagen-curso">
-                        <img src=<?php echo $mostrar['imagen'] ?>>
+                        <img src=<?php echo $course['image'] ?>>
                     </div>
+                    <!-- Contenido  -->
                     <div class="contenido-curso">
-                        <h4><?php echo $mostrar['nombre'] ?></h4>
+                        <h4><?php echo $course['name'] ?></h4>
+
                         <p>
-                            <?php echo $mostrar['descripcion'] ?>
+                            <?php echo $course['description'] ?>
                         </p>
+
                         <b><label>disponibilidad del curso:</label></b>
                         <br>
-                        <label id="fecha_inicial">Fecha inicial:<?php echo " " . $mostrar['fecha_inicial'] ?></label> <br>
-                        <label id="fecha_final">Fecha final:<?php echo " " . $mostrar['fecha_final'] ?></label><br>
-                        <b><label>valor de curso:</label></b><br>
-                        <label id="valor"><?php echo " " . $mostrar['valor'] ?></label>
+
+                        <label id="fecha_inicial">
+                            Fecha inicial: <?php echo  $course['startDate'] ?>
+                        </label>
+                        <br>
+
+                        <label id="fecha_final">
+                            Fecha final:<?php echo $course['endDate'] ?>
+                        </label>
+                        <br>
+
+                        <b>
+                            <label>valor de curso:
+                            </label>
+                        </b>
+                        <br>
+                        <label id="valor"><?php echo " $" . $course['value'] ?></label>
+
                         <div class="boton">
-                            <a href="matricula.php?id=<?php echo $idCurso; ?>&token=<?php echo $tokenHash ?>" class="btn">
+                            <a 
+                            href="<?php echo constant('URL') . 'enrollment?course=' . $course['idCourse']; ?>"
+                            class="btn">
                                 Matricularme
                             </a>
                         </div>
+
                     </div>
                 </div>
             <?php
             }
-            ?> -->
+            ?>
         </div>
     </main>
 </body>

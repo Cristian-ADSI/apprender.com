@@ -1,14 +1,22 @@
 <?php
+require_once "classes/session.php";
 class AppController extends Controller
 {
-    function __construct()
+    public function __construct()
     {
-        error_log("APP_CONTROLLER::CONSTRUCT=>Cargado");
+        // error_log("APP_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 
-    function loadView(){
+    public function loadView()
+    {
         $this->view->render('app');
     }
-    
+
+    public function closeSession()
+    {
+        $session = new Session();
+        $session->closeSession();
+        header("Location:" . constant('URL'));
+    }
 }
