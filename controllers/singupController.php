@@ -4,7 +4,7 @@ class SingupController extends Controller
 {
     public function __construct()
     {
-        // error_log("SINGUP_CONTROLLER::CONSTRUCT=>Cargado");
+        // error_log("SINGUP_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 
@@ -40,7 +40,7 @@ class SingupController extends Controller
             return;
         }
 
-        if (!$this->equalPasswords($_POST['password'], $_POST['password_conf'])) {
+        if (!$this->comparePasswords($_POST['password'], $_POST['password_conf'])) {
             $this->redirect('singup', ['error' => ErrorMessages::ERORR_AUTH_DIFERENT_PASSWORD]);
             return;
         }
@@ -102,6 +102,7 @@ class SingupController extends Controller
         if (strlen($PASSWORD) < 8) {
             return false;
         }
+
         if (strlen($PASSWORD) > 16) {
             return false;
         }
@@ -118,7 +119,7 @@ class SingupController extends Controller
         return true;
     }
 
-    private function equalPasswords($PASSWORD, $PASsWORD_CONF)
+    private function comparePasswords($PASSWORD, $PASsWORD_CONF)
     {
         if (strcmp($PASSWORD, $PASsWORD_CONF) === 0) {
             return true;

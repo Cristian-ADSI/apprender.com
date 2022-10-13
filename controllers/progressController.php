@@ -3,7 +3,7 @@ class ProgressController extends Controller
 {
     function __construct()
     {
-        error_log("APP_CONTROLLER::CONSTRUCT=>Cargado");
+        // error_log("PROGRESS_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 

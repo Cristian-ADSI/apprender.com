@@ -4,7 +4,7 @@ class LoginController extends Controller
 {
     function __construct()
     {
-        error_log("LOGIN_CONTROLLER::CONSTRUCT=>Cargado");
+        // error_log("LOGIN_CONTROLLER::CONSTRUCT=>Loaded");
         parent::__construct();
     }
 
@@ -12,6 +12,7 @@ class LoginController extends Controller
     {
         $this->view->render('login');
     }
+
     public function access()
     {
         $params = [
