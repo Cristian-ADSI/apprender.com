@@ -13,8 +13,8 @@ class Model
         return $this->database->connect()->query($query);
     }
 
-    function prepare($query)
+    function prepare($STRING)
     {
-        return $this->database->connect()->prepare($query);
+        return $this->database->connect()->prepare($STRING);
     }
 }

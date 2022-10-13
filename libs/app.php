@@ -10,24 +10,20 @@ class App
 
         // No se especifico controlador en la url 
         if (empty($url[0])) {
-            $this->redirectLogin();
+            $this->redirectHome();
             return;
         }
 
         // No existe el controlador especificado
-        $fileController = "controllers/$url[0].php";
+        $fileController = "controllers/$url[0]Controller.php";
         if (!file_exists($fileController)) {
-            $this->redirectErrors();
+            $this->redirectErrors('controlador', $url[0]);
             return;
         }
 
-        // TODO:: scar esto de aqui 
-        // ------------------------------
-        require_once $fileController;
-        $controller = ucfirst($url[0]) . 'Controller';
+        $controller = $this->loadController($fileController, $url);
+
         $model = $url[0] . 'Model';
-        $controller =  new $controller();
-        // ------------------------------
         $controller->loadModel($model);
 
         //No se especifico metodo en la url
@@ -38,15 +34,16 @@ class App
         }
 
         //No existe el metodo especificado
-        if (method_exists($controller, $method)) {
-            $this->redirectErrors();
-            return;
+        if (!method_exists($controller, $method)) {
+            $this->redirectErrors('metodo', $url[1]);
         }
 
         //No tiene parametros
         $params = isset($url[2]) ? $url[2] : null;
         if (is_null($params)) {
             $controller->{$method}();
+            $controller->loadView();
+            return;
         }
 
 
@@ -61,6 +58,39 @@ class App
         $controller->{$method}($paramList);
     }
 
+
+    private function loadController($FILE_CONTROLLER, $URL)
+    {
+        require_once $FILE_CONTROLLER;
+
+        $controller = ucfirst($URL[0]) . 'Controller';
+        $controller =  new $controller();
+        return $controller;
+    }
+
+    private function redirectErrors($TYPE, $NAME)
+    {
+        error_log("APP::constructor=>No existe el $TYPE $NAME");
+
+        $fileController = 'controllers/errorsController.php';
+        require_once $fileController;
+
+        $controller = new ErrorsController();
+        $controller->loadView();
+    }
+
+    private function redirectHome()
+    {
+        error_log("APP::constructor=>No se especifico controlador");
+
+        $fileController = 'controllers/homeController.php';
+        require_once $fileController;
+
+        $controller = new HomeController();
+        $controller->loadModel('home');
+        $controller->loadView();
+    }
+    // TODO: Actualmente en desuso 
     private function redirectLogin()
     {
         error_log("APP::constructor=>No se especifico controlador");
@@ -70,17 +100,6 @@ class App
 
         $controller = new LoginController();
         $controller->loadModel('login');
-        $controller->loadView();
-    }
-
-    private function redirectErrors()
-    {
-        error_log("APP::constructor=>No existe el controlador especificado");
-
-        $fileController = 'controllers/errorsController.php';
-        require_once $fileController;
-
-        $controller = new ErrorsController();
         $controller->loadView();
     }
 }

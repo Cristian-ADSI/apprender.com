@@ -1,43 +1,57 @@
 <?php
 
+
 class Controller
 {
 
-    function __construct()
+    public function __construct()
     {
         error_log('CONTROLLER::CONSTRUCT=>OK');
         $this->view = new View();
     }
 
-    function loadModel($MODEL)
+    public function loadModel($MODEL)
     {
-        $modelFile = 'models/' . $MODEL . 'Model.php';
-
+        $modelFile = 'models/' . $MODEL . '.php';
         if (file_exists($modelFile)) {
 
             require_once $modelFile;
-            $modelName =  ucfirst($model . 'Model');
+            $modelName =  ucfirst($MODEL);
 
             $this->model = new  $modelName();
         }
     }
 
-    function existsPOST($PARAMS)
+    public function existsPOST($PARAMS)
     {
-
-        $validation = true;
+        $exist = true;
 
         foreach ($PARAMS as $param) {
             if (!isset($_POST[$param])) {
                 error_log("CONTROLLER::existsPOST => No existe el parametro $param");
-                $validation =  false;
+                $exist =  false;
             }
         }
 
-        return $validation;
+        return $exist;
     }
 
-    function existsGET($PARAMS)
+    public function emptyPOST($PARAMS)
+    {
+        $empty =  false;
+
+        foreach ($PARAMS as $param) {
+
+            if (strlen(trim($_POST[$param])) < 1) {
+                error_log("CONTROLLER::existsPOST => No existe el parametro $param");
+                $empty =  true;
+            }
+        }
+
+        return $empty;
+    }
+
+    public function existsGET($PARAMS)
     {
         $validation = true;
 
@@ -51,7 +65,7 @@ class Controller
         return $validation;
     }
 
-    function redirect($PATH, $MESSAGES)
+    public function redirect($PATH, $MESSAGES)
     {
         $data = [];
         $params = '';
@@ -67,6 +81,12 @@ class Controller
             $params = "?$params";
         }
 
-        header("lLcation:".constant(URL)."$PATH" . "$params");
+        header("Location:" . constant('URL') . "$PATH" . "$params");
+    }
+
+    // TODO: ACtualmente en desuso 
+    public function getPOST($NAME)
+    {
+        return $_POST[$NAME];
     }
 }

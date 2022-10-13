@@ -1,0 +1,295 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color:#f2f2f2;
+    margin:0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+/*-----------------------inicio estilos header------------------------- */
+.group-header{
+    display: flex;
+    background-color:#3C5C94;
+    height: 100px;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+}
+.contenedor-Logo{
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+.contorno{
+    display: flex;
+    background-color: #8BBDBF;
+    margin-top: 25px;
+    margin-left: 20px;
+    height: 40px;
+    width: 160px;
+    border-radius: 30px;
+}
+.logo img{
+    height: 40px;
+    width: 50px;
+    border-radius: 30px;
+}
+.nombre-proyecto{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.contenedor-titulo
+{
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+.contorno-titulo{
+    background-color: white;
+    margin-top: 25px;
+    height: 30px;
+    width: 510px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.contenedor-usuario{
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+.contorno-usuario{
+    display: flex;
+    background-color: #8BBDBF;
+    margin-top: 25px;
+    height: 40px;
+    width: 160px;
+    border-radius: 30px;
+    transform: translateX(220px); 
+}
+.imagen-usuario img
+{
+    height: 40px;
+    width: 50px;
+    border-radius: 30px;
+}
+.nombre-usuario{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+/* ------------------- fin estilos header------------------------ */
+/* ---------------------inicio estilos menu-------------------------------------- */
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+.wrapper .menu-btn{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: #3C5C94;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 9999;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ .menu-btn{
+  left: 247px;
+}
+.wrapper .menu-btn i{
+  position: absolute;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+.wrapper .menu-btn i.fa-times{
+  opacity: 0;
+}
+#btn:checked ~ .menu-btn i.fa-times{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.fa-bars{
+  opacity: 0;
+  transform: rotate(180deg);
+}
+#sidebar{
+  position: fixed;
+  background:#3C5C94;
+  height: 100%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ #sidebar{
+  left: 0;
+}
+#sidebar .title{
+  line-height: 65px;
+  text-align: center;
+  background: #3C5C94;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2f2f2;
+  border-bottom: 1px solid #6c9bc7;;
+}
+#sidebar .list-items{
+  position: relative;
+  background: #3C5C94;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+#sidebar .list-items li{
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid #3C5C94;
+  border-bottom:#6c9bc7;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #EEDDDD;
+}
+#sidebar .list-items li:first-child{
+  border-top: none;
+}
+#sidebar .list-items li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#sidebar .list-items li a i,
+#sidebar .list-items li a ion-icon{
+  margin-right: 20px;
+  font-size: 25px;
+}
+#sidebar .list-items .icons{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sidebar .list-items .icons a{
+  height: 100%;
+  width: 40px;
+  display: block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #f2f2f2;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+/* #sidebar .list-items .icons a:hover{
+  background: #404040;
+} */
+.list-items .icons a:first-child{
+  margin-left: 0px;
+}
+/* ---------------------inicio estilos menu-------------------------------------- */
+
+.group-cards{
+    display: flex;
+    background-color: rgb(221, 221, 221);
+    margin: 40px;
+    margin-left: 11%;
+    margin-right: 13%;
+    margin-top: 130px;
+    width: auto;
+    border-radius: 30px;
+}
+.card1{
+    background-color: #CFD8DF;
+    width: 250px;
+    height: auto;
+    margin: 30px;
+    margin-left: 50px;
+    justify-content: center;
+    text-align: justify;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px  rgba(0, 0, 0, 0.23);
+    border: none;
+   
+}
+.imagen-1 img{
+    margin: 36px;
+    margin-left: 60px;
+    margin-top: 25px;
+    height: 125px;
+    width: 125px;
+    border-radius: 20px;
+    border: none;
+   
+}
+.contenido{
+    margin: 16px;
+    margin-top: -40px;
+}
+.card2{
+    background-color: #CFD8DF;
+    width: 250px;
+    height: auto;
+    margin: 30px;
+    margin-left: 60px;
+    justify-content: center;
+    text-align: justify;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px  rgba(0, 0, 0, 0.23);
+    border: none;
+}
+.imagen-2 img{
+    margin: 36px;
+    margin-left: 60px;
+    margin-top: 25px;
+    height: 125px;
+    width: 125px;
+    border-radius: 20px;
+    border: none;
+}
+.card3{
+  background-color: #CFD8DF;
+  width: 250px;
+  height: auto;
+  margin: 30px;
+  margin-left: 60px;
+  justify-content: center;
+  text-align: justify;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px  rgba(0, 0, 0, 0.23);
+  border: none;
+}
+.imagen-3 img
+{
+  margin: 36px;
+  margin-left: 60px;
+  margin-top: 25px;
+  height: 125px;
+  width: 125px;
+  border-radius: 20px;
+  border: none;
+}
+

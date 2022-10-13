@@ -1,0 +1,53 @@
+{
+    "sites": [
+        {
+            "site": "",
+            "access": "public",
+            "role": ""
+        },
+        {
+            "site": "singup",
+            "access": "public",
+            "role": ""
+        },
+        {
+            "site": "login",
+            "access": "public",
+            "role": ""
+        },
+        {
+            "site": "student",
+            "access": "private",
+            "role": "student"
+        },
+        {
+            "site": "student-settings",
+            "access": "private",
+            "role": "student"
+        },
+        {
+            "site": "student-progress",
+            "access": "private",
+            "role": "student"
+        },
+        {
+            "site": "student-courses",
+            "access": "private",
+            "role": "student"
+        }
+    ],
+    "default-sites": [
+        {
+            "site": "student",
+            "role": "student"
+        },
+        {
+            "site": "teacher",
+            "role": "teacher"
+        },
+        {
+            "site": "admin",
+            "role": "admin"
+        }
+    ]
+}
