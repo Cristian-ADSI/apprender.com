@@ -8,7 +8,7 @@ if (empty($_SESSION['sessionImage'])) {
 }
 
 ?>
-<header>
+<header> 
     <div class="group-header">
         <div class="contenedor-Logo">
             <div class="contorno">
