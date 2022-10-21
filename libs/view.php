@@ -5,7 +5,7 @@ class View
 
     function __construct()
     {
-        error_log('VIEW::CONSTRUCT=>OK');
+        // error_log('VIEW::CONSTRUCT=>OK');
     }
 
     public function render($VIEW, $DATA = [])

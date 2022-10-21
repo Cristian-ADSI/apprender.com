@@ -29,7 +29,7 @@ class Database
 
             $connection = new PDO($dsn, $this->user, $this->password, $options);
 
-            error_log('DATABASE::=>Conect successfuly');
+            // error_log('DATABASE::=>Conect successfuly');
 
             return $connection;
             
