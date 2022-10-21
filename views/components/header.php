@@ -13,7 +13,7 @@ if (empty($_SESSION['sessionImage'])) {
         <div class="contenedor-Logo">
             <div class="contorno">
                 <div class="logo">
-                    <img src="<?PHP constant('URL') ?>/public/img/utilities/logo-apprender.png" alt="">
+                    <img src="<?PHP constant('URL') ?>/public/img/utilities/logo.png" alt="">
                 </div>
                 <div class="nombre-proyecto">
                     <label>

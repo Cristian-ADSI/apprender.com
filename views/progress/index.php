@@ -1,6 +1,5 @@
-
 <?PHP
-session_start();
+// var_dump($this->data)
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +10,6 @@ session_start();
 
     <!-- styles  -->
     <link rel="stylesheet" href="<?PHP echo constant('URL') ?>/public/css/courses.css">
-    <!-- <link rel="stylesheet" href="<?PHP echo constant('URL') ?>/public/css/header.css"> -->
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="<?PHP echo BOOTSTRAP ?>">
     <!-- Font Awesome  -->
@@ -23,45 +21,30 @@ session_start();
     <?PHP require_once "views/components/header.php" ?>
     <?PHP require_once "views/components/sidebar.php" ?>
     <main>
-        <!-- <div class="contenedor-cursos">
-            <?php
-            //cunsulta paa mostrar los cursos
-            $sql = ("SELECT C.id_curso,c.imagen,c.nombre,c.descripcion,c.fecha_inicial,c.fecha_final
-                 FROM cursos C 
-                 INNER join matriculas M ON c.id_curso = m.id_curso
-                 INNER JOIN usuarios U ON u.id = m.id_usuarios
-                 WHERE m.id_usuarios='1039784054'"
-            );
-            $result = mysqli_query($con, $sql);
-            while ($mostrar = mysqli_fetch_array($result)) {
-
-                $idCurso = $mostrar['id_curso'];
-                $tokenHash =  hash_hmac('sha1', $idCurso, KEY_TOKEN);
-            ?>
+        <div class="contenedor-cursos">
+            <?php foreach ($this->data as $course) { ?>
                 <div class="card-curso" id="curso">
                     <div class="imagen-curso">
-                        <img src=<?php echo $mostrar['imagen'] ?>>
+                        <img src=<?php echo $course['image'] ?>>
                     </div>
                     <div class="contenido-curso">
-                        <h4><?php echo $mostrar['nombre'] ?></h4>
+                        <h4><?php echo $course['name'] ?></h4>
                         <p>
-                            <?php echo $mostrar['descripcion'] ?>
+                            <?php echo $course['description'] ?>
                         </p>
                         <b><label>disponibilidad del curso:</label></b>
                         <br>
-                        <label id="fecha_inicial">Fecha inicial:<?php echo " " . $mostrar['fecha_inicial'] ?></label> <br>
-                        <label id="fecha_final">Fecha final:<?php echo " " . $mostrar['fecha_final'] ?></label><br>
+                        <label id="fecha_inicial">Fecha inicial:<?php echo " " . $course['startDate'] ?></label> <br>
+                        <label id="fecha_final">Fecha final:<?php echo " " . $course['endDate'] ?></label><br>
                         <div class="boton">
-                            <a href="temas.php?id=<?php echo $idCurso; ?>&token=<?php echo $tokenHash ?>" class="btn">
+                            <a href="<?php echo  constant('URL') . 'themes?theme=' . $course['idCourse'] ?>" class="btn">
                                 continuar
                             </a>
                         </div>
                     </div>
                 </div>
-            <?php
-            }
-            ?>
-        </div> -->
+            <?php } ?>
+        </div>
     </main>
 </body>
 

@@ -52,6 +52,33 @@ class CourseModel extends Model
         }
     }
 
+    public function getCoursesByUser($ID_USER)
+    {
+        $string = "SELECT `cursos`.* FROM `cursos`
+        INNER join `matriculas` ON `cursos`.`id_curso` = `matriculas`.`id_curso`
+        WHERE `matriculas`.`id_usuario` = $ID_USER ";
+
+        $courses = [];
+
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+
+            while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
+
+                $this->setModel($result);
+                $course = $this->getModel();
+                array_push($courses, $course);
+            }
+
+            return $courses;
+        } catch (PDOException $err) {
+
+            error_log("USER_MODEL::GET_USER=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
     public function getThemes($ID_COURSE)
     {
         $string = "SELECT T.id_tema, T.nombre FROM cursos C
@@ -91,11 +118,11 @@ class CourseModel extends Model
                 $query = $this->prepare($string);
                 $query = $this->query($string);
                 $thematics = [];
-                
+
                 while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
                     array_push($thematics, $result);
                 }
-            
+
                 $theme['thematics'] = $thematics ? $thematics : [];
 
                 array_push($themesAndThematics, $theme);
