@@ -1,5 +1,8 @@
 <?PHP
-session_start();
+$user = $this->data;
+$image = empty($_SESSION['sessionImage'])
+    ? constant('URL') . 'public/img/profiles/profile.jpg' :
+    constant('URL') . 'public/img/profiles/' . $image;
 ?>
 
 <!DOCTYPE html>
@@ -30,13 +33,12 @@ session_start();
 
                     <article class="col-md-6 text-center">
                         <h2>Foto perfil</h2>
-                        <img src="<?php echo $imagen ?>" alt="">
-
+                        <img src="<?php echo $image ?>" alt="">
                         <div class="form-imagen">
                             <div class="imagen">
-                                <input type="file" name="imagen" id="imagen" class="select-image">
+                                <input type="file" name="imagen" id="imagen" class="select-image mb-3">
 
-                                <button class="btn btn-secondary" type="submit" name="deleteImage" value="deleteImage">
+                                <button class="btn btn-secondary d-block m-auto" type="submit" name="deleteImage" value="deleteImage">
                                     Eliminar imagen
                                 </button>
 
@@ -49,27 +51,27 @@ session_start();
                     <article class="col-md-6">
                         <article class="mt-2">
                             <label class="form-label"> </label>
-                            <input class="form-control" type="text" name="id" value="">
+                            <input class="form-control" type="text" name="id" value="<?PHP echo $user['idUser'] ?>">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Telefono</label>
-                            <input class="form-control" type="text" name="telefono" value="">
+                            <input class="form-control" type="text" name="telefono" value="<?PHP echo $user['phone'] ?>">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Nombre</label>
-                            <input class="form-control" type="text" name="nombre" value="">
+                            <input class="form-control" type="text" name="nombre" value="<?PHP echo $user['name'] ?>">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Apellido</label>
-                            <input class="form-control" type="text" name="apellido" value="">
+                            <input class="form-control" type="text" name="apellido" value="<?PHP echo $user['lastname'] ?>">
                         </article>
 
                         <article class="mt-2">
                             <label class="form-label">Correo</label>
-                            <input class="form-control" type="email" name="correo" value="">
+                            <input class="form-control" type="email" name="correo" value="<?PHP echo $user['email'] ?>">
                         </article>
 
                     </article>

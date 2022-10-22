@@ -26,7 +26,7 @@ class UserModel extends Model
 
 
 
-        error_log('SINGUP_MODEL::CONSTRUCT=>Loaded');
+        // error_log('USER_MODEL::CONSTRUCT=>Loaded');
     }
 
     public function update()
@@ -118,14 +118,7 @@ class UserModel extends Model
                 return false;
             }
 
-            $this->setIdUser($user['id_usuario']);
-            $this->setName($user['nombre']);
-            $this->setLastname($user['apellido']);
-            $this->setPhone($user['telefono']);
-            $this->setEmail($user['correo']);
-            $this->setPassword($user['clave']);
-            $this->setImage($user['imagen']);
-            $this->setRoles($user['cod_rol']);
+            $this->setModel($user);
 
             return $this;
         } catch (PDOException $err) {
@@ -177,7 +170,7 @@ class UserModel extends Model
 
     private function hashPassword($PASSWORD)
     {
-        
+
         return password_hash($PASSWORD, PASSWORD_DEFAULT);
     }
 
@@ -190,6 +183,23 @@ class UserModel extends Model
         $this->email    = $ARRAY['correo'];
         $this->password = $ARRAY['clave'];
         $this->image    = $ARRAY['imagen'];
+        $this->roles    = $ARRAY['cod_rol'];
+    }
+
+    public function getModel()
+    {
+        $user = [
+            'idUser'    => $this->idUser,
+            'name'      => $this->name,
+            'lastname'  => $this->lastname,
+            'phone'     => $this->phone,
+            'email'     => $this->email,
+            'password'  => $this->password,
+            'image'     => $this->image,
+            'roles'     => $this->roles,
+        ];
+
+        return $user;
     }
 
     public function startSession()
