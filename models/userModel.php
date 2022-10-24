@@ -77,7 +77,6 @@ class UserModel extends Model
     function unlinkImage($ID_USER)
     {
         $string = "SELECT `imagen` FROM `usuarios` WHERE `id_usuario` = $ID_USER";
-        echo"ejecucion";
         try {
             $query = $this->prepare($string);
             $query->execute();

@@ -17,6 +17,7 @@ class ProfileController extends Controller
         $model = new UserModel();
         $model->getUser($idUser);
         $user = $model->getModel();
+
         $this->view->render('profile', $user);
     }
 
@@ -30,11 +31,16 @@ class ProfileController extends Controller
 
 
         if (isset($_POST['deleteImage'])) {
-            $model->deleteImage($_POST['id_usuario']);
+
+            // echo 'Ejecucion';
             $model->unlinkImage($_POST['id_usuario']);
+            $model->deleteImage($_POST['id_usuario']);
+            $_SESSION["sessionImage"] = "";
             $this->redirect('profile', ['success' => SuccesserMessages::SUCCESS_DELETE_IMAGE]);
             return;
         }
+
+
 
         if (!empty($_FILES['imagen']['name'])) {
             $model->unlinkImage($_POST['id_usuario']);
