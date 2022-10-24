@@ -6,7 +6,7 @@ class Session{
     private $sessionRole   ='role';
     private $sessionIdUser ='name';
 
-    function __construct($ID_USER="", $ROLE="", $NAME="",$IMAGE=""){
+    function __construct($ID_USER="", $ROLE="", $NAME="", $IMAGE=""){
 
         if (session_status() !== PHP_SESSION_ACTIVE) { session_start(); }
 

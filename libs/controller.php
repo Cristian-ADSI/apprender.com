@@ -6,7 +6,7 @@ class Controller
 
     public function __construct()
     {
-        error_log('CONTROLLER::CONSTRUCT=>OK');
+        // error_log('CONTROLLER::CONSTRUCT=>OK');
         $this->view = new View();
     }
 

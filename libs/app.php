@@ -70,7 +70,7 @@ class App
 
     private function redirectErrors($TYPE, $NAME)
     {
-        error_log("APP::constructor=>No existe el $TYPE $NAME");
+        // error_log("APP::constructor=>No existe el $TYPE $NAME");
 
         $fileController = 'controllers/errorsController.php';
         require_once $fileController;

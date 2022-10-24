@@ -1,1 +1,11 @@
-
+[25-Oct-2022 00:19:02 Europe/Berlin] USER_MODEL::UPDATE=>PDOEXEPTION: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `id_usuario` = '1040746421'' at line 1 in C:\xampp\htdocs\apprender.com\libs\model.php:16
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\model.php(16): PDO->prepare('UPDATE `usuario...')
+#1 C:\xampp\htdocs\apprender.com\models\userModel.php(58): Model->prepare('UPDATE `usuario...')
+#2 C:\xampp\htdocs\apprender.com\controllers\profileController.php(36): UserModel->updatePassword()
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(44): ProfileController->update()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+[25-Oct-2022 00:27:23 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 8
+[25-Oct-2022 00:27:23 Europe/Berlin] APP::constructor=>No se especifico controlador
+[25-Oct-2022 00:27:35 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\apprender.com\views\login\index.php on line 2
