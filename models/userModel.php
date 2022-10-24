@@ -23,22 +23,19 @@ class UserModel extends Model
         $this->password = '';
         $this->image = '';
         $this->roles = [];
-
-
-
         // error_log('USER_MODEL::CONSTRUCT=>Loaded');
     }
 
-    public function update()
+    public function updateUser()
     {
+
+        // var_dump($this->idUser);
         $string = "UPDATE `usuarios` SET 
         `nombre`      = :nombre,
         `apellido`    = :apellido,
         `telefono`    = :telefono,
-        `correo`      = :correo, 
-        `clave`       = :clave
-        `imagen`      = :imagen, 
-        WHERE `id_usuario`  = :id_usuario";
+        `correo`      = :correo 
+        WHERE `id_usuario` = $this->idUser";
         try {
             $query = $this->prepare($string);
             $query->execute([
@@ -46,14 +43,68 @@ class UserModel extends Model
                 'apellido'   => $this->lastname,
                 'telefono'   => $this->phone,
                 'correo'     => $this->email,
-                'clave'      => $this->password,
-                'imagen'     => $this->image,
-                'id_usuario' => $this->idUser,
             ]);
-
             return true;
         } catch (PDOException $err) {
             error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
+    function upImage($FILE, $ID_USER)
+    {
+        $path = 'public/img/profiles/' . $FILE['imagen']['name'];
+        $tmpName = $FILE['imagen']['tmp_name'];
+        $name = $FILE['imagen']['name'];
+
+        $string = "UPDATE `usuarios` SET imagen = :imagen WHERE `id_usuario`=:id_usuario ";
+
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'imagen'        => $name,
+                'id_usuario'    => $ID_USER,
+            ]);
+
+            move_uploaded_file($tmpName, $path);
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
+    function unlinkImage($ID_USER)
+    {
+        $string = "SELECT `imagen` FROM `usuarios` WHERE `id_usuario` = $ID_USER";
+        echo"ejecucion";
+        try {
+            $query = $this->prepare($string);
+            $query->execute();
+            $row = $query->fetch(PDO::FETCH_ASSOC);
+            $image = $row['imagen'];
+            if (!empty($image) && isset($image)) {
+                unlink("public/img/profiles/$image");
+            }
+            return true;
+        } catch (PDOException $error) {
+            error_log(("ERROR_DELETING_IMAGE:: $error"));
+            return false;
+        }
+    }
+
+    function deleteImage($ID_USER)
+    {
+        $string = "UPDATE `usuarios` SET imagen='' WHERE `id_usuario` = :id_usuario";
+
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'id_usuario'  => $ID_USER,
+            ]);
+            return true;
+        } catch (PDOException $error) {
+            error_log(("ERROR_DELETING_IMAGE:: $error"));
             return false;
         }
     }
@@ -182,8 +233,10 @@ class UserModel extends Model
         $this->phone    = $ARRAY['telefono'];
         $this->email    = $ARRAY['correo'];
         $this->password = $ARRAY['clave'];
-        $this->image    = $ARRAY['imagen'];
         $this->roles    = $ARRAY['cod_rol'];
+
+       
+
     }
 
     public function getModel()
@@ -237,6 +290,7 @@ class UserModel extends Model
     {
         $this->password =  $this->hashPassword($PASSWORD);
     }
+
     public function setRoles($ROLES)
     {
         $this->roles =  $ROLES;

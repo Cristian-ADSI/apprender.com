@@ -1,5 +1,6 @@
 <?PHP
 $user = $this->data;
+;
 $image = empty($_SESSION['sessionImage'])
     ? constant('URL') . 'public/img/profiles/profile.jpg' :
     constant('URL') . 'public/img/profiles/' . $image;
@@ -24,10 +25,10 @@ $image = empty($_SESSION['sessionImage'])
     <section class="container-all">
 
         <section class="ctn-form">
+            <button class="btn btn-success"><a  class="text-decoration-none text-white" href="<?PHP echo constant('URL') . "app" ?>">Volver</a></button>
+            <h1 class=" title"><?php echo "Perfil " . $_SESSION['sessionName'] ?></h1>
 
-            <h1 class="title"><?php echo "Perfil " . $_SESSION['sessionName'] ?></h1>
-
-            <form action="actualizar.php" method="POST" enctype="multipart/form-data">
+            <form action="<?PHP echo constant('URL') . "profile/update" ?>" method="POST" enctype="multipart/form-data">
 
                 <section class="form1 row">
 
@@ -45,13 +46,15 @@ $image = empty($_SESSION['sessionImage'])
                                 <input class="btn-update" type="submit" value="Actualizar datos">
                             </div>
                         </div>
-
+                        <article class="mt-2">
+                            <input class="form-control" type="text" name="cod_rol" value="<?PHP echo $user['roles'] ?>" style="visibility:hidden;">
+                        </article>
                     </article>
 
                     <article class="col-md-6">
                         <article class="mt-2">
                             <label class="form-label"> </label>
-                            <input class="form-control" type="text" name="id" value="<?PHP echo $user['idUser'] ?>">
+                            <input class="form-control" type="text" name="id_usuario" value="<?PHP echo $user['idUser'] ?>">
                         </article>
 
                         <article class="mt-2">
@@ -74,6 +77,10 @@ $image = empty($_SESSION['sessionImage'])
                             <input class="form-control" type="email" name="correo" value="<?PHP echo $user['email'] ?>">
                         </article>
 
+                        <article class="mt-2">
+                            <label class="form-label">password</label>
+                            <input class="form-control" type="password" name="clave" value="<?PHP echo $user['password'] ?>" style="pointer-events:none;">
+                        </article>
                     </article>
 
                 </section>
