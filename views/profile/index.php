@@ -1,9 +1,10 @@
 <?PHP
 $user = $this->data;
-;
+
+
 $image = empty($_SESSION['sessionImage'])
     ? constant('URL') . 'public/img/profiles/profile.jpg' :
-    constant('URL') . 'public/img/profiles/' . $image;
+    constant('URL') . 'public/img/profiles/' . $_SESSION['sessionImage'];
 ?>
 
 <!DOCTYPE html>

@@ -39,6 +39,7 @@ class ProfileController extends Controller
         if (!empty($_FILES['imagen']['name'])) {
             $model->unlinkImage($_POST['id_usuario']);
             $model->upImage($_FILES, $_POST['id_usuario']);
+            $_SESSION["sessionImage"] = $_FILES['imagen']['name'];
         }
 
         $model->updateUser();
