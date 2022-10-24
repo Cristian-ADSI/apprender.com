@@ -51,6 +51,22 @@ class UserModel extends Model
         }
     }
 
+    public function updatePassword()
+    {
+        $string = "UPDATE `usuarios` SET `clave` = :clave  WHERE `id_usuario` = '$this->idUser'";
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'clave'     => $this->password,
+            ]);
+
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
     function upImage($FILE, $ID_USER)
     {
         $path = 'public/img/profiles/' . $FILE['imagen']['name'];
@@ -233,9 +249,6 @@ class UserModel extends Model
         $this->email    = $ARRAY['correo'];
         $this->password = $ARRAY['clave'];
         $this->roles    = $ARRAY['cod_rol'];
-
-       
-
     }
 
     public function getModel()

@@ -26,7 +26,7 @@ $image = empty($_SESSION['sessionImage'])
     <section class="container-all">
 
         <section class="ctn-form">
-            <button class="btn btn-success"><a  class="text-decoration-none text-white" href="<?PHP echo constant('URL') . "app" ?>">Volver</a></button>
+            <button class="btn btn-success"><a class="text-decoration-none text-white" href="<?PHP echo constant('URL') . "app" ?>">Volver</a></button>
             <h1 class=" title"><?php echo "Perfil " . $_SESSION['sessionName'] ?></h1>
 
             <form action="<?PHP echo constant('URL') . "profile/update" ?>" method="POST" enctype="multipart/form-data">
@@ -79,9 +79,20 @@ $image = empty($_SESSION['sessionImage'])
                         </article>
 
                         <article class="mt-2">
-                            <label class="form-label">password</label>
-                            <input class="form-control" type="password" name="clave" value="<?PHP echo $user['password'] ?>" style="pointer-events:none;">
+                            <input class="form-control" type="password" name="clave" value="<?PHP echo $user['password'] ?>" style="pointer-events:none; visibility:hidden;">
                         </article>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#changePassword">
+                            Cambiar Contaseña
+                        </button>
+
+                        <?PHP if (isset($this->data['success'])) {
+                            echo '
+                             <div class="alert alert-success" role="alert">
+                                ' . $this->data['success'] . '
+                            </div>
+                         ';
+                        } ?>
                     </article>
 
                 </section>
@@ -89,6 +100,31 @@ $image = empty($_SESSION['sessionImage'])
 
         </section>
     </section>
+
+    <div class="modal fade" id="changePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cambiar tu Contraseña</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="<?PHP echo constant('URL') . "profile/update" ?>" method="POST">
+                    <div class="modal-body">
+
+                        <article class="mt-2">
+                            <input class="form-control" type="password" name="nuevaClave" placeholder="Ingresa tu nueva contraseña">
+                        </article>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" name="newPassword" value="newPassword">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

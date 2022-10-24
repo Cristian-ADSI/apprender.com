@@ -27,18 +27,28 @@ class ProfileController extends Controller
         $model = new UserModel();
 
 
+
+
+        if (isset($_POST['newPassword'])) {
+            $model->setPassword($_POST['nuevaClave']);
+            $model->setIdUser($_SESSION['sessionIdUser']);
+            $model->updatePassword();
+            $this->redirect('profile', ['success' => SuccesserMessages::SUCCESS_UPDATE_USER]);
+            return;
+        }
+
         $model->setModel($_POST);
 
 
         if (isset($_POST['deleteImage'])) {
-
-            // echo 'Ejecucion';
             $model->unlinkImage($_POST['id_usuario']);
             $model->deleteImage($_POST['id_usuario']);
             $_SESSION["sessionImage"] = "";
             $this->redirect('profile', ['success' => SuccesserMessages::SUCCESS_DELETE_IMAGE]);
             return;
         }
+
+
 
 
 
