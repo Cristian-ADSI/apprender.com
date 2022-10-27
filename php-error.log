@@ -9,3 +9,5 @@ Stack trace:
 [25-Oct-2022 00:27:23 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 8
 [25-Oct-2022 00:27:23 Europe/Berlin] APP::constructor=>No se especifico controlador
 [25-Oct-2022 00:27:35 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\apprender.com\views\login\index.php on line 2
+[27-Oct-2022 21:56:19 Europe/Berlin] APP::constructor=>No se especifico controlador
+[27-Oct-2022 21:56:21 Europe/Berlin] APP::constructor=>No se especifico controlador
