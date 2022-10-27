@@ -79,6 +79,31 @@ class CourseModel extends Model
         }
     }
 
+    public function getCoursesByTeacher($ID_Teacher)
+    {
+        $string = "SELECT * FROM `cursos` WHERE `profesor` = '$ID_Teacher' 
+        AND `active` = 1  ORDER BY `id_curso`";
+
+        $courses = [];
+
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+
+            while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
+                $this->setModel($result);
+                $course = $this->getModel();
+                array_push($courses, $course);
+            }
+
+            return $courses;
+        } catch (PDOException $err) {
+
+            error_log("USER_MODEL::GET_USER=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
     public function getThemes($ID_COURSE)
     {
         $string = "SELECT T.id_tema, T.nombre FROM cursos C
