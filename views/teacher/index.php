@@ -1,5 +1,5 @@
 
-<?PHP var_dump( $this->data) ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

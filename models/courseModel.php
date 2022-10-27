@@ -11,6 +11,7 @@ class CourseModel extends Model
     private $startDate;
     private $endDate;
     private $value;
+    private $active;
     private $teacher;
 
     public function __construct()
@@ -19,12 +20,13 @@ class CourseModel extends Model
         parent::__construcut();
 
         $this->idCourse = '';
-        $this->image = '';
         $this->name = '';
+        $this->image = '';
         $this->description = '';
         $this->startDate = '';
         $this->endDate = '';
         $this->value = '';
+        $this->private = 0;
         $this->teacher = '';
     }
 
@@ -82,7 +84,7 @@ class CourseModel extends Model
     public function getCoursesByTeacher($ID_Teacher)
     {
         $string = "SELECT * FROM `cursos` WHERE `profesor` = '$ID_Teacher' 
-        AND `active` = 1  ORDER BY `id_curso`";
+        AND `activo` = 1  ORDER BY `id_curso`";
 
         $courses = [];
 
@@ -171,6 +173,7 @@ class CourseModel extends Model
         $this->endDate      = $ARRAY['fecha_final'];
         $this->value        = $ARRAY['valor'];
         $this->teacher      = $ARRAY['profesor'];
+        $this->active       = $ARRAY['activo'];
     }
 
     private function getModel()
@@ -183,10 +186,37 @@ class CourseModel extends Model
             'startDate'     => $this->startDate,
             'endDate'       => $this->endDate,
             'value'         => $this->value,
-            'teacher'       => $this->teacher
+            'teacher'       => $this->teacher,
+            'active'         => $this->active
         ];
 
         return $arrayCourse;
+    }
+
+    public function createCourse()
+    {
+        $string = "INSERT INTO `cursos`
+        (id_curso, nombre, imagen, descripcion, fecha_inicial, fecha_final, valor, profesor, activo) 
+        VALUES (:id_curso,:nombre, :imagen, :descripcion, :fecha_inicial, :fecha_final, :valor, :profesor, :activo)";
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'id_curso'      => $this->idCourse,
+                'nombre'        => $this->name,
+                'imagen'        => $this->image,
+                'descripcion'   => $this->description,
+                'fecha_inicial' => $this->startDate,
+                'fecha_final'   => $this->endDate,
+                'valor'         => $this->value,
+                'profesor'      => $this->teacher,
+                'activo'        => $this->active,
+            ]);
+
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::CREATE=>PDOEXEPTION: $err");
+            return false;
+        }
     }
 
 

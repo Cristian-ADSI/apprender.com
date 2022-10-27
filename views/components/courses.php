@@ -1,7 +1,8 @@
 <?php
 // $idUser = ($_SESSION['idUser']);
-
-// $result = mysqli_query($con, $query);
+// echo "<pre>";
+// var_dump($this->data);
+// echo "</pre>";
 
 ?>
 
@@ -22,28 +23,32 @@
         </thead>
 
         <tbody>
-            <?php while ($course = mysqli_fetch_array($result)) { ?>
+            <?php 
+            // foreach ($variable as $key => $value) {
+            //     # code...
+            // }
+            foreach ($this->data as $course) { ?>
                 <tr>
-                    <td><?php echo $course['id_curso'] ?></td>
+                    <td><?php echo $course['idCourse'] ?></td>
 
                     <td>
-                        <img class="course-image" src="<?php echo $course['imagen'] ?>" alt="<?php echo $course['nombre'] ?>">
-                        <?php echo $course['nombre'] ?>
+                        <img class="course-image" src="<?php echo $course['image'] ?>" alt="<?php echo $course['name'] ?>">
+                        <?php echo $course['name'] ?>
                     </td>
 
-                    <td><?php echo $course['fecha_inicial'] ?></td>
-                    <td><?php echo $course['fecha_final'] ?></td>
-                    <td><?php echo $course['valor'] ?></td>
+                    <td><?php echo $course['startDate'] ?></td>
+                    <td><?php echo $course['endDate'] ?></td>
+                    <td><?php echo $course['value'] ?></td>
                     <td>
 
                         <button type="button" class="btn btn-warning btn-edit">
-                            <a class="text-dark" href="components/editCourses.php?id=<?PHP echo $course['id_curso'] ?>">
+                            <a class="text-dark" href="views/components/editCourses.php?id=<?PHP echo $course['idCourse'] ?>">
                                 Editar
                             </a>
                         </button>
 
-                        <form action="profesor.php?view=listCourses&delete=<?php echo $course['id_curso'] ?>" class="d-inline" method="POST">
-                            <button type="submit" name="deleteCourse" class="btn btn-danger" value="<?php echo $course['id_curso'] ?>">
+                        <form action="profesor.php?view=listCourses&delete=<?php echo $course['idCourse'] ?>" class="d-inline" method="POST">
+                            <button type="submit" name="deleteCourse" class="btn btn-danger" value="<?php echo $course['idCourse'] ?>">
                                 Eliminar
                             </button>
                         </form>
@@ -54,4 +59,4 @@
     </table>
 </section>
 
-<?php include_once "formModal.php";
+<?php include_once "views/components/createCourse.php";
