@@ -106,6 +106,31 @@ class CourseModel extends Model
         }
     }
 
+    public function getCourseByIdCourse($ID_COURSE)
+    {
+        $string = "SELECT `cursos`.* FROM `cursos` WHERE `id_curso` = $ID_COURSE ";
+
+        $courses = [];
+
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+
+            while ($result = $query->fetch(PDO::FETCH_ASSOC)) {
+
+                $this->setModel($result);
+                $course = $this->getModel();
+                array_push($courses, $course);
+            }
+
+            return $courses;
+        } catch (PDOException $err) {
+
+            error_log("USER_MODEL::GET_USER=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
     public function getThemes($ID_COURSE)
     {
         $string = "SELECT T.id_tema, T.nombre FROM cursos C
@@ -226,6 +251,46 @@ class CourseModel extends Model
 
         try {
             move_uploaded_file($tmpName, $path);
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
+    function unlinkImage($COVER)
+    {
+        try {
+            if (!empty($COVER) && isset($COVER)) {
+                unlink("public/img/covers/$COVER");
+            }
+            return true;
+        } catch (PDOException $error) {
+            error_log(("ERROR_DELETING_IMAGE:: $error"));
+            return false;
+        }
+    }
+
+    public function updateCourse($ID_COURSE)
+    {
+        $string = "UPDATE `cursos` SET 
+        `nombre`           = :nombre,
+        `imagen`           = :imagen,
+        `descripcion`      = :descripcion,
+        `fecha_inicial`    = :fecha_inicial,
+        `fecha_final`      = :fecha_final, 
+        `valor`            = :valor 
+        WHERE `id_curso` = $ID_COURSE";
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'nombre'          => $this->name,
+                'imagen'          => $this->image,
+                'descripcion'     => $this->description,
+                'fecha_inicial'   => $this->startDate,
+                'fecha_final'     => $this->endDate,
+                'valor'           => $this->value
+            ]);
             return true;
         } catch (PDOException $err) {
             error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");

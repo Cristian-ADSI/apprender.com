@@ -1,0 +1,24 @@
+[30-Oct-2022 20:59:11 Europe/Berlin] USER_MODEL::UPDATE=>PDOEXEPTION: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`valor`            = ? 
+        WHERE `id_curso` = 19' at line 7 in C:\xampp\htdocs\apprender.com\libs\model.php:16
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\model.php(16): PDO->prepare('UPDATE `cursos`...')
+#1 C:\xampp\htdocs\apprender.com\models\courseModel.php(285): Model->prepare('UPDATE `cursos`...')
+#2 C:\xampp\htdocs\apprender.com\controllers\editcourseController.php(37): CourseModel->updateCourse('19')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(44): EditcourseController->course()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+[30-Oct-2022 21:04:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Undefined constant "course" in C:\xampp\htdocs\apprender.com\views\editcourse\index.php:5
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\editcourseController.php(18): View->render('editcourse', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): EditcourseController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 5
+[30-Oct-2022 21:12:00 Europe/Berlin] PHP Warning:  Undefined variable $fecha in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 7
+[30-Oct-2022 21:12:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 7
+[30-Oct-2022 21:12:00 Europe/Berlin] PHP Warning:  Undefined variable $fecha in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 7
+[30-Oct-2022 21:12:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 7
+[30-Oct-2022 21:12:00 Europe/Berlin] PHP Warning:  Undefined variable $fecha in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 7
+[30-Oct-2022 21:12:00 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 7
+[30-Oct-2022 21:14:13 Europe/Berlin] PHP Warning:  Undefined variable $startDate in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 45
