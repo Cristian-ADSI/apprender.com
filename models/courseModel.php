@@ -219,6 +219,38 @@ class CourseModel extends Model
         }
     }
 
+    public function upCover($FILES)
+    {
+        $path = 'public/img/covers/' . $FILES['imagen']['name'];
+        $tmpName = $FILES['imagen']['tmp_name'];
+
+        try {
+            move_uploaded_file($tmpName, $path);
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
+    function unactiveCourse($ID_COURSE)
+    {
+        $this->setIdCourse($ID_COURSE);
+        $string = "UPDATE `cursos` SET `activo` = 0 WHERE `id_curso` = :id_curso";
+
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'id_curso'      => $this->idCourse,
+            ]);
+
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::CREATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+
 
     // Getters 
     public function getIdCourse()

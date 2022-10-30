@@ -1,12 +1,3 @@
-<?php
-// $idUser = ($_SESSION['idUser']);
-// echo "<pre>";
-// var_dump($this->data);
-// echo "</pre>";
-
-?>
-
-
 <section class="container">
     <h1>Lista de cursos</h1>
 
@@ -23,16 +14,13 @@
         </thead>
 
         <tbody>
-            <?php 
-            // foreach ($variable as $key => $value) {
-            //     # code...
-            // }
+            <?php
             foreach ($this->data as $course) { ?>
                 <tr>
                     <td><?php echo $course['idCourse'] ?></td>
 
                     <td>
-                        <img class="course-image" src="<?php echo $course['image'] ?>" alt="<?php echo $course['name'] ?>">
+                        <img class="course-image" src="public/img/covers/<?php echo $course['image'] ?>" alt="<?php echo $course['name'] ?>">
                         <?php echo $course['name'] ?>
                     </td>
 
@@ -47,11 +35,18 @@
                             </a>
                         </button>
 
-                        <form action="profesor.php?view=listCourses&delete=<?php echo $course['idCourse'] ?>" class="d-inline" method="POST">
+                        <button type="button" class="btn btn-danger btn-edit">
+                            <a class="text-white" href="<?PHP echo constant('URL').'/app/deleteCourse?id='.$course['idCourse'] ?>">
+                                Eliminar
+                            </a>
+                        </button>
+
+                        <!-- <form action="profesor.php?view=listCourses&delete=
+                        <?php echo $course['idCourse'] ?>" class="d-inline" method="POST">
                             <button type="submit" name="deleteCourse" class="btn btn-danger" value="<?php echo $course['idCourse'] ?>">
                                 Eliminar
                             </button>
-                        </form>
+                        </form> -->
                     </td>
                 </tr>
             <?php } ?>

@@ -41,17 +41,20 @@ class AppController extends Controller
         $_POST['profesor'] = $_SESSION['sessionIdUser'];
         $_POST['imagen'] = $_FILES['imagen']['name'];
 
-        // echo "<pre>";
-        // var_dump($_POST);
-        // echo "<?pre>";
+        $model = new CourseModel();
+        $model->upCover($_FILES);
+        $model->createCourse($_POST);
+        $this->redirect('app', []);
+        return;
+    }
 
-        // echo "<pre>";
-        // var_dump($_FILES);
-        // echo "<?pre>";
+    public function deleteCourse()
+    {
+        
 
         $model = new CourseModel();
-        $model->createCourse($_POST);
-
-        die;
+        $model->unactiveCourse($_GET['id']);
+        $this->redirect('app', []);
+        return;
     }
 }
