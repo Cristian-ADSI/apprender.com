@@ -31,6 +31,7 @@ class AppController extends Controller
     {
         $model = new CourseModel();
         $courses = $model->getCoursesByTeacher($_SESSION['sessionIdUser']);
+      
         return $courses;
     }
 

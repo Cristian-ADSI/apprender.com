@@ -275,7 +275,7 @@ class CourseModel extends Model
     {
         $string = "UPDATE `cursos` SET 
         `nombre`           = :nombre,
-        `imagen`           = :imagen,
+        -- `imagen`           = :imagen,
         `descripcion`      = :descripcion,
         `fecha_inicial`    = :fecha_inicial,
         `fecha_final`      = :fecha_final, 
@@ -285,7 +285,7 @@ class CourseModel extends Model
             $query = $this->prepare($string);
             $query->execute([
                 'nombre'          => $this->name,
-                'imagen'          => $this->image,
+                // 'imagen'          => $this->image,
                 'descripcion'     => $this->description,
                 'fecha_inicial'   => $this->startDate,
                 'fecha_final'     => $this->endDate,

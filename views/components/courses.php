@@ -30,7 +30,7 @@
                     <td>
 
                         <button type="button" class="btn btn-warning btn-edit">
-                            <a class="text-dark" href="<?PHP echo constant('URL').'editcourse?id='.$course['idCourse'] ?>">
+                            <a class="text-dark" href="<?PHP echo constant('URL').'editcourse?idc='.$course['idCourse'] ?>">
                                 Editar
                             </a>
                         </button>

@@ -1,6 +1,8 @@
 <?PHP
-
-// var_dump($this->data);
+echo '<pre>';
+var_dump($this->data['content']);
+echo '</pre>';
+$themes = $this->data['content'];
 $course = $this->data['course'][0];
 ?>
 <!DOCTYPE html>
@@ -12,6 +14,8 @@ $course = $this->data['course'][0];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?PHP echo constant('BOOTSTRAP') ?>">
     <link rel="stylesheet" href="<?PHP echo constant('URL') ?>/public/css/editCourse.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Apprender</title>
 </head>
 
@@ -29,7 +33,7 @@ $course = $this->data['course'][0];
                 <div>
 
                     <div style="visibility: hidden;">
-                        <input type="text" class="form-control" name="cover" value=" <?php echo $course['image'] ?>">
+                        <input type="text" class="form-control" name="cover" value="<?php echo $course['image'] ?>">
                     </div>
 
                     <div class="mb-3">
@@ -42,8 +46,7 @@ $course = $this->data['course'][0];
                             <label for="startDate" class="form-label">
                                 Fecha Inicial
                             </label>
-                            <input type="date" id="startDate" class="form-control" name="fecha_inicial" 
-                            value="<?PHP echo $course['startDate']  ?>" >
+                            <input type="date" id="startDate" class="form-control" name="fecha_inicial" value="<?PHP echo $course['startDate']  ?>">
                         </div>
 
 
@@ -51,8 +54,7 @@ $course = $this->data['course'][0];
                             <label for="endDate" class="form-label">
                                 Fecha Final
                             </label>
-                            <input id="endDate" type="date" class="form-control" name="fecha_final" 
-                            value="<?PHP echo $course['endDate']  ?>">
+                            <input id="endDate" type="date" class="form-control" name="fecha_final" value="<?PHP echo $course['endDate']  ?>">
                         </div>
 
                         <div class="input-group mb-3">
@@ -64,8 +66,8 @@ $course = $this->data['course'][0];
                             <label class="form-label" for="courseDesc">Descripcion del curso</label>
                             <textarea class="form-control mb-3" id="courseDesc" name="descripcion"><?php echo $course['description'] ?></textarea>
 
-                            <label class="form-label" for="courseImage">Caratula</label>
-                            <input id="courseImage" type="file" name="imagen">
+                            <!-- <label class="form-label" for="courseImage">Caratula</label>
+                            <input id="courseImage" type="file" name="imagen"> -->
                         </div>
 
                     </div>
@@ -78,8 +80,54 @@ $course = $this->data['course'][0];
                     </div>
             </form>
         </div>
-    </main>
 
+        <h2 class="text-center my-5">Temas</h2>
+
+        <div class="accordion" id="accordionTheme">
+            <?php
+            require_once "views/components/editTheme.php";
+            foreach ($themes as $theme) { ?>
+                <div class="accordion-item mb-3">
+                    <button 
+                        class="btn btn-secondary d-flex gap-3 editTheme"
+                        data-bs-toggle="modal"
+                        data-bs-target="#themeModal"
+                        data-name="<?php echo $theme['nombre'] ?>"
+                        id="<?php echo $theme['id_tema'] ?>">
+                        <span class="material-symbols-outlined">edit</span>
+                    </button>
+
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" 
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse<?php echo $theme['id_tema'] ?>"
+                        aria-expanded="true"
+                        aria-controls="collapse<?php echo $theme['id_tema'] ?>">
+                            <?PHP echo $theme['nombre'] ?>
+                        </button>
+                    </h2>
+
+                    <div id="collapse<?php echo $theme['id_tema'] ?>" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionTheme">
+                        <div class="accordion-body">
+                            <?php
+                            foreach ($theme['thematics'] as $key => $thematic) {
+                            ?>
+                                <article class="mb-3">
+                                    <h4><?php echo $thematic['nombre'] ?></h4>
+                                    <p><?php echo $thematic['descripcion'] ?></p>
+                                    <a href="<?php echo $thematic['video'] ?>"><?php echo $thematic['video'] ?></a>
+                                </article>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="public/js/editCourse.js"></script>
 </body>
 
 </html>

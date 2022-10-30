@@ -13,8 +13,11 @@ class EditcourseController extends Controller
     function loadView()
     {
         $model = new CourseModel();
+        $themes = $model->getThemes($_GET['idc']);
+        $course['content'] = $model->getThemsAndThematics($themes);
 
-        $course['course'] = $model->getCourseByIdCourse($_GET['id']);
+        $course['course'] = $model->getCourseByIdCourse($_GET['idc']);
+
         $this->view->render('editcourse', $course);
     }
 
@@ -23,20 +26,19 @@ class EditcourseController extends Controller
         $model = new CourseModel();
 
         var_dump($_POST);
-        // var_dump($_FILES);
 
         // $model->unlinkImage(constant($_POST['cover']);
 
         $model->setName($_POST['nombre']);
-        $model->setImage($_FILES['imagen']['name']);
+        // $model->setImage($_FILES['imagen']['name']);
         $model->setDescription($_POST['descripcion']);
         $model->setStarDate($_POST['fecha_inicial']);
         $model->setendDate($_POST['fecha_final']);
         $model->setValue($_POST['valor']);
 
-        $model->updateCourse($_GET['id']);
+        $model->updateCourse($_GET['idc']);
 
-        echo 'editando';
-        die;
+        $this->redirect("editcourse?idc=" . $_GET['idc'], []);
+        return;
     }
 }
