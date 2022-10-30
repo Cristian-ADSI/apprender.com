@@ -16,7 +16,6 @@ class AppController extends Controller
             $courses = $this->loadTeacherCourses();
             $this->view->render('app', $courses);
         } else {
-
             $this->view->render('app');
         }
     }
@@ -33,5 +32,26 @@ class AppController extends Controller
         $model = new CourseModel();
         $courses = $model->getCoursesByTeacher($_SESSION['sessionIdUser']);
         return $courses;
+    }
+
+    public function createCourse()
+    {
+        $_POST['activo'] = 1;
+        $_POST['id_curso'] = '';
+        $_POST['profesor'] = $_SESSION['sessionIdUser'];
+        $_POST['imagen'] = $_FILES['imagen']['name'];
+
+        // echo "<pre>";
+        // var_dump($_POST);
+        // echo "<?pre>";
+
+        // echo "<pre>";
+        // var_dump($_FILES);
+        // echo "<?pre>";
+
+        $model = new CourseModel();
+        $model->createCourse($_POST);
+
+        die;
     }
 }

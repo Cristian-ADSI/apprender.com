@@ -1,5 +1,8 @@
+<?PHP
+$view = isset($_GET['view']) ? $_GET['view']  : 'courses';
 
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,10 +25,10 @@
             Crear curso Nuevo
         </button>
 
-        <?php include_once   "views/components/$view.php";  ?>
+        <?php include_once   "views/components/$view.php"; ?>
 
 
-</main>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

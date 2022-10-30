@@ -163,7 +163,7 @@ class CourseModel extends Model
         }
     }
 
-    private function setModel($ARRAY)
+    public function setModel($ARRAY)
     {
         $this->idCourse     = $ARRAY['id_curso'];
         $this->image        = $ARRAY['imagen'];
@@ -193,15 +193,15 @@ class CourseModel extends Model
         return $arrayCourse;
     }
 
-    public function createCourse()
+    public function createCourse($POST)
     {
+        $this->setModel($POST);
         $string = "INSERT INTO `cursos`
-        (id_curso, nombre, imagen, descripcion, fecha_inicial, fecha_final, valor, profesor, activo) 
-        VALUES (:id_curso,:nombre, :imagen, :descripcion, :fecha_inicial, :fecha_final, :valor, :profesor, :activo)";
+        (nombre, imagen, descripcion, fecha_inicial, fecha_final, valor, profesor, activo) 
+        VALUES (:nombre, :imagen, :descripcion, :fecha_inicial, :fecha_final, :valor, :profesor, :activo)";
         try {
             $query = $this->prepare($string);
             $query->execute([
-                'id_curso'      => $this->idCourse,
                 'nombre'        => $this->name,
                 'imagen'        => $this->image,
                 'descripcion'   => $this->description,
