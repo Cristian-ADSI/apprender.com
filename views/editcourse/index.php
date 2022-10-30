@@ -1,7 +1,7 @@
 <?PHP
-echo '<pre>';
-var_dump($this->data['content']);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($this->data);
+// echo '</pre>';
 $themes = $this->data['content'];
 $course = $this->data['course'][0];
 ?>
@@ -29,7 +29,7 @@ $course = $this->data['course'][0];
         </div>
 
         <div class="w-50 mx-auto mb-5">
-            <form action="<?PHP echo constant('URL') . "editcourse/course?id=" . $course['idCourse'] ?>" enctype="multipart/form-data" method="POST">
+            <form action="<?PHP echo constant('URL') . "editcourse/course?idc=" . $course['idCourse'] ?>" enctype="multipart/form-data" method="POST">
                 <div>
 
                     <div style="visibility: hidden;">
@@ -83,27 +83,25 @@ $course = $this->data['course'][0];
 
         <h2 class="text-center my-5">Temas</h2>
 
-        <div class="accordion" id="accordionTheme">
+        <div class="accordion" id="createThemeModal">
+            <button 
+            type="button" 
+            class="btn btn-primary mb-3"
+            data-bs-toggle="modal"
+            data-bs-target="#createTheme">
+               Nuevo Tema
+            </button>
             <?php
             require_once "views/components/editTheme.php";
+            require_once "views/components/createTheme.php";
             foreach ($themes as $theme) { ?>
                 <div class="accordion-item mb-3">
-                    <button 
-                        class="btn btn-secondary d-flex gap-3 editTheme"
-                        data-bs-toggle="modal"
-                        data-bs-target="#themeModal"
-                        data-name="<?php echo $theme['nombre'] ?>"
-                        id="<?php echo $theme['id_tema'] ?>">
+                    <button class="btn btn-secondary d-flex gap-3 editTheme" data-bs-toggle="modal" data-bs-target="#themeModal" data-name="<?php echo $theme['nombre'] ?>" id="<?php echo $theme['id_tema'] ?>">
                         <span class="material-symbols-outlined">edit</span>
                     </button>
 
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" 
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse<?php echo $theme['id_tema'] ?>"
-                        aria-expanded="true"
-                        aria-controls="collapse<?php echo $theme['id_tema'] ?>">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $theme['id_tema'] ?>" aria-expanded="true" aria-controls="collapse<?php echo $theme['id_tema'] ?>">
                             <?PHP echo $theme['nombre'] ?>
                         </button>
                     </h2>

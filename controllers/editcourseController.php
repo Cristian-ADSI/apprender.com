@@ -25,8 +25,6 @@ class EditcourseController extends Controller
     {
         $model = new CourseModel();
 
-        var_dump($_POST);
-
         // $model->unlinkImage(constant($_POST['cover']);
 
         $model->setName($_POST['nombre']);
@@ -37,7 +35,24 @@ class EditcourseController extends Controller
         $model->setValue($_POST['valor']);
 
         $model->updateCourse($_GET['idc']);
+        $this->redirect("editcourse?idc=" . $_GET['idc'], []);
+        return;
+    }
 
+    public function  theme()
+    {
+        $model = new CourseModel();
+        $model->updateTheme($_POST);
+        $this->redirect("editcourse?idc=" . $_GET['idc'], []);
+        return;
+    }
+
+    public function newTheme()
+    {
+        $model = new CourseModel();
+        $idTheme = $model->createTheme($_POST);
+        var_dump($idTheme );
+        $model->createCoursesTheme($_GET['idc'],$idTheme);
         $this->redirect("editcourse?idc=" . $_GET['idc'], []);
         return;
     }

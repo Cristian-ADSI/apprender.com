@@ -1,9 +1,10 @@
 const btnEditTheme = document.querySelectorAll('.editTheme');
+const themeName = document.getElementById('inputThemeName');
+const themeId = document.getElementById('inputThemeId');
 
-btnEditTheme.forEach( (btn) => {
-
+btnEditTheme.forEach((btn) => {
   btn.addEventListener('click', () => {
-    console.log(btn.dataset.name);
+    themeName.value = btn.dataset.name;
+    themeId.value = btn.id;
   });
-
 });

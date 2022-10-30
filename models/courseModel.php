@@ -30,6 +30,32 @@ class CourseModel extends Model
         $this->teacher = '';
     }
 
+    // Cursos 
+    public function createCourse($POST)
+    {
+        $this->setModel($POST);
+        $string = "INSERT INTO `cursos`
+        (nombre, imagen, descripcion, fecha_inicial, fecha_final, valor, profesor, activo) 
+        VALUES (:nombre, :imagen, :descripcion, :fecha_inicial, :fecha_final, :valor, :profesor, :activo)";
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'nombre'        => $this->name,
+                'imagen'        => $this->image,
+                'descripcion'   => $this->description,
+                'fecha_inicial' => $this->startDate,
+                'fecha_final'   => $this->endDate,
+                'valor'         => $this->value,
+                'profesor'      => $this->teacher,
+                'activo'        => $this->active,
+            ]);
+
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::CREATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
     public function getCourses()
     {
         $string = "SELECT * FROM `cursos` ORDER BY id_curso";
@@ -53,7 +79,6 @@ class CourseModel extends Model
             return false;
         }
     }
-
     public function getCoursesByUser($ID_USER)
     {
         $string = "SELECT `cursos`.* FROM `cursos`
@@ -80,7 +105,6 @@ class CourseModel extends Model
             return false;
         }
     }
-
     public function getCoursesByTeacher($ID_Teacher)
     {
         $string = "SELECT * FROM `cursos` WHERE `profesor` = '$ID_Teacher' 
@@ -105,7 +129,6 @@ class CourseModel extends Model
             return false;
         }
     }
-
     public function getCourseByIdCourse($ID_COURSE)
     {
         $string = "SELECT `cursos`.* FROM `cursos` WHERE `id_curso` = $ID_COURSE ";
@@ -130,7 +153,102 @@ class CourseModel extends Model
             return false;
         }
     }
+    public function upCover($FILES)
+    {
+        $path = 'public/img/covers/' . $FILES['imagen']['name'];
+        $tmpName = $FILES['imagen']['tmp_name'];
 
+        try {
+            move_uploaded_file($tmpName, $path);
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+    public function updateCourse($ID_COURSE)
+    {
+        $string = "UPDATE `cursos` SET 
+        `nombre`           = :nombre,
+        -- `imagen`           = :imagen,
+        `descripcion`      = :descripcion,
+        `fecha_inicial`    = :fecha_inicial,
+        `fecha_final`      = :fecha_final, 
+        `valor`            = :valor 
+        WHERE `id_curso` = $ID_COURSE";
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'nombre'          => $this->name,
+                // 'imagen'          => $this->image,
+                'descripcion'     => $this->description,
+                'fecha_inicial'   => $this->startDate,
+                'fecha_final'     => $this->endDate,
+                'valor'           => $this->value
+            ]);
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+    function unactiveCourse($ID_COURSE)
+    {
+        $this->setIdCourse($ID_COURSE);
+        $string = "UPDATE `cursos` SET `activo` = 0 WHERE `id_curso` = :id_curso";
+
+        try {
+            $query = $this->prepare($string);
+            $query->execute([
+                'id_curso'      => $this->idCourse,
+            ]);
+
+            return true;
+        } catch (PDOException $err) {
+            error_log("USER_MODEL::CREATE=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+    public function unlinkImage($COVER)
+    {
+        try {
+            if (!empty($COVER) && isset($COVER)) {
+                unlink("public/img/covers/$COVER");
+            }
+            return true;
+        } catch (PDOException $error) {
+            error_log(("ERROR_DELETING_IMAGE:: $error"));
+            return false;
+        }
+    }
+
+    // Temas 
+    public function createTheme($POST)
+    {
+        $name = $POST['nombre'];
+        $string = "INSERT INTO `temas` (`nombre`) VALUES ('$name')";
+        try {
+            $query = $this->prepare($string);
+            return $this->lastIdQuery($string);
+        } catch (PDOException $err) {
+            error_log("COURSE_MODEL::CREAT_THEME=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+    public function createCoursesTheme($ID_COURSE, $ID_TEMA)
+    {
+
+        $string = "INSERT INTO `cursos_tema`(`id_curso`, `id_tema`) 
+        VALUES ('$ID_COURSE','$ID_TEMA')";
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+            return true;
+        } catch (PDOException $err) {
+            error_log("COURSE_MODEL::CREATE_COURSE_THEME=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
     public function getThemes($ID_COURSE)
     {
         $string = "SELECT T.id_tema, T.nombre FROM cursos C
@@ -155,7 +273,6 @@ class CourseModel extends Model
             return false;
         }
     }
-
     public function getThemsAndThematics($THEMES)
     {
         $themesAndThematics = [];
@@ -187,20 +304,23 @@ class CourseModel extends Model
             return false;
         }
     }
-
-    public function setModel($ARRAY)
+    public function updateTheme($POST)
     {
-        $this->idCourse     = $ARRAY['id_curso'];
-        $this->image        = $ARRAY['imagen'];
-        $this->name         = $ARRAY['nombre'];
-        $this->description  = $ARRAY['descripcion'];
-        $this->startDate    = $ARRAY['fecha_inicial'];
-        $this->endDate      = $ARRAY['fecha_final'];
-        $this->value        = $ARRAY['valor'];
-        $this->teacher      = $ARRAY['profesor'];
-        $this->active       = $ARRAY['activo'];
+        $name = $POST['nombre'];
+        $id = $POST['id'];
+        $string = "UPDATE `temas` SET `nombre`='$name' WHERE `id_tema`= $id";
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+            return true;
+        } catch (PDOException $err) {
+            error_log("COURSE_MODEL::UPDATE_THEME=>PDOEXEPTION: $err");
+            return false;
+        }
     }
 
+
+    // Getters 
     private function getModel()
     {
         $arrayCourse = [
@@ -217,107 +337,6 @@ class CourseModel extends Model
 
         return $arrayCourse;
     }
-
-    public function createCourse($POST)
-    {
-        $this->setModel($POST);
-        $string = "INSERT INTO `cursos`
-        (nombre, imagen, descripcion, fecha_inicial, fecha_final, valor, profesor, activo) 
-        VALUES (:nombre, :imagen, :descripcion, :fecha_inicial, :fecha_final, :valor, :profesor, :activo)";
-        try {
-            $query = $this->prepare($string);
-            $query->execute([
-                'nombre'        => $this->name,
-                'imagen'        => $this->image,
-                'descripcion'   => $this->description,
-                'fecha_inicial' => $this->startDate,
-                'fecha_final'   => $this->endDate,
-                'valor'         => $this->value,
-                'profesor'      => $this->teacher,
-                'activo'        => $this->active,
-            ]);
-
-            return true;
-        } catch (PDOException $err) {
-            error_log("USER_MODEL::CREATE=>PDOEXEPTION: $err");
-            return false;
-        }
-    }
-
-    public function upCover($FILES)
-    {
-        $path = 'public/img/covers/' . $FILES['imagen']['name'];
-        $tmpName = $FILES['imagen']['tmp_name'];
-
-        try {
-            move_uploaded_file($tmpName, $path);
-            return true;
-        } catch (PDOException $err) {
-            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
-            return false;
-        }
-    }
-
-    function unlinkImage($COVER)
-    {
-        try {
-            if (!empty($COVER) && isset($COVER)) {
-                unlink("public/img/covers/$COVER");
-            }
-            return true;
-        } catch (PDOException $error) {
-            error_log(("ERROR_DELETING_IMAGE:: $error"));
-            return false;
-        }
-    }
-
-    public function updateCourse($ID_COURSE)
-    {
-        $string = "UPDATE `cursos` SET 
-        `nombre`           = :nombre,
-        -- `imagen`           = :imagen,
-        `descripcion`      = :descripcion,
-        `fecha_inicial`    = :fecha_inicial,
-        `fecha_final`      = :fecha_final, 
-        `valor`            = :valor 
-        WHERE `id_curso` = $ID_COURSE";
-        try {
-            $query = $this->prepare($string);
-            $query->execute([
-                'nombre'          => $this->name,
-                // 'imagen'          => $this->image,
-                'descripcion'     => $this->description,
-                'fecha_inicial'   => $this->startDate,
-                'fecha_final'     => $this->endDate,
-                'valor'           => $this->value
-            ]);
-            return true;
-        } catch (PDOException $err) {
-            error_log("USER_MODEL::UPDATE=>PDOEXEPTION: $err");
-            return false;
-        }
-    }
-
-    function unactiveCourse($ID_COURSE)
-    {
-        $this->setIdCourse($ID_COURSE);
-        $string = "UPDATE `cursos` SET `activo` = 0 WHERE `id_curso` = :id_curso";
-
-        try {
-            $query = $this->prepare($string);
-            $query->execute([
-                'id_curso'      => $this->idCourse,
-            ]);
-
-            return true;
-        } catch (PDOException $err) {
-            error_log("USER_MODEL::CREATE=>PDOEXEPTION: $err");
-            return false;
-        }
-    }
-
-
-    // Getters 
     public function getIdCourse()
     {
         return $this->idCourse;
@@ -352,6 +371,18 @@ class CourseModel extends Model
     }
 
     // Setters 
+    public function setModel($ARRAY)
+    {
+        $this->idCourse     = $ARRAY['id_curso'];
+        $this->image        = $ARRAY['imagen'];
+        $this->name         = $ARRAY['nombre'];
+        $this->description  = $ARRAY['descripcion'];
+        $this->startDate    = $ARRAY['fecha_inicial'];
+        $this->endDate      = $ARRAY['fecha_final'];
+        $this->value        = $ARRAY['valor'];
+        $this->teacher      = $ARRAY['profesor'];
+        $this->active       = $ARRAY['activo'];
+    }
     public function setIdCourse($ID_COURSE)
     {
         $this->idCourse = $ID_COURSE;
