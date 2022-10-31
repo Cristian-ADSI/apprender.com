@@ -59,7 +59,9 @@ class EditcourseController extends Controller
 
     public function thematics()
     {
-
-        die;
+        $model = new CourseModel();
+        $model->updateThematics($_POST);
+        $this->redirect("editcourse?idc=" . $_GET['idc'], []);
+        return;
     }
 }

@@ -112,12 +112,14 @@ $course = $this->data['course'][0];
                             <?php
                             foreach ($theme['thematics'] as $key => $thematic) {
                             ?>
+                                <button class="btn btn-primary">Nueva tematica</button>
                                 <article class="mb-3">
                                     <h4
                                     style="cursor: pointer;"
                                     class="editThematics"
                                     data-desc="<?php echo $thematic['descripcion'] ?>"
                                     data-video="<?php echo $thematic['video'] ?>"
+                                    data-name="<?php echo $thematic['nombre']?>"
                                     data-bs-toggle="modal" 
                                     data-bs-target="#thematicsModal"
                                     id="<?php echo $thematic['id_tematica']?>"

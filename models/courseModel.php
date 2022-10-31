@@ -319,6 +319,25 @@ class CourseModel extends Model
             return false;
         }
     }
+    // Tematicas 
+    public function updateThematics($POST)
+    {
+        $id = $POST['id'];
+        $name = $POST['nombre'];
+        $description = $POST['descripcion'];
+        $video = $POST['video'];
+
+        $string = "UPDATE `tematicas` SET 
+        `nombre`='$name',`descripcion`='$description',`video`='$video' WHERE `id_tematica`= $id";
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+            return true;
+        } catch (PDOException $err) {
+            error_log("COURSE_MODEL::UPDATE_THEME=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
 
 
     // Getters 

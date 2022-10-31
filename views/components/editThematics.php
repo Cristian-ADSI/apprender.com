@@ -14,7 +14,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <input id="inputThematicDesc" type="text" class="form-control" name="Descripcion" placeholder="Descripcion">
+                        <input id="inputThematicDesc" type="text" class="form-control" name="descripcion" placeholder="descripcion">
                     </div>
 
                     <div class="mb-3">

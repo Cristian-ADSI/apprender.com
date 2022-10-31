@@ -8,3 +8,5 @@ Stack trace:
 #4 {main}
   thrown in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 96
 [31-Oct-2022 01:07:21 Europe/Berlin] PHP Warning:  Undefined array key "id_tematica" in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 123
+[31-Oct-2022 01:18:47 Europe/Berlin] PHP Warning:  Undefined array key "descripcion" in C:\xampp\htdocs\apprender.com\models\courseModel.php on line 327
+[31-Oct-2022 01:21:49 Europe/Berlin] PHP Warning:  Undefined array key "descripcion" in C:\xampp\htdocs\apprender.com\models\courseModel.php on line 327

@@ -19,7 +19,7 @@ btnEditTheme.forEach((btn) => {
 
 btnEditThematics.forEach((btn) => {
   btn.addEventListener('click', () => {
-    thematicName.value = btn.innerHTML;
+    thematicName.value = btn.dataset.name;
     thematicDesc.value = btn.dataset.desc;
     thematicVideo.value = btn.dataset.video;
     thematicId.value = btn.id;
