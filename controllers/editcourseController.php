@@ -51,9 +51,15 @@ class EditcourseController extends Controller
     {
         $model = new CourseModel();
         $idTheme = $model->createTheme($_POST);
-        var_dump($idTheme );
-        $model->createCoursesTheme($_GET['idc'],$idTheme);
+        var_dump($idTheme);
+        $model->createCoursesTheme($_GET['idc'], $idTheme);
         $this->redirect("editcourse?idc=" . $_GET['idc'], []);
         return;
+    }
+
+    public function thematics()
+    {
+
+        die;
     }
 }

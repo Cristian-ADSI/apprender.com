@@ -235,6 +235,7 @@ class CourseModel extends Model
             return false;
         }
     }
+
     public function createCoursesTheme($ID_COURSE, $ID_TEMA)
     {
 
@@ -280,7 +281,7 @@ class CourseModel extends Model
         try {
 
             foreach ($THEMES as $theme) {
-                $string = "SELECT `tematicas`.nombre, `tematicas`.`descripcion`, `tematicas`.`video` FROM `temas`
+                $string = "SELECT `tematicas`.id_tematica,`tematicas`.nombre, `tematicas`.`descripcion`, `tematicas`.`video` FROM `temas`
                 INNER JOIN `temas_tematicas` ON `temas`.`id_tema` = `temas_tematicas`.`id_tema`
                 INNER JOIN `tematicas` ON `temas_tematicas`.`id_tematica` = `tematicas`.`id_tematica`
                 WHERE `temas_tematicas`.`id_tema` = " . $theme['id_tema'];

@@ -93,6 +93,7 @@ $course = $this->data['course'][0];
             </button>
             <?php
             require_once "views/components/editTheme.php";
+            require_once "views/components/editThematics.php";
             require_once "views/components/createTheme.php";
             foreach ($themes as $theme) { ?>
                 <div class="accordion-item mb-3">
@@ -112,7 +113,18 @@ $course = $this->data['course'][0];
                             foreach ($theme['thematics'] as $key => $thematic) {
                             ?>
                                 <article class="mb-3">
-                                    <h4><?php echo $thematic['nombre'] ?></h4>
+                                    <h4
+                                    style="cursor: pointer;"
+                                    class="editThematics"
+                                    data-desc="<?php echo $thematic['descripcion'] ?>"
+                                    data-video="<?php echo $thematic['video'] ?>"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#thematicsModal"
+                                    id="<?php echo $thematic['id_tematica']?>"
+                                    >
+                                        <?php echo $thematic['nombre']?>
+                                        <span class="material-symbols-outlined">edit</span>
+                                    </h4>
                                     <p><?php echo $thematic['descripcion'] ?></p>
                                     <a href="<?php echo $thematic['video'] ?>"><?php echo $thematic['video'] ?></a>
                                 </article>

@@ -1,0 +1,10 @@
+[31-Oct-2022 01:07:03 Europe/Berlin] PHP Warning:  require_once(views/components/editThematic.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 96
+[31-Oct-2022 01:07:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'views/components/editThematic.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apprender.com\views\editcourse\index.php:96
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once()
+#1 C:\xampp\htdocs\apprender.com\controllers\editcourseController.php(21): View->render('editcourse', Array)
+#2 C:\xampp\htdocs\apprender.com\libs\app.php(32): EditcourseController->loadView()
+#3 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 96
+[31-Oct-2022 01:07:21 Europe/Berlin] PHP Warning:  Undefined array key "id_tematica" in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 123
