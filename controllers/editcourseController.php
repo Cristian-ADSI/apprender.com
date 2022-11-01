@@ -59,7 +59,6 @@ class EditcourseController extends Controller
     {
         $model = new CourseModel();
         $idTheme = $model->createTheme($_POST);
-        var_dump($idTheme);
         $model->createCoursesTheme($_GET['idc'], $idTheme);
         $this->redirect("editcourse?idc=" . $_GET['idc'], []);
         return;
@@ -67,13 +66,14 @@ class EditcourseController extends Controller
 
     public function newThematic()
     {
+        // var_dump($_POST);
         $model = new CourseModel();
-        echo "nueva tematica";
+        // echo "nueva tematica";
+        $idThematic = $model->createThematic($_POST);
+        var_dump($idThematic);
         die;
 
-        $idTheme = $model->createTheme($_POST);
-        var_dump($idTheme);
-        $model->createCoursesTheme($_GET['idc'], $idTheme);
+        $model->createCoursesTheme($_GET['idc'], $idThematic);
         $this->redirect("editcourse?idc=" . $_GET['idc'], []);
         return;
     }

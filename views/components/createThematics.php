@@ -6,9 +6,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <form action="<?PHP 
-            echo constant('URL')."editcourse/newThematic?idc=".$course['idCourse']."&idt=".$theme['id_tema']
-            ?>" 
+            <form action="<?PHP echo constant('URL')."editcourse/newThematic?idc=".$course['idCourse'] ?>" 
             method="POST">
                 <div class="modal-body">
 
@@ -25,7 +23,7 @@
                     </div> 
                     
                     <div class="mb-3" style="visibility: hidden;">
-                        <input id="currentThemeId" type="text" class="form-control" name="id">
+                        <input id="currentThemeId" type="text" class="form-control" name="themeId">
                     </div> 
 
                 </div>

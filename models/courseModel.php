@@ -320,6 +320,21 @@ class CourseModel extends Model
         }
     }
     // Tematicas 
+    public function createThematic($POST)
+    {
+        $name = $POST['nombre'];
+        $description = $POST['nombre'];
+        $video = $POST['nombre'];
+        $string = "INSERT INTO `tematicas` (`nombre`,`descripcion`,`video`) VALUES ('$name','$description','$video')";
+        
+        try {
+            $query = $this->prepare($string);
+            return $this->lastIdQuery($string);
+        } catch (PDOException $err) {
+            error_log("COURSE_MODEL::CREAT_THEME=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
     public function updateThematics($POST)
     {
         $id = $POST['id'];

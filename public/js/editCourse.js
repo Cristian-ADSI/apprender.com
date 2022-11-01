@@ -29,10 +29,6 @@ btnEditThematics.forEach((btn) => {
 
 btnNewThematics.forEach((btn) => {
   btn.addEventListener('click', () => {
-    alert(btn.dataset.theme);
     currentThemeId.value = btn.dataset.theme;
-    // thematicDesc.value = btn.dataset.desc;
-    // thematicVideo.value = btn.dataset.video;
-    // thematicId.value = btn.id;
   });
 });
