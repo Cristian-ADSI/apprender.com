@@ -326,12 +326,26 @@ class CourseModel extends Model
         $description = $POST['nombre'];
         $video = $POST['nombre'];
         $string = "INSERT INTO `tematicas` (`nombre`,`descripcion`,`video`) VALUES ('$name','$description','$video')";
-        
+
         try {
             $query = $this->prepare($string);
             return $this->lastIdQuery($string);
         } catch (PDOException $err) {
             error_log("COURSE_MODEL::CREAT_THEME=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
+    public function createThemesThematics($ID_THEME, $ID_TEMATIC)
+    {
+
+        $string = "INSERT INTO `temas_tematicas`(`id_tema`, `id_tematica`) 
+        VALUES ('$ID_THEME','$ID_TEMATIC')";
+        try {
+            $query = $this->prepare($string);
+            $query = $this->query($string);
+            return true;
+        } catch (PDOException $err) {
+            error_log("COURSE_MODEL::CREATE_COURSE_THEME=>PDOEXEPTION: $err");
             return false;
         }
     }

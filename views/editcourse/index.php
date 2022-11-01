@@ -23,7 +23,8 @@ $course = $this->data['course'][0];
     <?PHP require_once "views/components/header.php" ?>
     <main class="container">
         <!-- Curso  -->
-        <h1 class="text-center mb-5">Editar Curso </h1>
+        <a class="btn btn-success m-3" href="<?PHP constant('URL')?>app">Volver a cursos</a>
+        <h1 class="text-center mb-5">Editar Curso</h1>
 
         <div class="course-cover text-center">
             <img src="<?php echo "public/img/covers/" . $course['image'] ?>" width="100px" alt="Course cover">
