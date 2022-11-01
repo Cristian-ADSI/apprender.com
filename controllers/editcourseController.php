@@ -47,6 +47,14 @@ class EditcourseController extends Controller
         return;
     }
 
+    public function thematics()
+    {
+        $model = new CourseModel();
+        $model->updateThematics($_POST);
+        $this->redirect("editcourse?idc=" . $_GET['idc'], []);
+        return;
+    }
+
     public function newTheme()
     {
         $model = new CourseModel();
@@ -57,10 +65,15 @@ class EditcourseController extends Controller
         return;
     }
 
-    public function thematics()
+    public function newThematic()
     {
         $model = new CourseModel();
-        $model->updateThematics($_POST);
+        echo "nueva tematica";
+        die;
+
+        $idTheme = $model->createTheme($_POST);
+        var_dump($idTheme);
+        $model->createCoursesTheme($_GET['idc'], $idTheme);
         $this->redirect("editcourse?idc=" . $_GET['idc'], []);
         return;
     }

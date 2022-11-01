@@ -10,3 +10,27 @@ Stack trace:
 [31-Oct-2022 01:07:21 Europe/Berlin] PHP Warning:  Undefined array key "id_tematica" in C:\xampp\htdocs\apprender.com\views\editcourse\index.php on line 123
 [31-Oct-2022 01:18:47 Europe/Berlin] PHP Warning:  Undefined array key "descripcion" in C:\xampp\htdocs\apprender.com\models\courseModel.php on line 327
 [31-Oct-2022 01:21:49 Europe/Berlin] PHP Warning:  Undefined array key "descripcion" in C:\xampp\htdocs\apprender.com\models\courseModel.php on line 327
+[01-Nov-2022 15:14:29 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:14:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:14:45 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:14:45 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:19:03 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:19:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:20:55 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:20:55 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:21:04 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:21:04 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:21:48 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:21:48 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:24:10 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:24:10 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:24:38 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:24:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:25:47 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:25:47 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:26:53 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:26:53 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:27:21 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:27:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:27:59 Europe/Berlin] PHP Warning:  Undefined variable $theme in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10
+[01-Nov-2022 15:27:59 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\components\createThematics.php on line 10

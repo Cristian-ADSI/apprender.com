@@ -22,6 +22,7 @@ $course = $this->data['course'][0];
 <body>
     <?PHP require_once "views/components/header.php" ?>
     <main class="container">
+        <!-- Curso  -->
         <h1 class="text-center mb-5">Editar Curso </h1>
 
         <div class="course-cover text-center">
@@ -81,50 +82,68 @@ $course = $this->data['course'][0];
             </form>
         </div>
 
+        <!-- Tems  -->
         <h2 class="text-center my-5">Temas</h2>
-
         <div class="accordion" id="createThemeModal">
             <button 
-            type="button" 
+            type="button"
             class="btn btn-primary mb-3"
             data-bs-toggle="modal"
             data-bs-target="#createTheme">
-               Nuevo Tema
+                Nuevo Tema
             </button>
             <?php
             require_once "views/components/editTheme.php";
             require_once "views/components/editThematics.php";
             require_once "views/components/createTheme.php";
+            require_once "views/components/createThematics.php";
             foreach ($themes as $theme) { ?>
                 <div class="accordion-item mb-3">
-                    <button class="btn btn-secondary d-flex gap-3 editTheme" data-bs-toggle="modal" data-bs-target="#themeModal" data-name="<?php echo $theme['nombre'] ?>" id="<?php echo $theme['id_tema'] ?>">
+                    <button 
+                    class="btn btn-secondary d-flex gap-3 editTheme"
+                    data-bs-toggle="modal"
+                    data-bs-target="#themeModal"
+                    data-name="<?php echo $theme['nombre'] ?>"
+                    id="<?php echo $theme['id_tema'] ?>">
                         <span class="material-symbols-outlined">edit</span>
                     </button>
 
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $theme['id_tema'] ?>" aria-expanded="true" aria-controls="collapse<?php echo $theme['id_tema'] ?>">
+                        <button 
+                        class="accordion-button" 
+                        type="button" 
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse<?php echo $theme['id_tema'] ?>"
+                        aria-expanded="true"
+                        aria-controls="collapse<?php echo $theme['id_tema'] ?>">
                             <?PHP echo $theme['nombre'] ?>
                         </button>
                     </h2>
 
                     <div id="collapse<?php echo $theme['id_tema'] ?>" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionTheme">
                         <div class="accordion-body">
-                            <?php
+                            <!-- Tematicas -->
+                            <button
+                            class="btn btn-primary mb-3 newThematic"
+                            data-bs-toggle="modal"
+                            data-bs-target="#newThematics"
+                            data-theme="<?php echo $theme['id_tema'] ?>">
+                            Nueva tematica
+                            </button>
+
+                            <?php  
                             foreach ($theme['thematics'] as $key => $thematic) {
                             ?>
-                                <button class="btn btn-primary">Nueva tematica</button>
                                 <article class="mb-3">
-                                    <h4
-                                    style="cursor: pointer;"
-                                    class="editThematics"
-                                    data-desc="<?php echo $thematic['descripcion'] ?>"
-                                    data-video="<?php echo $thematic['video'] ?>"
-                                    data-name="<?php echo $thematic['nombre']?>"
-                                    data-bs-toggle="modal" 
-                                    data-bs-target="#thematicsModal"
-                                    id="<?php echo $thematic['id_tematica']?>"
-                                    >
-                                        <?php echo $thematic['nombre']?>
+                                    <h4 
+                                    style="cursor: pointer;" 
+                                    class="editThematics" 
+                                    data-desc="<?php echo $thematic['descripcion'] ?>" 
+                                    data-video="<?php echo $thematic['video'] ?>" 
+                                    data-name="<?php echo $thematic['nombre'] ?>" data-bs-toggle="modal" 
+                                    data-bs-target="#thematicsModal" 
+                                    id="<?php echo $thematic['id_tematica'] ?>">
+                                        <?php echo $thematic['nombre'] ?>
                                         <span class="material-symbols-outlined">edit</span>
                                     </h4>
                                     <p><?php echo $thematic['descripcion'] ?></p>
