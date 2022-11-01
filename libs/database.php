@@ -10,6 +10,7 @@ class Database
 
     function __construct()
     {
+        
         $this->host = constant('HOST');
         $this->dbName = constant('DBNAME');
         $this->user = constant('USER');

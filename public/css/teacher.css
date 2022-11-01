@@ -1,0 +1,91 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+/*-----------------------inicio estilos header------------------------- */
+.group-header {
+  display: flex;
+  background-color: #3c5c94;
+  height: 100px;
+  margin: 0%;
+  padding: 0%;
+  border: none;
+}
+.contenedor-Logo {
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.contorno {
+  display: flex;
+  background-color: #8bbdbf;
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 40px;
+  width: 160px;
+  border-radius: 30px;
+}
+.logo img {
+  height: 40px;
+  width: 50px;
+  border-radius: 30px;
+}
+.nombre-proyecto {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.contenedor-titulo {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+}
+.contorno-titulo {
+  background-color: white;
+  margin-top: 25px;
+  height: 30px;
+  width: 510px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.contenedor-usuario {
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.contorno-usuario {
+  display: flex;
+  background-color: #8bbdbf;
+  margin-top: 25px;
+  height: 40px;
+  width: 160px;
+  border-radius: 30px;
+  transform: translateX(220px);
+}
+.imagen-usuario img {
+  height: 40px;
+  width: 50px;
+  border-radius: 30px;
+}
+.nombre-usuario {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+/* ------------------- fin estilos header------------------------ */
+
+.course-image {
+  width: 80px;
+  clip-path: circle();
+  margin-right: 5px;
+}
+.btn-edit a {
+  text-decoration: none;
+}
