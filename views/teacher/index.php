@@ -4,7 +4,7 @@ $view = isset($_GET['view']) ? $_GET['view']  : 'courses';
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
