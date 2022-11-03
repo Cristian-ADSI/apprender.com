@@ -8,25 +8,18 @@ if (empty($_SESSION['sessionImage'])) {
 }
 
 ?>
-<header> 
+<header>
     <div class="group-header">
         <div class="contenedor-Logo">
             <div class="contorno">
                 <div class="logo">
                     <img src="<?PHP constant('URL') ?>/public/img/utilities/logo.png" alt="">
                 </div>
-                <div class="nombre-proyecto">
-                    <label>
-                        apprender
-                    </label>
-                </div>
             </div>
-        </div>
-        <div class="contenedor-titulo">
         </div>
         <div class="contenedor-usuario">
             <div class="contorno-usuario">
-                
+
                 <div class="imagen-usuario">
                     <img src=<?php echo $userImage ?>>
                 </div>
