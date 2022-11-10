@@ -95,7 +95,7 @@
     justify-content: center;
     text-align: center;
 }
-p{
+.card p{
     margin-top: -135px;
     justify-content: center;
     height: 50px;
@@ -106,8 +106,11 @@ p{
     transform: translateX(35px);
     
 }
-.btn {
-    transform: translateY(50px);
-    width: 100px;
-    
-} 
+.textarea-htmlTemplate{
+  visibility: hidden;
+  height: 20px;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif !important; 
+}

@@ -3,6 +3,12 @@ session_start();
 require_once "classes/session.php";
 require_once "models/courseModel.php";
 require_once "models/reportModel.php";
+
+require_once "libs/dompdf/vendor/autoload.php";
+require_once "libs/dompdf/autoload.inc.php";
+
+use Dompdf\Dompdf;
+
 class AppController extends Controller
 {
     public function __construct()
@@ -17,7 +23,7 @@ class AppController extends Controller
             $courses = $this->loadTeacherCourses();
             $this->view->render('app', $courses);
         } elseif ($_SESSION['sessionRole'] == 3) {
-            $report = $this->loadReport();
+            $report = $this->loadReport_1();
             $this->view->render('app', $report);
         } else {
             $this->view->render('app');
@@ -55,20 +61,31 @@ class AppController extends Controller
 
     public function deleteCourse()
     {
-
-
         $model = new CourseModel();
         $model->unactiveCourse($_GET['id']);
         $this->redirect('app', []);
         return;
     }
 
-    private function loadReport()
+    private function loadReport_1()
     {
+
         $model = new ReportModel();
+
         if (!isset($_GET['report'])) {
-            $report = $model->mostSolicited();
+            $report = $model->reportOne();
             return $report;
         }
+    }
+
+    public function loadReport_2()
+    {
+        $model = new ReportModel();
+
+        $report = $model->reportTwo($_POST['curso']);
+        var_dump($report);
+        $this->redirect('app?report=report_2', $report);
+
+        return;
     }
 }

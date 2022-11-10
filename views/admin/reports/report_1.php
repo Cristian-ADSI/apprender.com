@@ -1,5 +1,12 @@
 <div class="reports">
-<h2 class="text-center mt-5"> 3 Cursos Mas Solicitados</h2>
+    <h2 class="text-center my-5 fw-bolder">
+        3 Cursos Mas Solicitados
+    </h2>
+
+    <?php 
+    $title='3 Cursos Mas Solicitados';
+    ob_start(); 
+    ?>
     <table class="table">
         <thead class="table-dark">
             <tr>
@@ -22,3 +29,8 @@
         </tbody>
     </table>
 </div>
+
+<?php 
+$htmlTemplate = ob_get_clean(); 
+echo $htmlTemplate;
+?>

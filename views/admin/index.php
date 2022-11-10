@@ -23,7 +23,7 @@ $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
 
         <div class="card">
             <p>3 cursos mas solicitados</p>
-            <a href="diagramas/reporte1/diagrama1.php">
+            <a href="<?php echo URL ?>app">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>
@@ -32,7 +32,7 @@ $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
 
         <div class="card">
             <p>profesor con mas estudiantes inscritor en el curso elegido</p>
-            <a href="diagramas/reporte2/formulario.php">
+            <a href="<?php echo URL ?>app?report=report_2">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>
@@ -76,17 +76,24 @@ $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
         </div>
     </div>
 
-    <section class="container">
-        <?PHP require_once "views/admin/reports/$report.php" ?>
+    <section class="container mb-3">
+        <?PHP
+        require_once "views/admin/reports/$report.php";
+        ?>
+        <form action="<?php echo URL . 'pdf?title='.$title ?>" class="dowload" method="POST"> 
+            <textarea name="htmlTemplate" class="textarea-htmlTemplate">
+            <?php echo $htmlTemplate ?>
+            </textarea>
 
-        <div class="dowload">
-        <a href="../../pdfs/pdf4.php">
-            <button class="btn btn-primary">
-                descargar pdf
-            </button>
-        </a>
-    </div>
+            <div>
+                <button type="submit" class="btn btn-primary">
+                    descargar pdf
+                </button>
+            </div>
+        </form>
     </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
