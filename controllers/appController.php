@@ -2,6 +2,7 @@
 session_start();
 require_once "classes/session.php";
 require_once "models/courseModel.php";
+require_once "models/reportModel.php";
 class AppController extends Controller
 {
     public function __construct()
@@ -15,6 +16,9 @@ class AppController extends Controller
         if ($_SESSION['sessionRole'] == 2) {
             $courses = $this->loadTeacherCourses();
             $this->view->render('app', $courses);
+        } elseif ($_SESSION['sessionRole'] == 3) {
+            $report = $this->loadReport();
+            $this->view->render('app', $report);
         } else {
             $this->view->render('app');
         }
@@ -31,7 +35,7 @@ class AppController extends Controller
     {
         $model = new CourseModel();
         $courses = $model->getCoursesByTeacher($_SESSION['sessionIdUser']);
-      
+
         return $courses;
     }
 
@@ -51,11 +55,20 @@ class AppController extends Controller
 
     public function deleteCourse()
     {
-        
+
 
         $model = new CourseModel();
         $model->unactiveCourse($_GET['id']);
         $this->redirect('app', []);
         return;
+    }
+
+    private function loadReport()
+    {
+        $model = new ReportModel();
+        if (!isset($_GET['report'])) {
+            $report = $model->mostSolicited();
+            return $report;
+        }
     }
 }

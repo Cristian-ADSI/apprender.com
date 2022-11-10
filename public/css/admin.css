@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+}
+/*-----------------------inicio estilos header------------------------- */
+.group-header {
+    display: flex;
+    background-color: #3c5c94;
+    height: 100px;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+  }
+  .contenedor-Logo {
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+  }
+  .contorno {
+    display: flex;
+    background-color: #8bbdbf;
+    margin-top: 25px;
+    margin-left: 20px;
+    height: 40px;
+    width: 160px;
+    border-radius: 30px;
+  }
+  .logo img {
+    height: 40px;
+    width: 50px;
+    border-radius: 30px;
+  }
+  .nombre-proyecto {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .contenedor-titulo {
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+  }
+  input[type='search'] {
+    transform: translateY(25px);
+    width: 510px;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+  }
+  
+  .contenedor-usuario {
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .contorno-usuario {
+    display: flex;
+    background-color: #8bbdbf;
+    margin-top: 25px;
+    height: 40px;
+    width: 160px;
+    border-radius: 30px;
+    transform: translateX(220px);
+    text-decoration: none;
+  }
+  .imagen-usuario img {
+    height: 40px;
+    width: 50px;
+    border-radius: 30px;
+  }
+  .nombre-usuario {
+    margin-top: 15px;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  /* ------------------- fin estilos header------------------------ */
+.contenedorB{
+    margin: 30px;
+    margin-left: 9%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(17rem,1fr));
+    width: 80%;
+    height: auto;
+    gap: 20px;
+}
+.card{
+    background: hsla(217, 100%, 50%, 1);
+    height: 200px;
+    width: 300px;
+    border: none;
+    gap: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    margin-top: -135px;
+    justify-content: center;
+    height: 50px;
+    width: 220px;
+    background-color: deepskyblue;
+    font-size: 15px;
+    border-radius: 30px;
+    transform: translateX(35px);
+    
+}
+.btn {
+    transform: translateY(50px);
+    width: 100px;
+    
+} 

@@ -1,0 +1,29 @@
+[10-Nov-2022 13:39:30 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\controllers\appController.php on line 15
+[10-Nov-2022 13:39:30 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 10
+[10-Nov-2022 13:39:30 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 14
+[10-Nov-2022 13:39:30 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 18
+[10-Nov-2022 13:39:30 Europe/Berlin] APP::constructor=>No se especifico controlador
+[10-Nov-2022 13:39:33 Europe/Berlin] APP::constructor=>No se especifico controlador
+[10-Nov-2022 13:43:41 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\apprender.com\views\login\index.php on line 2
+[10-Nov-2022 14:35:24 Europe/Berlin] PHP Warning:  require_once(views/admin/reports/report_1): Failed to open stream: No such file or directory in C:\xampp\htdocs\apprender.com\views\admin\index.php on line 80
+[10-Nov-2022 14:35:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'views/admin/reports/report_1' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apprender.com\views\admin\index.php:80
+Stack trace:
+#0 C:\xampp\htdocs\apprender.com\views\app\index.php(19): require_once()
+#1 C:\xampp\htdocs\apprender.com\libs\view.php(15): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apprender.com\controllers\appController.php(21): View->render('app')
+#3 C:\xampp\htdocs\apprender.com\libs\app.php(32): AppController->loadView()
+#4 C:\xampp\htdocs\apprender.com\index.php(20): App->__construct()
+#5 {main}
+  thrown in C:\xampp\htdocs\apprender.com\views\admin\index.php on line 80
+[10-Nov-2022 14:38:38 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 15
+[10-Nov-2022 14:38:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 15
+[10-Nov-2022 14:38:38 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 16
+[10-Nov-2022 14:38:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 16
+[10-Nov-2022 15:21:03 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 15
+[10-Nov-2022 15:21:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 15
+[10-Nov-2022 15:21:03 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 16
+[10-Nov-2022 15:21:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 16
+[10-Nov-2022 15:21:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 16
+[10-Nov-2022 15:21:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 16
+[10-Nov-2022 15:21:36 Europe/Berlin] PHP Warning:  Undefined variable $row in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 17
+[10-Nov-2022 15:21:36 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\apprender.com\views\admin\reports\report_1.php on line 17

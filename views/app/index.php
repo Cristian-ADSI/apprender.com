@@ -14,3 +14,7 @@ if ($_SESSION['sessionRole'] == 1) {
 if ($_SESSION['sessionRole'] == 2) {
     require_once 'views/teacher/index.php';
 }
+
+if ($_SESSION['sessionRole'] == 3) {
+    require_once 'views/admin/index.php';
+}
