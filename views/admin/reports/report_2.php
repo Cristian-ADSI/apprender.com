@@ -8,7 +8,7 @@
         <form action="<?php echo URL ?>app/loadReport_2" method="post">
             <label for="" class="label mb-3">curso</label><br>
             <input class="mb-3" type="text" name="curso" id="curso" required><br>
-            <input class="btn btn-primary" type="submit" value="continuar" name="studensTeacher">
+            <input class="btn btn-primary" type="submit" value="continuar">
         </form>
     </div>
 
@@ -17,7 +17,7 @@
         <?php
         $title = 'Profesor con mas estudiantes inscritor en el curso elegido';
         ob_start();
-        if (isset($this->data)) {
+        if (isset($_SESSION['report2']) && count($_SESSION['report2']) > 0) {
         ?>
             <table class="table">
                 <thead class="table-dark">
@@ -32,7 +32,7 @@
                 <tbody>
                     <?php
                     # code...
-                    foreach ($this->data as $row) {
+                    foreach ($_SESSION['report2'] as $row) {
                     ?>
                         <tr>
                             <td><?php echo $row['profesor'] ?></td>

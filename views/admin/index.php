@@ -1,6 +1,9 @@
 <?php
 
 $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
+$report = explode('?',$report);
+$report = $report[0];
+$_SESSION['report'];
 
 ?>
 <!DOCTYPE html>
@@ -40,8 +43,8 @@ $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
         </div>
 
         <div class="card">
-            <p>cursos con mayor inscripcion entre meses elegidos </p>
-            <a href="diagramas/reporte3/formulario.php">
+            <p>cursos con mayor inscripcion entre meses elegidos</p>
+            <a href="<?php echo URL ?>app?report=report_3">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>

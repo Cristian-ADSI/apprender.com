@@ -83,9 +83,24 @@ class AppController extends Controller
         $model = new ReportModel();
 
         $report = $model->reportTwo($_POST['curso']);
-        var_dump($report);
-        $this->redirect('app?report=report_2', $report);
+        $_SESSION['report2']= $report;
 
+        $this->redirect('app?report=report_2',[]);
+        return;
+    }
+
+    public function loadReport_3()
+    {
+        $model = new ReportModel();
+
+        $report = $model->reportThree($_POST['año'], $_POST['mes_inicial'], $_POST['mes_final']);
+        $_SESSION['report3']= $report;
+
+        $this->redirect('app?report=report_3',[]);
+
+        // echo "<pre>";
+        // var_dump($report);
+        // echo "</pre>";
         return;
     }
 }
