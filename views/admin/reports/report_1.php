@@ -21,11 +21,4 @@
             ?>
         </tbody>
     </table>
-    <div class="dowload">
-        <a href="../../pdfs/pdf4.php">
-            <button class="btn btn-primary">
-                descargar pdf
-            </button>
-        </a>
-    </div>
 </div>

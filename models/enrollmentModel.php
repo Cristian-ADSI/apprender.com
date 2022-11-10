@@ -15,7 +15,7 @@ class EnrollmentModel extends Model
 
         $this->idCourse = '';
         $this->idUser = '';
-        $this->t = '';
+        $this->enrollmentDate = '';
     }
 
 

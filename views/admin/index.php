@@ -78,6 +78,14 @@ $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
 
     <section class="container">
         <?PHP require_once "views/admin/reports/$report.php" ?>
+
+        <div class="dowload">
+        <a href="../../pdfs/pdf4.php">
+            <button class="btn btn-primary">
+                descargar pdf
+            </button>
+        </a>
+    </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
