@@ -2,6 +2,13 @@
 session_start();
 require_once "classes/session.php";
 require_once "models/courseModel.php";
+require_once "models/reportModel.php";
+
+require_once "libs/dompdf/vendor/autoload.php";
+require_once "libs/dompdf/autoload.inc.php";
+
+use Dompdf\Dompdf;
+
 class AppController extends Controller
 {
     public function __construct()
@@ -15,6 +22,9 @@ class AppController extends Controller
         if ($_SESSION['sessionRole'] == 2) {
             $courses = $this->loadTeacherCourses();
             $this->view->render('app', $courses);
+        } elseif ($_SESSION['sessionRole'] == 3) {
+            $report = $this->loadReport_1();
+            $this->view->render('app', $report);
         } else {
             $this->view->render('app');
         }
@@ -31,7 +41,7 @@ class AppController extends Controller
     {
         $model = new CourseModel();
         $courses = $model->getCoursesByTeacher($_SESSION['sessionIdUser']);
-      
+
         return $courses;
     }
 
@@ -51,11 +61,46 @@ class AppController extends Controller
 
     public function deleteCourse()
     {
-        
-
         $model = new CourseModel();
         $model->unactiveCourse($_GET['id']);
         $this->redirect('app', []);
+        return;
+    }
+
+    private function loadReport_1()
+    {
+
+        $model = new ReportModel();
+
+        if (!isset($_GET['report'])) {
+            $report = $model->reportOne();
+            return $report;
+        }
+    }
+
+    public function loadReport_2()
+    {
+        $model = new ReportModel();
+
+        $report = $model->reportTwo($_POST['curso']);
+        $_SESSION['report2']= $report;
+
+        $this->redirect('app?report=report_2',[]);
+        return;
+    }
+
+    public function loadReport_3()
+    {
+        $model = new ReportModel();
+
+        $report = $model->reportThree($_POST['año'], $_POST['mes_inicial'], $_POST['mes_final']);
+        $_SESSION['report3']= $report;
+
+        $this->redirect('app?report=report_3',[]);
+
+        // echo "<pre>";
+        // var_dump($report);
+        // echo "</pre>";
         return;
     }
 }

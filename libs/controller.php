@@ -84,7 +84,7 @@ class Controller
         header("Location:" . constant('URL') . "$PATH" . "$params");
     }
 
-    // TODO: ACtualmente en desuso 
+    // TODO: Actualmente en desuso 
     public function getPOST($NAME)
     {
         return $_POST[$NAME];

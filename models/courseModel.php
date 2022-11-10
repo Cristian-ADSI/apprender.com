@@ -323,8 +323,8 @@ class CourseModel extends Model
     public function createThematic($POST)
     {
         $name = $POST['nombre'];
-        $description = $POST['nombre'];
-        $video = $POST['nombre'];
+        $description = $POST['descripcion'];
+        $video = $POST['video'];
         $string = "INSERT INTO `tematicas` (`nombre`,`descripcion`,`video`) VALUES ('$name','$description','$video')";
 
         try {
