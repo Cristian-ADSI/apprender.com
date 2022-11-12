@@ -20,7 +20,7 @@ class LoginController extends Controller
             'password',
             'role',
         ];
- 
+
         if (!$this->existsPOST($params)) {
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_EMPTY_FIELD]);
             return;
@@ -37,6 +37,11 @@ class LoginController extends Controller
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_NOT_EXISTS_USER]);
             return;
         }
+        echo "<pre>";
+        var_dump($user);
+        echo "</pre>";
+
+        die;
 
         if ($_POST['role'] != $user->getRoles()) {
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_NOT_INVALID_ROLE]);
@@ -53,5 +58,3 @@ class LoginController extends Controller
         $this->redirect('app', []);
     }
 }
-
-

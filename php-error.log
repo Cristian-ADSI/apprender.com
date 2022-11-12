@@ -1,0 +1,52 @@
+[12-Nov-2022 21:28:00 Europe/Berlin] APP::constructor=>No se especifico controlador
+[12-Nov-2022 21:28:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:28:02 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:28:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:29:28 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:29:42 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:30:39 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:30:46 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\controllers\appController.php on line 22
+[12-Nov-2022 21:30:46 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\controllers\appController.php on line 25
+[12-Nov-2022 21:30:46 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 10
+[12-Nov-2022 21:30:46 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 14
+[12-Nov-2022 21:30:46 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 18
+[12-Nov-2022 21:30:46 Europe/Berlin] APP::constructor=>No se especifico controlador
+[12-Nov-2022 21:30:47 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:30:48 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:32:01 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:32:21 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:32:37 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:33:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:34:12 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:34:40 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:34:51 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\apprender.com\views\login\index.php on line 2
+[12-Nov-2022 21:34:51 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:34:56 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\controllers\appController.php on line 22
+[12-Nov-2022 21:34:56 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\controllers\appController.php on line 25
+[12-Nov-2022 21:34:56 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 10
+[12-Nov-2022 21:34:56 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 14
+[12-Nov-2022 21:34:56 Europe/Berlin] PHP Warning:  Undefined array key "sessionRole" in C:\xampp\htdocs\apprender.com\views\app\index.php on line 18
+[12-Nov-2022 21:34:56 Europe/Berlin] APP::constructor=>No se especifico controlador
+[12-Nov-2022 21:34:56 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:34:59 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:35:06 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:40:31 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:40:55 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:41:41 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:44:20 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:44:24 Europe/Berlin] PHP Warning:  Undefined array key "id_usuario" in C:\xampp\htdocs\apprender.com\models\userModel.php on line 245
+[12-Nov-2022 21:44:24 Europe/Berlin] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\apprender.com\models\userModel.php on line 246
+[12-Nov-2022 21:44:24 Europe/Berlin] PHP Warning:  Undefined array key "apellido" in C:\xampp\htdocs\apprender.com\models\userModel.php on line 247
+[12-Nov-2022 21:44:24 Europe/Berlin] PHP Warning:  Undefined array key "telefono" in C:\xampp\htdocs\apprender.com\models\userModel.php on line 248
+[12-Nov-2022 21:44:24 Europe/Berlin] PHP Warning:  Undefined array key "correo" in C:\xampp\htdocs\apprender.com\models\userModel.php on line 249
+[12-Nov-2022 21:44:24 Europe/Berlin] PHP Warning:  Undefined array key "clave" in C:\xampp\htdocs\apprender.com\models\userModel.php on line 250
+[12-Nov-2022 21:44:24 Europe/Berlin] PHP Warning:  Undefined array key "cod_rol" in C:\xampp\htdocs\apprender.com\models\userModel.php on line 251
+[12-Nov-2022 21:44:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:44:58 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:46:35 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:48:24 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:49:28 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:53:23 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:57:19 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:58:14 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
+[12-Nov-2022 21:58:25 Europe/Berlin] APP::constructor=>No existe el controlador favicon.ico
