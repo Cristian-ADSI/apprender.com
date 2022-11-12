@@ -174,19 +174,24 @@ class UserModel extends Model
         INNER JOIN usuarios ON `roles_usuario`.id_usuario = `usuarios`.`id_usuario`
         WHERE `usuarios`.id_usuario  = :id_usuario";
 
+        $users = [];
         try {
             $query = $this->prepare($string);
             $query->execute(['id_usuario' => $ID_USER]);
 
-            $user = $query->fetch(PDO::FETCH_ASSOC);
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
-            if (!$user) {
+            if (!$result) {
                 return false;
             }
 
-            $this->setModel($user);
-
-            return $this;
+            foreach ($result as $user) {
+                $this->setModel($user);
+                $user = $this->getModel();
+                
+                array_push($users, $user);
+            }       
+            return $users;
         } catch (PDOException $err) {
 
             error_log("USER_MODEL::GET_USER=>PDOEXEPTION: $err");
@@ -267,10 +272,10 @@ class UserModel extends Model
         return $user;
     }
 
-    public function startSession()
+    public function startSession($ROLE)
     {
         session_start();
-        $session = new Session($this->getIdUser(), $this->getRoles(), $this->getName(), $this->getImage());
+        $session = new Session($this->getIdUser(), $ROLE, $this->getName(), $this->getImage());
     }
 
     // Setters 
