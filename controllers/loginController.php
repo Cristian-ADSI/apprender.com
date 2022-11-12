@@ -31,29 +31,42 @@ class LoginController extends Controller
             return;
         }
 
-        $user = new UserModel();
+        $userModel = new UserModel();
 
-        if (!$user->getUser($_POST['idUser'])) {
+        if (!$users = $userModel->getUser($_POST['idUser'])) {
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_NOT_EXISTS_USER]);
             return;
         }
-        echo "<pre>";
-        var_dump($user);
-        echo "</pre>";
 
-        die;
-
-        if ($_POST['role'] != $user->getRoles()) {
+        
+        // echo "<pre>";
+        // var_dump($users);
+        // echo "</pre>";
+        
+        $roleVerify = false;
+        foreach ($users as $user) {
+            if ($user['roles'] == $_POST['role']) {
+                $roleVerify = true;
+            }
+        }
+        if ($roleVerify == false) {
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_NOT_INVALID_ROLE]);
             return;
         }
 
-        if (!$user->comparePasswords($_POST['password'])) {
+
+        $paswordVerify = false;
+        foreach ($users as $user) {
+            if (  password_verify($_POST['password'],$user['password']) ) {
+                $paswordVerify = true;
+            }
+        }
+        if ($paswordVerify == false) {
             $this->redirect('login', ['error' => ErrorMessages::ERORR_AUTH_NOT_INVALID_PASS]);
             return;
         }
 
-        $user->startSession();
+        $userModel->startSession($_POST['role']);
 
         $this->redirect('app', []);
     }

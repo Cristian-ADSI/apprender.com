@@ -22,7 +22,7 @@ class UserModel extends Model
         $this->email = '';
         $this->password = '';
         $this->image = '';
-        $this->roles = '';
+        $this->roles = [];
         // error_log('USER_MODEL::CONSTRUCT=>Loaded');
     }
 
@@ -174,7 +174,7 @@ class UserModel extends Model
         INNER JOIN usuarios ON `roles_usuario`.id_usuario = `usuarios`.`id_usuario`
         WHERE `usuarios`.id_usuario  = :id_usuario";
 
-        $users = ['users' => []];
+        $users = [];
         try {
             $query = $this->prepare($string);
             $query->execute(['id_usuario' => $ID_USER]);
@@ -188,12 +188,9 @@ class UserModel extends Model
             foreach ($result as $user) {
                 $this->setModel($user);
                 $user = $this->getModel();
-                array_push($users['users'], $user);
-            }
-            echo "<pre>";
-            var_dump($users);
-            echo "</pre>";
-            die;
+                
+                array_push($users, $user);
+            }       
             return $users;
         } catch (PDOException $err) {
 
@@ -275,10 +272,10 @@ class UserModel extends Model
         return $user;
     }
 
-    public function startSession()
+    public function startSession($ROLE)
     {
         session_start();
-        $session = new Session($this->getIdUser(), $this->getRoles(), $this->getName(), $this->getImage());
+        $session = new Session($this->getIdUser(), $ROLE, $this->getName(), $this->getImage());
     }
 
     // Setters 
