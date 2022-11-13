@@ -33,7 +33,6 @@
                         <th>inscripcciones</th>
                         <th>año</th>
                         <th>mes</th>
-                        <th> </th>
                     </tr>
                 </thead>
                 <tbody>

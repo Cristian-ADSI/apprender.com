@@ -12,7 +12,6 @@
             <tr>
                 <th>nombre del curso</th>
                 <th>cantidad de inscripciones</th>
-                <th> </th>
             </tr>
         </thead>
         <tbody>

@@ -63,7 +63,7 @@ $report = $report[0];
 
         <div class="card">
             <p>cantidad de matriculas entre mese elegidos</p>
-            <a href="diagramas/reporte5/formulario.php">
+            <a href="<?php echo URL ?>app?report=report_5">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>
