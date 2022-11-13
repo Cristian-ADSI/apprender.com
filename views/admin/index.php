@@ -1,7 +1,7 @@
 <?php
 
 $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
-$report = explode('?',$report);
+$report = explode('?', $report);
 $report = $report[0];
 
 // $_SESSION['report'];
@@ -72,7 +72,7 @@ $report = $report[0];
 
         <div class="card">
             <p>usuarios registrados en año elegido</p>
-            <a href="diagramas/reporte6/formulario.php">
+            <a href="<?php echo URL ?>app?report=report_6">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>
@@ -84,7 +84,7 @@ $report = $report[0];
         <?PHP
         require_once "views/admin/reports/$report.php";
         ?>
-        <form action="<?php echo URL . 'pdf?title='.$title ?>" class="dowload" method="POST"> 
+        <form action="<?php echo URL . 'pdf?title=' . $title ?>" class="dowload" method="POST">
             <textarea name="htmlTemplate" class="textarea-htmlTemplate">
             <?php echo $htmlTemplate ?>
             </textarea>

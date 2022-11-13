@@ -98,4 +98,19 @@ class ReportModel extends Model
             return false;
         }
     }
+
+    public function reportSix($YEAR)
+    {
+        try {
+            $string = "CALL reporte6($YEAR)";
+
+            $query = $this->prepare($string);
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        } catch (PDOException $err) {
+            error_log("REPORT_MODEL::REPORT_TWO=>PDOEXEPTION: $err");
+            return false;
+        }
+    }
 }

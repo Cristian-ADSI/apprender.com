@@ -127,4 +127,14 @@ class AppController extends Controller
         // echo "</pre>";
         return;
     }
+
+    public function loadReport_6(){
+        $model = new ReportModel();
+
+        $report = $model->reportSix($_POST['año']);
+        $_SESSION['report6']= $report;
+        $this->redirect('app?report=report_6',[]);
+
+        return;
+    }
 }
