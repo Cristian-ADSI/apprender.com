@@ -18,7 +18,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="<?php echo constant('URL') ?>/public/img/utilities/logo.png" alt="Apprender.com" class="logo" />
+                <img src="<?php echo constant('URL') ?>public/img/utilities/logo.png" alt="Apprender.com" class="logo" />
             </div>
             <nav>
                 <a href="<?php echo constant('URL')?>singup" class="select">Registrarse</a>
@@ -48,7 +48,7 @@
             <div class="card">
                 <div class="card-img">
                     <figure>
-                        <img src="/public/img/utilities/1.jpg" alt="" />
+                        <img src="public/img/utilities/1.jpg" alt="" />
                         <div class="capa">
                             <h3>Paso 1</h3>
                             <p>
@@ -64,7 +64,7 @@
             <div class="card">
                 <div class="card-img">
                     <figure>
-                        <img src="/public/img/utilities/2.jpg" alt="" />
+                        <img src="public/img/utilities/2.jpg" alt="" />
                         <div class="capa">
                             <h3>Paso 2</h3>
                             <p>
@@ -81,7 +81,7 @@
             <div class="card">
                 <div class="card-img">
                     <figure>
-                        <img src="/public/img/utilities/3.jpg" alt="" />
+                        <img src="public/img/utilities/3.jpg" alt="" />
                         <div class="capa">
                             <h3>Paso 3</h3>
                             <p>
@@ -97,7 +97,7 @@
             <div class="card">
                 <div class="card-img">
                     <figure>
-                        <img src="/public/img/utilities/4.jpg" alt="" />
+                        <img src="public/img/utilities/4.jpg" alt="" />
                         <div class="capa">
                             <h3>Paso 4</h3>
                             <p>

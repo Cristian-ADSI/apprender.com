@@ -4,7 +4,7 @@ $view = isset($_GET['view']) ? $_GET['view']  : 'courses';
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,8 @@ $view = isset($_GET['view']) ? $_GET['view']  : 'courses';
     <link rel="stylesheet" href="<?PHP echo constant('URL') ?>/public/css/teacher.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="<?PHP echo constant('BOOTSTRAP') ?>">
-
+    <!-- Normalize: para ver todos los estilos iguales en los diferentes navegadores  -->
+    <link rel="stylesheet" href="/public/css/normalize.css">
     <title>Apprender</title>
 </head>
 

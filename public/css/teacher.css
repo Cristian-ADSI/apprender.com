@@ -12,21 +12,21 @@ body::-webkit-scrollbar {
 /*-----------------------inicio estilos header------------------------- */
 .group-header {
   display: flex;
-  background-color: #3c5c94;
+  background:linear-gradient(to right, #30127b, #2d8daa, #275891);
   height: 100px;
   margin: 0%;
   padding: 0%;
   border: none;
 }
 .contenedor-Logo {
-  width: 30%;
+  width: 50%;
   justify-content: center;
   text-align: center;
   font-size: 20px;
 }
 .contorno {
   display: flex;
-  background-color: #8bbdbf;
+  background-color: #bfb78b;
   margin-top: 25px;
   margin-left: 20px;
   height: 40px;
