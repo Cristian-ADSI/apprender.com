@@ -103,4 +103,16 @@ class AppController extends Controller
         // echo "</pre>";
         return;
     }
+
+    public function loadReport_4(){
+        $model = new ReportModel();
+
+        $report = $model->reportThree($_POST['año'], $_POST['mes_inicial'], $_POST['mes_final']);
+        $_SESSION['report4']= $report;
+        $this->redirect('app?report=report_4',[]);
+        // echo "<pre>";
+        // var_dump($report);
+        // echo "</pre>";
+        return;
+    }
 }
