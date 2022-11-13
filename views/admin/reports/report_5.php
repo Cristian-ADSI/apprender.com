@@ -1,11 +1,11 @@
 <div class="row reports">
     <h2 class="text-center fw-bolder my-5">
-    Cursos Con Mayor Inscripcion Entre Meses Elegidos
+        Cantidad de Matriculas Entre Meses Elegidos
     </h2>
 
     <div class="col-md-6">
         <h4 style="margin-bottom: 50px;">digite los siguientes datos</h4>
-        <form action="<?php echo URL ?>app/loadReport_3" method="post">
+        <form action="<?php echo URL ?>app/loadReport_5" method="post">
             <label>año</label><br>
             <input class="mb-2" type="text" name="año" id="año" required><br>
 
@@ -22,14 +22,13 @@
 
     <div class="col-md-6">
         <?php
-        $title = 'Cursos Con Mayor Inscripcion Entre Meses Elegidos';
+        $title = 'Cantidad de Matriculas Entre Meses Elegidos';
         ob_start();
-        if (isset($_SESSION['report3']) && count($_SESSION['report3']) > 0) {
+        if (isset($_SESSION['report5']) && count($_SESSION['report5']) > 0) {
         ?>
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>nombre del curso</th>
                         <th>inscripcciones</th>
                         <th>año</th>
                         <th>mes</th>
@@ -37,12 +36,10 @@
                 </thead>
                 <tbody>
                     <?php
-                    # code...
-                    foreach ($_SESSION['report3'] as $row) {
+                    foreach ($_SESSION['report5'] as $row) {
                     ?>
                         <tr>
-                            <td><?php echo $row['nombre del curso'] ?></td>
-                            <td><?php echo $row['inscripciones'] ?></td>
+                            <td><?php echo $row['matriculas'] ?></td>
                             <td><?php echo $row['año'] ?></td>
                             <td><?php echo $row['mes'] ?></td>
                         </tr>
