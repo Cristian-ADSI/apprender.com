@@ -25,7 +25,7 @@
             <?php foreach ($this->data as $course) { ?>
                 <div class="card-curso" id="curso">
                     <div class="imagen-curso">
-                        <img src=<?php echo $course['image'] ?>>
+                        <img src=<?php echo "/public/img/covers/".$course['image'] ?>>
                     </div>
                     <div class="contenido-curso">
                         <h4><?php echo $course['name'] ?></h4>
