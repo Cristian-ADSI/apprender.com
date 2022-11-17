@@ -23,7 +23,7 @@ $image = empty($_SESSION['sessionImage'])
 </head>
 
 <body>
-    <section class="container-all">
+    <section class="container-all" >
 
         <section class="ctn-form">
             <button class="btn btn-success"><a class="text-decoration-none text-white" href="<?PHP echo constant('URL') . "app" ?>">Volver</a></button>

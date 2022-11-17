@@ -4,7 +4,7 @@
         <i class="fas fa-bars"></i>
         <i class="fas fa-times"></i>
     </label>
-    <nav id="sidebar">
+    <nav id="sidebar" >
         <div class="title">
             Menu
         </div>
