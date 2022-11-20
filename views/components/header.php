@@ -13,20 +13,13 @@ if (empty($_SESSION['sessionImage'])) {
         <div class="contenedor-Logo">
             <div class="contorno">
                 <div class="logo">
-                    <img src="<?PHP constant('URL') ?>/public/img/utilities/logo-apprender.png" alt="">
-                </div>
-                <div class="nombre-proyecto">
-                    <label>
-                        apprender
-                    </label>
+                    <img src="<?PHP constant('URL') ?>/public/img/utilities/logo.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="contenedor-titulo">
-        </div>
         <div class="contenedor-usuario">
             <div class="contorno-usuario">
-                
+
                 <div class="imagen-usuario">
                     <img src=<?php echo $userImage ?>>
                 </div>

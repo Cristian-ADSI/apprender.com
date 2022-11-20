@@ -4,6 +4,13 @@ body {
   /* background-image: url("https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
   margin: 0%;
 }
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0!important;
+  margin-inline-end: 0!important;
+}
 /*-----------------------inicio estilos header------------------------- */
 .group-header {
   display: flex;
@@ -231,6 +238,6 @@ h2 {
   background-color: #3c5c94;
   border-radius: 30px;
   height: 30px;
-  width: 95%;
+  width: 100%;
   text-align: center;
 }

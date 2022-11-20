@@ -1,6 +1,4 @@
 <?php
-
-include_once "libs/iModel.php";
 class Model
 {
     function __construcut()
@@ -11,6 +9,12 @@ class Model
     function query($query)
     {
         return $this->database->connect()->query($query);
+    }
+    function lastIdQuery($query)
+    {
+        $instance  = $this->database->connect();
+        $instance->query($query);
+        return $instance->lastInsertId();
     }
 
     function prepare($STRING)

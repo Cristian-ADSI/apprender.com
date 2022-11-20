@@ -28,7 +28,7 @@ if (!isset($_SESSION['sessionIdUser'])) {
     <?PHP require_once "views/components/header.php" ?>
     <?PHP require_once "views/components/sidebar.php" ?>
 
-    <div class="contenedorTemas">
+    <div class="contenedorTemas p-5">
         <h2 class="titulo">
             Contenido del Curso
         </h2>
@@ -39,11 +39,13 @@ if (!isset($_SESSION['sessionIdUser'])) {
         ?>
             <b><p class="NombreTema"><?php echo $theme['nombre']?></p></b>
             <?php  foreach ($thematics as $key => $item) {?>
-                <a href="" style=" text-decoration: none;">
-                        <li style="text-decoration: none; color:black;  margin-bottom: 5px;">
+                <a href="<?php echo $item['video'];?>" target="_blank"  style=" text-decoration: none;">
+                    <li style="text-decoration: none; color:black;  margin-bottom: 5px;">
                         <?php echo $item['nombre'];?>
-                        </li>
+                        
+                    </li>
                 </a>
+                <p><?php echo $item['descripcion'];?></p>
             <?php  }?>
         <?PHP } ?>
     </div>

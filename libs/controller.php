@@ -6,7 +6,7 @@ class Controller
 
     public function __construct()
     {
-        error_log('CONTROLLER::CONSTRUCT=>OK');
+        // error_log('CONTROLLER::CONSTRUCT=>OK');
         $this->view = new View();
     }
 
@@ -84,7 +84,7 @@ class Controller
         header("Location:" . constant('URL') . "$PATH" . "$params");
     }
 
-    // TODO: ACtualmente en desuso 
+    // TODO: Actualmente en desuso 
     public function getPOST($NAME)
     {
         return $_POST[$NAME];

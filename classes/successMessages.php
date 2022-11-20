@@ -1,9 +1,11 @@
 <?php 
 class SuccesserMessages{
     // ERROR_CONTROLLER_METHOD_ACTION
-    const SUCCESS_ADMIN_TEST = "test";
-    const SUCCESS_SINGUP_USER_CREATED = "singup001";
+    const SUCCESS_ADMIN_TEST            = "test";
+    const SUCCESS_SINGUP_USER_CREATED   = "singup001";
     const SUCCESS_ENROLL_ENROLL_CREATED = "enrollp001";
+    const SUCCESS_DELETE_IMAGE          = "profilede001";
+    const SUCCESS_UPDATE_USER           = "profileup001";
 
     private $successList = [];
 
@@ -23,7 +25,9 @@ class SuccesserMessages{
                     ver temas
                 </a>
             </button>
-            '
+            ',
+            SuccesserMessages::SUCCESS_DELETE_IMAGE => 'Imagen Eliminada exitosamente!',
+            SuccesserMessages::SUCCESS_UPDATE_USER => 'Datos actualizado exitosamente!',
         ];
     }
 

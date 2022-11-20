@@ -1,4 +1,9 @@
 <?php
+require_once "models/courseModel.php";
+session_start();
+
+
+
 class ProgressController extends Controller
 {
     function __construct()
@@ -8,7 +13,13 @@ class ProgressController extends Controller
     }
 
     function loadView(){
-        $this->view->render('progress');
+
+        $coursesModel = new CourseModel();
+        $idUser = $_SESSION['sessionIdUser'];
+
+        $courses = $coursesModel->getCoursesByUser($idUser);
+
+        $this->view->render('progress', $courses);
     }
     
 }

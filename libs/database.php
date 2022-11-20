@@ -10,6 +10,7 @@ class Database
 
     function __construct()
     {
+        
         $this->host = constant('HOST');
         $this->dbName = constant('DBNAME');
         $this->user = constant('USER');
@@ -29,7 +30,7 @@ class Database
 
             $connection = new PDO($dsn, $this->user, $this->password, $options);
 
-            error_log('DATABASE::=>Conect successfuly');
+            // error_log('DATABASE::=>Conect successfuly');
 
             return $connection;
             
