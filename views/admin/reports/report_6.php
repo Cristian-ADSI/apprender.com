@@ -1,19 +1,13 @@
 <div class="row reports">
     <h2 class="text-center fw-bolder my-5">
-    Cursos Con Mayor Inscripcion Entre Meses Elegidos
+        Usuarios Registrados en El año Elegido
     </h2>
 
     <div class="col-md-6">
         <h4 style="margin-bottom: 50px;">digite los siguientes datos</h4>
-        <form action="<?php echo URL ?>app/loadReport_3" method="post">
+        <form action="<?php echo URL ?>app/loadReport_6" method="post">
             <label>año</label><br>
             <input class="mb-2" type="text" name="año" id="año" required><br>
-
-            <label>mes inicial</label><br>
-            <input class="mb-2" type="number" name="mes_inicial" id="mes_inicial" required><br>
-
-            <label>mes final</label><br>
-            <input class="mb-2" type="number" name="mes_final" id="mes_final" required><br>
 
             <input class="btn btn-primary" type="submit" value="continuar">
         </form>
@@ -22,29 +16,28 @@
 
     <div class="col-md-6">
         <?php
-        $title = 'Cursos Con Mayor Inscripcion Entre Meses Elegidos';
+        $title = ' Usuarios Registrados en El año Elegido';
         ob_start();
-        if (isset($_SESSION['report3']) && count($_SESSION['report3']) > 0) {
+        if (isset($_SESSION['report6']) && count($_SESSION['report6']) > 0) {
         ?>
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>nombre del curso</th>
-                        <th>inscripcciones</th>
-                        <th>año</th>
-                        <th>mes</th>
+                        <th>#</th>
+                        <th>nombre</th>
+                        <th>apellido</th>
+                        <th>fecha</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    # code...
-                    foreach ($_SESSION['report3'] as $row) {
+                    foreach ($_SESSION['report6'] as $row) {
                     ?>
                         <tr>
-                            <td><?php echo $row['nombre del curso'] ?></td>
-                            <td><?php echo $row['inscripciones'] ?></td>
-                            <td><?php echo $row['año'] ?></td>
-                            <td><?php echo $row['mes'] ?></td>
+                            <td><?php echo $row['id_usuario'] ?></td>
+                            <td><?php echo $row['nombre'] ?></td>
+                            <td><?php echo $row['apellido'] ?></td>
+                            <td><?php echo $row['fecha'] ?></td>
                         </tr>
                     <?php
                     }

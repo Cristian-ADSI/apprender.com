@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="<?php echo constant('BOOTSTRAP') ?>">
     <!-- Styles  -->
     <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/home.css">
-    <!-- Normalize: para ver todos los estilos iguales en los diferentes navegadores  -->
-    <link rel="stylesheet" href="/public/css/normalize.css">
 </head>
 
 <body>

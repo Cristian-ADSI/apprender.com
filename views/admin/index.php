@@ -1,9 +1,10 @@
 <?php
 
 $report = isset($_GET['report']) ? $_GET['report'] : 'report_1';
-$report = explode('?',$report);
+$report = explode('?', $report);
 $report = $report[0];
-$_SESSION['report'];
+
+// $_SESSION['report'];
 
 ?>
 <!DOCTYPE html>
@@ -53,7 +54,7 @@ $_SESSION['report'];
 
         <div class="card">
             <p>cursos con menor inscripcion entre meses elegidos</p>
-            <a href="diagramas/reporte4/formulario.php">
+            <a href="<?php echo URL ?>app?report=report_4">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>
@@ -62,7 +63,7 @@ $_SESSION['report'];
 
         <div class="card">
             <p>cantidad de matriculas entre mese elegidos</p>
-            <a href="diagramas/reporte5/formulario.php">
+            <a href="<?php echo URL ?>app?report=report_5">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>
@@ -71,7 +72,7 @@ $_SESSION['report'];
 
         <div class="card">
             <p>usuarios registrados en año elegido</p>
-            <a href="diagramas/reporte6/formulario.php">
+            <a href="<?php echo URL ?>app?report=report_6">
                 <button class="btn btn-warning" value="ver">
                     ver
                 </button>
@@ -83,7 +84,7 @@ $_SESSION['report'];
         <?PHP
         require_once "views/admin/reports/$report.php";
         ?>
-        <form action="<?php echo URL . 'pdf?title='.$title ?>" class="dowload" method="POST"> 
+        <form action="<?php echo URL . 'pdf?title=' . $title ?>" class="dowload" method="POST">
             <textarea name="htmlTemplate" class="textarea-htmlTemplate">
             <?php echo $htmlTemplate ?>
             </textarea>
