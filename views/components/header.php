@@ -21,7 +21,7 @@ if (empty($_SESSION['sessionImage'])) {
                             <img src=<?php echo $userImage ?>>
                         </div>
 
-                        <div class="nombre-Usuario col-9">
+                        <div class="nombre-Usuario col-7">
                             <label class="">
                                 <?php echo $_SESSION['sessionName'] ?>
                             </label>
