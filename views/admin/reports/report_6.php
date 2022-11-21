@@ -1,12 +1,12 @@
 <div class="row reports">
     <h2 class="text-center fw-bolder my-5">
-        Usuarios Registrados en El año Elegido
+        Usuarios registrados en el año elegido
     </h2>
 
     <div class="col-md-6">
-        <h4 style="margin-bottom: 50px;">digite los siguientes datos</h4>
+        <h4 style="margin-bottom: 50px;">Digite los siguientes datos</h4>
         <form action="<?php echo URL ?>app/loadReport_6" method="post">
-            <label>año</label><br>
+            <label>Año</label><br>
             <input class="mb-2" type="text" name="año" id="año" required><br>
 
             <input class="btn btn-primary" type="submit" value="continuar">
@@ -24,9 +24,9 @@
                 <thead class="table-dark">
                     <tr>
                         <th>#</th>
-                        <th>nombre</th>
-                        <th>apellido</th>
-                        <th>fecha</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Fecha</th>
                     </tr>
                 </thead>
                 <tbody>

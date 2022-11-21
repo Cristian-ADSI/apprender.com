@@ -64,7 +64,7 @@ $view = isset($_GET['view']) ? $_GET['view']  : 'courses';
 </div>
     <main class="container w-75">
 
-    <button type="button" class="btn btn-secondary my-4 w-100" data-bs-toggle="modal" data-bs-target="#courseModal">
+    <button type="button" class="btn btn-light my-4 w-100 text-xl-center" data-bs-toggle="modal" data-bs-target="#courseModal">
             Crear curso Nuevo
         </button>
 

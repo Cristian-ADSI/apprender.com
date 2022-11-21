@@ -1,10 +1,10 @@
 <div class="row reports">
     <h2 class="text-center fw-bolder my-5">
-        Profesor con mas estudiantes inscritor en el curso elegido
+        Profesor con más estudiantes inscritos en el curso elegido
     </h2>
 
     <div class="col-md-6">
-        <h4 style="margin-bottom: 50px;">digite los siguientes datos</h4>
+        <h4 style="margin-bottom: 50px;">Digite los siguientes datos</h4>
         <form action="<?php echo URL ?>app/loadReport_2" method="post">
             <label for="" class="label mb-3">curso</label><br>
             <input class="mb-3" type="text" name="curso" id="curso" required><br>
@@ -15,18 +15,18 @@
 
     <div class="col-md-6">
         <?php
-        $title = 'Profesor con mas estudiantes inscritor en el curso elegido';
+        $title = 'Profesor con más estudiantes inscritos en el curso elegido';
         ob_start();
         if (isset($_SESSION['report2']) && count($_SESSION['report2']) > 0) {
         ?>
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>profesor</th>
-                        <th>nombre</th>
-                        <th>apellido</th>
-                        <th>curso</th>
-                        <th>matriculas</th>
+                        <th>Profesor</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Curso</th>
+                        <th>Matrículas</th>
                     </tr>
                 </thead>
                 <tbody>

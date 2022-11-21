@@ -1,17 +1,17 @@
 <div class="reports">
     <h2 class="text-center my-5 fw-bolder">
-        3 Cursos Mas Solicitados
+        Los tres Cursos Mas Solicitados
     </h2>
 
     <?php 
-    $title='3 Cursos Mas Solicitados';
+    $title='Los tres Cursos más Solicitados';
     ob_start(); 
     ?>
-    <table class="table">
+    <table class="table text-light">
         <thead class="table-dark">
             <tr>
-                <th>nombre del curso</th>
-                <th>cantidad de inscripciones</th>
+                <th>Nombre del curso</th>
+                <th>Cantidad de inscripciones</th>
             </tr>
         </thead>
         <tbody>
