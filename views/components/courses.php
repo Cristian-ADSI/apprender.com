@@ -1,11 +1,12 @@
-<section class="container">
-    <h1>Lista de cursos</h1>
+<section class="container pb-1 rounded-2" 
+style="background:linear-gradient(to right, #30127b, #2d8daa, #275891)">
+    <h1 class="text-center text-white">Lista de cursos</h1>
 
-    <table class="table">
+    <table class="table table-dark table-hover rounded-2">
         <thead>
             <tr>
-                <th>id</th>
-                <th>nombre</th>
+                <th>Id</th>
+                <th>Imagen / Nombre</th>
                 <th>Fecha Inical</th>
                 <th>Fecha Final</th>
                 <th>Valor</th>
@@ -20,7 +21,7 @@
                     <td><?php echo $course['idCourse'] ?></td>
 
                     <td>
-                        <img class="course-image" src="public/img/covers/<?php echo $course['image'] ?>" alt="<?php echo $course['name'] ?>">
+                        <img class="course-image" width="40" height="40" src="public/img/covers/<?php echo $course['image'] ?>" alt="<?php echo $course['name'] ?>">
                         <?php echo $course['name'] ?>
                     </td>
 

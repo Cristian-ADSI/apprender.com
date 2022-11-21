@@ -79,13 +79,4 @@ body::-webkit-scrollbar {
   margin-top: 15px;
   margin-left: 10px;
 }
-/* ------------------- fin estilos header------------------------ */
 
-.course-image {
-  width: 80px;
-  clip-path: circle();
-  margin-right: 5px;
-}
-.btn-edit a {
-  text-decoration: none;
-}
