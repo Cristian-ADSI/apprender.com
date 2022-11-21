@@ -14,13 +14,13 @@
     <title>Apprender</title>
 </head>
 
-<body>
+<body style="background-image:url(/public/img/utilities/fondo1.png);">
     <?PHP require_once "views/components/header.php" ?>
     <?PHP require_once "views/components/sidebar.php" ?>
 
     <main>
 
-        <div class="group-cards">
+        <div class="group-cards"  style="background:linear-gradient(to right, #30127b, #2d8daa, #275891)">
 
             <div class="card1">
                 <div class="imagen-1">

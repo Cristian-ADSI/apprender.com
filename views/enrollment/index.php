@@ -30,7 +30,7 @@ if (!isset($_GET['idCourse']) && !isset($_GET['course'])) { $idCourse = NULL; }
     <title>Matricula</title>
 </head>
 
-<body>
+<body style="background-image:url(/public/img/utilities/fondoAzul.jpg);">
 
 
     <button class="btn btn-success m-4">
@@ -40,7 +40,7 @@ if (!isset($_GET['idCourse']) && !isset($_GET['course'])) { $idCourse = NULL; }
     </button>
 
 
-    <div class="contenedor" style=" width: 45%;height: 350px;text-align: center;margin: 27%;margin-top: 6%;  margin-bottom: 5%;border-radius: 30px;box-shadow: 2px 2px 13px 4px rgba(0, 0, 0, 0.4);">
+    <div class="contenedor bg-primary w-25" style=" width: 45%;height: 350px;text-align: center;margin: 27%;margin-top: 6%;  margin-bottom: 5%;border-radius: 30px;box-shadow: 2px 2px 13px 4px rgba(0, 0, 0, 0.4);">
 
         <div>
 
@@ -58,26 +58,26 @@ if (!isset($_GET['idCourse']) && !isset($_GET['course'])) { $idCourse = NULL; }
                 <input class="matri_fecha" type="text" value=<?php echo setDate() ?> id="fechaMatricula" name="erollmentDate" >
                 <br><br>
 
-                <input type="submit" class="btn btn-primary" value="matricularme">
+                <input type="submit" class="btn btn-primary " value="matricularme">
                 <a href="<?PHP echo constant('URL') . 'courses' ?>" class="btn btn-danger">cancelar</a>
             </form>
         </div>
     </div>
-    <div class="container text-center">
+    <div class="container text-center" style="background:linear-gradient(to right, #30127b, #2d8daa, #275891)">
         <?PHP
             // Success Message 
             if(isset($this->data['success']) ){
                 $path = constant('URL')."themes?theme=".$_GET['idCourse'];
                 echo '<div class="alert alert-success m-1">
                         Matricula existosa
-                      </div>
+                    </div>
 
-                      <button class="btn btn-success m-4">
+                    <button class="btn btn-success m-4">
                         <a class="text-decoration-none text-white fs-5" 
                         href="'.$path.'">
                             ver contenido de curso
                         </a>
-                      </button>
+                    </button>
             ';
             } 
             // Error Message 

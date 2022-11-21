@@ -28,7 +28,7 @@ if (!isset($_SESSION['sessionIdUser'])) {
     <?PHP require_once "views/components/header.php" ?>
     <?PHP require_once "views/components/sidebar.php" ?>
     <main>
-        <div class="contenedor-cursos">
+        <div class="contenedor-cursos" style="background:linear-gradient(to right, #30127b, #2d8daa, #275891)">
             <?php
 
             foreach ($this->data as $course) {
@@ -68,7 +68,7 @@ if (!isset($_SESSION['sessionIdUser'])) {
                         <div class="boton">
                             <a 
                             href="<?php echo constant('URL') . 'enrollment?course=' . $course['idCourse']; ?>"
-                            class="btn">
+                            class="btn text-center">
                                 Matricularme
                             </a>
                         </div>

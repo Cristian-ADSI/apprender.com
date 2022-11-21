@@ -1,18 +1,18 @@
 <div class="row reports">
     <h2 class="text-center fw-bolder my-5">
-        Cursos Con Menor Inscripcion Entre Meses Elegidos
+        Cursos con menor inscripciones entre los meses elegidos
     </h2>
 
     <div class="col-md-6">
-        <h4 style="margin-bottom: 50px;">digite los siguientes datos</h4>
+        <h4 style="margin-bottom: 50px;">Digite los siguientes datos</h4>
         <form action="<?php echo URL ?>app/loadReport_4" method="post">
-            <label>año</label><br>
+            <label>Año</label><br>
             <input class="mb-2" type="text" name="año" id="año" required><br>
 
-            <label>mes inicial</label><br>
+            <label>Mes inicial</label><br>
             <input class="mb-2" type="number" name="mes_inicial" id="mes_inicial" required><br>
 
-            <label>mes final</label><br>
+            <label>Mes final</label><br>
             <input class="mb-2" type="number" name="mes_final" id="mes_final" required><br>
 
             <input class="btn btn-primary" type="submit" value="continuar">
@@ -22,17 +22,17 @@
 
     <div class="col-md-6">
         <?php
-        $title = 'Cursos Con Menor Inscripcion Entre Meses Elegidos';
+        $title = 'Cursos con menor inscripciones entre meses elegidos';
         ob_start();
         if (isset($_SESSION['report4']) && count($_SESSION['report4']) > 0) {
         ?>
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                        <th>nombre del curso</th>
-                        <th>inscripcciones</th>
-                        <th>año</th>
-                        <th>mes</th>
+                        <th>Nombre del curso</th>
+                        <th>Inscripcciones</th>
+                        <th>Año</th>
+                        <th>Mes</th>
                     </tr>
                 </thead>
                 <tbody>
